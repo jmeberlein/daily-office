@@ -1,0 +1,57 @@
+package com.bcponline.dailyoffice
+
+val MORNING_SUFFRAGES = mapOf(
+    Pair("Option A", """V.    Show us your mercy, O Lord;
+R.    And grant us your salvation.
+V.    Clothe your ministers with righteousness;
+R.    Let your people sing with joy.
+V.    Give peace, O Lord, in all the world;
+R.    For only in you can we live in safety.
+V.    Lord, keep this nation under your care;
+R.    And guide us in the way of justice and truth.
+V.    Let your way be known upon earth;
+R.    Your saving health among all nations.
+V.    Let not the needy, O Lord, be forgotten;
+R.    Nor the hope of the poor be taken away.
+V.    Create in us clean hearts, O God;
+R.    And sustain us with your Holy Spirit.""".trimIndent()),
+    Pair("Option B", """V.    Save your people, Lord, and bless your inheritance;
+R.    Govern and uphold them, now and always.
+V.    Day by day we bless you;
+R.    We praise your name for ever.
+V.    Lord, keep us from all sin today;
+R.    Have mercy upon us, Lord, have mercy.
+V.    Lord, show us your love and mercy;
+R.    For we put our trust in you.
+V.    In you, Lord, is our hope;
+R.    And we shall never hope in vain.""".trimIndent())
+)
+
+val EVENING_SUFFRAGES = mapOf(
+    Pair("Option A", """V.    Show us your mercy, O Lord;
+R.    And grant us your salvation.
+V.    Clothe your ministers with righteousness;
+R.    Let your people sing with joy.
+V.    Give peace, O Lord, in all the world;
+R.    For only in you can we live in safety.
+V.    Lord, keep this nation under your care;
+R.    And guide us in the way of justice and truth.
+V.    Let your way be known upon earth;
+R.    Your saving health among all nations.
+V.    Let not the needy, O Lord, be forgotten;
+R.    Nor the hope of the poor be taken away.
+V.    Create in us clean hearts, O God;
+R.    And sustain us with your Holy Spirit.""".trimIndent()),
+    Pair("Option B", """V.    That this evening may be holy, good, and peaceful,
+R.    We entreat you, O Lord.
+V.    That your holy angels may lead us in paths of peace and goodwill,
+R.    We entreat you, O Lord.
+V.    That we may be pardoned and forgiven for our sins and offenses,
+R.    We entreat you, O Lord.
+V.    That there may be peace to your Church and to the whole world,
+R.    We entreat you, O Lord.
+V.    That we may depart this life in your faith and fear, and not be condemned before the great judgment seat of Christ,
+R.    We entreat you, O Lord.
+V.    That we may be bound together by your Holy Spirit in the communion of [________ and] all your saints, entrusting one another and all our life to Christ,
+R.    We entreat you, O Lord.""".trimIndent())
+)
