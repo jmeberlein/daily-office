@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    kotlin("plugin.serialization") version "2.3.0"
 }
 
 kotlin {
@@ -34,8 +35,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.kotlinx.datetime)
             implementation(libs.androidx.navigation.compose)
-            implementation(libs.jackson.module.kotlin)
-            implementation(libs.jackson.dataformat.yaml)
+            implementation("com.charleskorn.kaml:kaml:0.104.0")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -88,4 +88,10 @@ compose.desktop {
             packageVersion = "1.0.0"
         }
     }
+}
+
+compose.resources {
+    publicResClass = false
+    packageOfResClass = "com.bcponline.dailyoffice.resources"
+    generateResClass = auto
 }
