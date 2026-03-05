@@ -2,6 +2,35 @@ package com.bcponline.dailyoffice
 
 import kotlinx.datetime.*
 
+fun Map<*, *>.dig(vararg keys: String): Any? {
+    var current: Any? = this
+    for (key in keys) {
+        current = (current as? Map<*, *>)?.get(key)
+    }
+    return current
+}
+
+fun Map<*, *>.containsDeepPath(vararg keys: String): Boolean {
+    var current: Any? = this
+    for (key in keys) {
+        if (current !is Map<*, *> || !current.containsKey(key)) {
+            return false
+        }
+        current = current[key]
+    }
+    return true
+}
+
+@Suppress("UNCHECKED_CAST")
+fun <T> Map<*, *>.getDeepOrDefault(default: T, vararg keys: String): T {
+    var current: Any? = this
+    for (key in keys) {
+        current = (current as? Map<*, *>)?.get(key)
+        if (current == null) return default
+    }
+    return (current as? T) ?: default
+}
+
 fun computus(year: Int): LocalDate {
     val a = year % 19
     val b = year / 100
