@@ -17,7 +17,7 @@ import kotlinx.datetime.*
 fun App() {
     MaterialTheme {
         Surface(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier.fillMaxSize().safeDrawingPadding(),
             color = MaterialTheme.colorScheme.background
         ) {
             DailyOfficeScreen()
