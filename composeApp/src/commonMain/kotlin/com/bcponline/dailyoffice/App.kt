@@ -65,8 +65,8 @@ fun DailyOfficeScreen() {
     LaunchedEffect(currentDate) {
         isLoading = true
         FileRegistry.loadDailyPropers()
-//        FileRegistry.loadFilesForDate(currentDate)
-        currentDay = FileRegistry.getDailyProper(currentDate) ?: currentDay
+        FileRegistry.loadFilesForDate(currentDate)
+        currentDay = LiturgicalDay.of(currentDate)
         isLoading = false
     }
 
