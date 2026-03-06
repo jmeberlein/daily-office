@@ -133,6 +133,7 @@ object FileRegistry {
         val firstAdvent = christmas.minus(christmas.dayOfWeek.isoDayNumber + 21, DateTimeUnit.DAY)
         val name = day.get<YamlScalar>("name")?.content ?: week.get<YamlScalar>("name")?.content ?: ""
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: week.get<YamlScalar>("rank")?.content ?: if (today.dayOfWeek == DayOfWeek.SUNDAY) "SUNDAY" else "FERIA")
+        val season = Season.valueOf(day.get<YamlScalar>("season")?.content ?: week.get<YamlScalar>("season")?.content ?: "NONE")
         val morningPsalter = day.get<YamlMap>("morning")?.get<YamlScalar>("psalter")?.content ?: ""
         val eveningPsalter = day.get<YamlMap>("evening")?.get<YamlScalar>("psalter")?.content ?: ""
         val morningReadings = day.get<YamlMap>("morning")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content!! } ?:
@@ -169,7 +170,7 @@ object FileRegistry {
                 Office(
                     name,
                     rank,
-                    Season.NONE,
+                    season,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
@@ -178,7 +179,7 @@ object FileRegistry {
                 Office(
                     name,
                     rank,
-                    Season.NONE,
+                    season,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
@@ -187,7 +188,7 @@ object FileRegistry {
                 Office(
                     name,
                     rank,
-                    Season.NONE,
+                    season,
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
@@ -199,7 +200,7 @@ object FileRegistry {
                 Office(
                     name,
                     rank,
-                    Season.NONE,
+                    season,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
@@ -208,7 +209,7 @@ object FileRegistry {
                 Office(
                     name,
                     rank,
-                    Season.NONE,
+                    season,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
