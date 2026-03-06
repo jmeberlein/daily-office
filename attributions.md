@@ -1,0 +1,4 @@
+Morning by Carlos Andujar from <a href="https://thenounproject.com/browse/icons/term/morning/" target="_blank" title="Morning Icons">Noun Project</a> (CC BY 3.0)
+sunset by Carlos Andujar from <a href="https://thenounproject.com/browse/icons/term/sunset/" target="_blank" title="sunset Icons">Noun Project</a> (CC BY 3.0)
+Night by Carlos Andujar from <a href="https://thenounproject.com/browse/icons/term/night/" target="_blank" title="Night Icons">Noun Project</a> (CC BY 3.0)
+Calendar by Muhammad Naufal Subhiansyah from <a href="https://thenounproject.com/browse/icons/term/calendar/" target="_blank" title="Calendar Icons">Noun Project</a> (CC BY 3.0)
