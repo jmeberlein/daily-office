@@ -8,11 +8,18 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.bcponline.dailyoffice.components.ComplineTabContent
 import com.bcponline.dailyoffice.components.DatePickerDialogModal
+import com.bcponline.dailyoffice.components.DateTabContent
+import com.bcponline.dailyoffice.components.MatinsTabContent
+import com.bcponline.dailyoffice.components.VespersTabContent
 import com.bcponline.dailyoffice.model.LiturgicalDay
 import com.bcponline.dailyoffice.offices.*
+import com.bcponline.dailyoffice.resources.*
 import kotlinx.datetime.*
+import org.jetbrains.compose.resources.ExperimentalResourceApi
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun App() {
     MaterialTheme {
@@ -36,6 +43,7 @@ enum class Version(val title: String) {
     CONDENSED("Condensed")
 }
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun DailyOfficeScreen() {
     val timeZone = TimeZone.currentSystemDefault()
@@ -81,15 +89,23 @@ fun DailyOfficeScreen() {
                 Tab(
                     selected = false,
                     onClick = { showDatePicker = true },
-                    text = { Text(currentDate.toString()) }
+                    text = { DateTabContent(currentDate) }
                 )
-                Hour.entries.forEach { office ->
-                    Tab(
-                        selected = selectedOffice == office,
-                        onClick = { selectedOffice = office },
-                        text = { Text(office.title) }
-                    )
-                }
+                Tab(
+                    selected = selectedOffice == Hour.MATINS,
+                    onClick = { selectedOffice = Hour.MATINS },
+                    text = { MatinsTabContent() }
+                )
+                Tab(
+                    selected = selectedOffice == Hour.VESPERS,
+                    onClick = { selectedOffice = Hour.VESPERS },
+                    text = { VespersTabContent() }
+                )
+                Tab(
+                    selected = selectedOffice == Hour.COMPLINE,
+                    onClick = { selectedOffice = Hour.COMPLINE },
+                    text = { ComplineTabContent() }
+                )
             }
 
             // Second row: Versions
