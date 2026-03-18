@@ -9,9 +9,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalDay
 import com.bcponline.dailyoffice.model.Office
+import com.bcponline.dailyoffice.data.FileRegistry
+import com.bcponline.dailyoffice.data.ProperParser
 import com.bcponline.dailyoffice.ui.Compline
 import com.bcponline.dailyoffice.ui.Matins
 import com.bcponline.dailyoffice.ui.Vespers
+import kotlinx.coroutines.launch
 import kotlinx.datetime.*
 import kotlin.time.Clock
 
@@ -34,7 +37,15 @@ fun App() {
         var useOptionalSaints by remember { mutableStateOf(false) }
         var useExtraFeasts by remember { mutableStateOf(false) }
 
-        val liturgicalDay = THANKSGIVING_DAY
+        var liturgicalDay by remember { mutableStateOf<LiturgicalDay>(THANKSGIVING_DAY) }
+        val scope = rememberCoroutineScope()
+
+        LaunchedEffect(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts) {
+            scope.launch {
+                FileRegistry.loadFiles("daily_propers")
+                ProperParser.getDailyProper(selectedDate, forceTwoReadings)?.let { liturgicalDay = it }
+            }
+        }
         var selectedService by remember { mutableStateOf(0) }
         val services = listOf("Matins", "Vespers", "Compline")
 
