@@ -1,48 +1,123 @@
 package com.bcponline.dailyoffice
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.safeContentPadding
-import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import org.jetbrains.compose.resources.painterResource
+import androidx.compose.ui.unit.dp
+import com.bcponline.dailyoffice.model.LiturgicalDay
+import com.bcponline.dailyoffice.model.Office
+import com.bcponline.dailyoffice.ui.Compline
+import com.bcponline.dailyoffice.ui.Matins
+import com.bcponline.dailyoffice.ui.Vespers
+import kotlinx.datetime.*
+import kotlin.time.Clock
 
-import dailyoffice.composeapp.generated.resources.Res
-import dailyoffice.composeapp.generated.resources.compose_multiplatform
+private val THANKSGIVING_DAY = LiturgicalDay(
+    morning = Office.THANKSGIVING_MORNING,
+    evening = Office.THANKSGIVING_EVENING
+)
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-@Preview
 fun App() {
     MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
+        val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
+
+        var selectedDate by remember { mutableStateOf(today) }
+        var showDatePicker by remember { mutableStateOf(false) }
+        var condensed by remember { mutableStateOf(false) }
+        var forceTwoReadings by remember { mutableStateOf(false) }
+        var useOptionalSaints by remember { mutableStateOf(false) }
+
+        // Placeholder: always use Thanksgiving until real lookup is wired up
+        val liturgicalDay = THANKSGIVING_DAY
+
+        var selectedService by remember { mutableStateOf(0) }
+        val services = listOf("Matins", "Vespers", "Compline")
+
+        if (showDatePicker) {
+            val datePickerState = rememberDatePickerState(
+                initialSelectedDateMillis = selectedDate
+                    .atStartOfDayIn(TimeZone.UTC)
+                    .toEpochMilliseconds()
+            )
+            DatePickerDialog(
+                onDismissRequest = { showDatePicker = false },
+                confirmButton = {
+                    TextButton(onClick = {
+                        datePickerState.selectedDateMillis?.let { millis ->
+                            selectedDate = Instant.fromEpochMilliseconds(millis)
+                                .toLocalDateTime(TimeZone.UTC).date
+                        }
+                        showDatePicker = false
+                    }) { Text("OK") }
+                },
+                dismissButton = {
+                    TextButton(onClick = { showDatePicker = false }) { Text("Cancel") }
+                }
+            ) {
+                DatePicker(state = datePickerState)
+            }
+        }
+
         Column(
             modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
+                .fillMaxSize()
                 .safeContentPadding()
-                .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
+                .verticalScroll(rememberScrollState())
         ) {
-            Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
+            // Date picker row
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(selectedDate.toString(), style = MaterialTheme.typography.titleMedium)
+                Button(onClick = { showDatePicker = true }) { Text("Change Date") }
             }
-            AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
-                Column(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
+
+            // Settings toggles
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Switch(checked = condensed, onCheckedChange = { condensed = it })
+                    Spacer(Modifier.width(4.dp))
+                    Text("Condensed")
                 }
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Switch(checked = forceTwoReadings, onCheckedChange = { forceTwoReadings = it })
+                    Spacer(Modifier.width(4.dp))
+                    Text("Two Readings")
+                }
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Switch(checked = useOptionalSaints, onCheckedChange = { useOptionalSaints = it })
+                    Spacer(Modifier.width(4.dp))
+                    Text("Optional Saints")
+                }
+            }
+
+            // Service tabs
+            TabRow(selectedTabIndex = selectedService) {
+                services.forEachIndexed { index, name ->
+                    Tab(
+                        selected = selectedService == index,
+                        onClick = { selectedService = index },
+                        text = { Text(name) }
+                    )
+                }
+            }
+
+            when (selectedService) {
+                0 -> Matins(selectedDate, liturgicalDay, condensed)
+                1 -> Vespers(selectedDate, liturgicalDay, condensed)
+                2 -> Compline(selectedDate, liturgicalDay, condensed)
             }
         }
     }
