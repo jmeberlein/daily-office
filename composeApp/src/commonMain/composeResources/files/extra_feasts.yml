@@ -556,28 +556,6 @@
     - ""
     - ""
 
-"0319":
-  name: Saint Joseph
-  rank: OPTIONAL
-  collect: |
-    O God, who from the family of your servant David
-    raised up Joseph to be the guardian of your incarnate
-    Son and the spouse of his virgin mother: Give us grace
-    to imitate his uprightness of life and his obedience to
-    your commands; through Jesus Christ our Lord, who
-    lives and reigns with you and the Holy Spirit, one God,
-    for ever and ever. Amen.
-  morning:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-  evening:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-
 "0320":
   name: Cuthbert
   rank: OPTIONAL
@@ -608,7 +586,7 @@
     grace and courage to bear witness to the truth before
     rulers and kings: Give us strength also that we may
     constantly defend what is right, boldly reprove what is
-    evil, and patiently suffer for the truth’s sake; through
+    evil, and patiently suffer for the truth's sake; through
     Jesus Christ our Lord, who lives and reigns with you
     and the Holy Spirit, one God, for ever and ever. Amen.
   morning:
@@ -680,27 +658,6 @@
     your Word who abides, your Word who is Life, even
     Jesus Christ our Lord, to whom, with you and the Holy
     Spirit, be praise and glory now and for ever. Amen.
-  morning:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-  evening:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-
-"0325":
-  name: The Annunciation of Our Lord Jesus Christ to
-  rank: OPTIONAL
-  collect: |
-    Pour your grace into our hearts, O Lord, that we who
-    have known the incarnation of your Son Jesus Christ,
-    announced by an angel to the Virgin Mary, may by
-    his cross and passion be brought to the glory of his
-    resurrection; who lives and reigns with you, in the unity
-    of the Holy Spirit, one God, now and for ever. Amen.
   morning:
     psalter: ""
     readings:
@@ -913,7 +870,7 @@
     - ""
 
 "0404":
-  name: Martin Luther King, Jr. Pastor and Martyr, 1968
+  name: Martin Luther King, Jr. Pastor and Martyr
   rank: OPTIONAL
   collect: |
     Almighty God, by the hand of Moses your servant you
@@ -1260,27 +1217,6 @@
     advancement of your kingdom; through the same Jesus
     Christ our Lord, to whom with you and the Holy Spirit
     be all honor and glory now and for ever. Amen.
-  morning:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-  evening:
-    psalter: ""
-    readings:
-    - ""
-    - ""
-
-"0425":
-  name: Saint Mark the Evangelist
-  rank: OPTIONAL
-  collect: |
-    Almighty God, by the hand of Mark the evangelist you
-    have given to your church the Gospel of Jesus Christ the
-    Son of God: We thank you for this witness, and pray
-    that we may be firmly grounded in its truth; through
-    Jesus Christ our Lord, who lives and reigns with you
-    and the Holy Spirit, one God, for ever and ever. Amen.
   morning:
     psalter: ""
     readings:
@@ -1964,7 +1900,7 @@
     Fill us with the wisdom to speak out in defense of your
     truth, with love for you and for our neighbor, that we
     may serve you and welcome all your people with a
-    mother’s heart; through Christ our Lord. Amen.
+    mother's heart; through Christ our Lord. Amen.
   morning:
     psalter: ""
     readings:
@@ -2020,7 +1956,7 @@
     - ""
 
 "0908":
-  name: The Nativity of the
+  name: The Nativity of the Virgin Mary
   rank: OPTIONAL
   collect: |
     Father in heaven, by your grace the virgin mother of
@@ -2173,7 +2109,7 @@
   name: John Raleigh Mott
   rank: OPTIONAL
   collect: |
-    Everlasting God, who leads your people’s feet into the
+    Everlasting God, who leads your people's feet into the
     ways of peace; Raise up heralds and evangelists of your
     kingdom like your servant John Mott, that your church
     may make known to all the world the unsearchable
