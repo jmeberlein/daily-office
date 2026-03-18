@@ -10,6 +10,7 @@ import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalDay
 import com.bcponline.dailyoffice.model.Office
 import com.bcponline.dailyoffice.data.FileRegistry
+import com.bcponline.dailyoffice.data.ProperFetcher
 import com.bcponline.dailyoffice.data.ProperParser
 import com.bcponline.dailyoffice.ui.Compline
 import com.bcponline.dailyoffice.ui.Matins
@@ -43,7 +44,10 @@ fun App() {
         LaunchedEffect(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts) {
             scope.launch {
                 FileRegistry.loadFiles("daily_propers")
-                ProperParser.getDailyProper(selectedDate, forceTwoReadings)?.let { liturgicalDay = it }
+                if (useOptionalSaints) FileRegistry.loadFiles("optional_feasts")
+                if (useExtraFeasts) FileRegistry.loadFiles("extra_feasts")
+                ProperParser.loadFilesForDate(selectedDate)
+                liturgicalDay = ProperFetcher.getProperForDate(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts)
             }
         }
         var selectedService by remember { mutableStateOf(0) }

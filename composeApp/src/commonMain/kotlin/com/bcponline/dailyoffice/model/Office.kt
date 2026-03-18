@@ -31,7 +31,7 @@ Amen."""
         val PENTECOST_WEEKDAY =
             Office(
                 "The {{day_of_week}} after Pentecost",
-                Rank.OPTIONAL,
+                Rank.NAMED_FERIA,
                 Season.PENTECOST,
                 "",
                 "",
