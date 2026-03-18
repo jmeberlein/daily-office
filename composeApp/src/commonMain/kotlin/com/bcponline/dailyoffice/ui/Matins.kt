@@ -9,7 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalDay
+import dailyoffice.composeapp.generated.resources.Res
+import dailyoffice.composeapp.generated.resources.suffrages_a
 import kotlinx.datetime.LocalDate
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun Matins(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
@@ -23,5 +26,6 @@ fun Matins(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
             Text("Second Reading: ${office.secondReading}")
         }
         MarkdownText(office.collect)
+        MarkdownText(stringResource(Res.string.suffrages_a))
     }
 }

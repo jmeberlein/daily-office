@@ -5,7 +5,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalDay
@@ -29,21 +28,19 @@ fun App() {
 
         var selectedDate by remember { mutableStateOf(today) }
         var showDatePicker by remember { mutableStateOf(false) }
+        var showMenu by remember { mutableStateOf(false) }
         var condensed by remember { mutableStateOf(false) }
         var forceTwoReadings by remember { mutableStateOf(false) }
         var useOptionalSaints by remember { mutableStateOf(false) }
+        var useExtraFeasts by remember { mutableStateOf(false) }
 
-        // Placeholder: always use Thanksgiving until real lookup is wired up
         val liturgicalDay = THANKSGIVING_DAY
-
         var selectedService by remember { mutableStateOf(0) }
         val services = listOf("Matins", "Vespers", "Compline")
 
         if (showDatePicker) {
             val datePickerState = rememberDatePickerState(
-                initialSelectedDateMillis = selectedDate
-                    .atStartOfDayIn(TimeZone.UTC)
-                    .toEpochMilliseconds()
+                initialSelectedDateMillis = selectedDate.atStartOfDayIn(TimeZone.UTC).toEpochMilliseconds()
             )
             DatePickerDialog(
                 onDismissRequest = { showDatePicker = false },
@@ -56,68 +53,66 @@ fun App() {
                         showDatePicker = false
                     }) { Text("OK") }
                 },
-                dismissButton = {
-                    TextButton(onClick = { showDatePicker = false }) { Text("Cancel") }
-                }
-            ) {
-                DatePicker(state = datePickerState)
-            }
+                dismissButton = { TextButton(onClick = { showDatePicker = false }) { Text("Cancel") } }
+            ) { DatePicker(state = datePickerState) }
         }
 
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .safeContentPadding()
-                .verticalScroll(rememberScrollState())
-        ) {
-            // Date picker row
-            Row(
-                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Text(selectedDate.toString(), style = MaterialTheme.typography.titleMedium)
-                Button(onClick = { showDatePicker = true }) { Text("Change Date") }
+        Scaffold(
+            topBar = {
+                TopAppBar(
+                    title = {
+                        TextButton(onClick = { showDatePicker = true }) {
+                            Text(selectedDate.toString(), style = MaterialTheme.typography.titleLarge)
+                        }
+                    },
+                    actions = {
+                        IconButton(onClick = { showMenu = true }) {
+                            Text("⋮", style = MaterialTheme.typography.titleLarge)
+                        }
+                        DropdownMenu(expanded = showMenu, onDismissRequest = { showMenu = false }) {
+                            DropdownMenuItem(
+                                text = { Text("Condensed") },
+                                trailingIcon = { Switch(checked = condensed, onCheckedChange = { condensed = it }) },
+                                onClick = { condensed = !condensed }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("Two Readings") },
+                                trailingIcon = { Switch(checked = forceTwoReadings, onCheckedChange = { forceTwoReadings = it }) },
+                                onClick = { forceTwoReadings = !forceTwoReadings }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("Optional Saints") },
+                                trailingIcon = { Switch(checked = useOptionalSaints, onCheckedChange = { useOptionalSaints = it; if (!it) useExtraFeasts = false }) },
+                                onClick = { useOptionalSaints = !useOptionalSaints; if (!useOptionalSaints) useExtraFeasts = false }
+                            )
+                            DropdownMenuItem(
+                                enabled = useOptionalSaints,
+                                text = { Text("Even More Saints") },
+                                trailingIcon = { Switch(enabled = useOptionalSaints, checked = useExtraFeasts, onCheckedChange = { useExtraFeasts = it }) },
+                                onClick = { if (useOptionalSaints) useExtraFeasts = !useExtraFeasts }
+                            )
+                        }
+                    }
+                )
             }
-
-            // Settings toggles
-            Row(
-                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(16.dp)
-            ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Switch(checked = condensed, onCheckedChange = { condensed = it })
-                    Spacer(Modifier.width(4.dp))
-                    Text("Condensed")
+        ) { innerPadding ->
+            Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
+                TabRow(selectedTabIndex = selectedService) {
+                    services.forEachIndexed { index, name ->
+                        Tab(
+                            selected = selectedService == index,
+                            onClick = { selectedService = index },
+                            text = { Text(name) }
+                        )
+                    }
                 }
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Switch(checked = forceTwoReadings, onCheckedChange = { forceTwoReadings = it })
-                    Spacer(Modifier.width(4.dp))
-                    Text("Two Readings")
+                Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+                    when (selectedService) {
+                        0 -> Matins(selectedDate, liturgicalDay, condensed)
+                        1 -> Vespers(selectedDate, liturgicalDay, condensed)
+                        2 -> Compline(selectedDate, liturgicalDay, condensed)
+                    }
                 }
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Switch(checked = useOptionalSaints, onCheckedChange = { useOptionalSaints = it })
-                    Spacer(Modifier.width(4.dp))
-                    Text("Optional Saints")
-                }
-            }
-
-            // Service tabs
-            TabRow(selectedTabIndex = selectedService) {
-                services.forEachIndexed { index, name ->
-                    Tab(
-                        selected = selectedService == index,
-                        onClick = { selectedService = index },
-                        text = { Text(name) }
-                    )
-                }
-            }
-
-            when (selectedService) {
-                0 -> Matins(selectedDate, liturgicalDay, condensed)
-                1 -> Vespers(selectedDate, liturgicalDay, condensed)
-                2 -> Compline(selectedDate, liturgicalDay, condensed)
             }
         }
     }

@@ -22,5 +22,6 @@ fun Compline(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
             Text("First Reading: ${office.firstReading}")
         }
         MarkdownText(office.collect)
+        MarkdownText("*This is in italics* and this isn't")
     }
 }

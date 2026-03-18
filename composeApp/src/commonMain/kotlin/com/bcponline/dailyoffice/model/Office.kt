@@ -18,7 +18,14 @@ class Office(
                 "",
                 "",
                 "",
-                "Almighty and everlasting God, by whose Spirit the whole body of your faithful people is governed and sanctified: Receive our supplications and prayers, which we offer before you for all members of your holy Church, that in their vocation and ministry they may truly and devoutly serve you; through our Lord and Savior Jesus Christ, who lives and reigns with you, in the unity of the Holy Spirit, one God, now and forever. Amen."
+                """Almighty and everlasting God, by whose Spirit the whole
+body of your faithful people is governed and sanctified:
+Receive our supplications and prayers, which we offer before
+you for all members of your holy Church, that in their vocation
+and ministry they may truly and devoutly serve you; through
+our Lord and Savior Jesus Christ, who lives and reigns with
+you, in the unity of the Holy Spirit, one God, now and for ever.
+Amen."""
             )
 
         val PENTECOST_WEEKDAY =
@@ -39,7 +46,13 @@ class Office(
             "147",
             "Deut. 26:1-11",
             "John 6:26-35",
-            "Almighty and gracious Father, we give you thanks for the fruits of the earth in their season and for the labors of those who harvest them. Make us, we pray, faithful stewards of your great bounty, for the provision of our necessities and the relief of all who are in need, to the glory of your Name; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen."
+            """Almighty and gracious Father, we give you thanks for the
+fruits of the earth in their season and for the labors of those
+who harvest them. Make us, we pray, faithful stewards of
+your great bounty, for the provision of our necessities and
+the relief of all who are in need, to the glory of your Name;
+through Jesus Christ our Lord, who lives and reigns with
+you and the Holy Spirit, one God, now and for ever. Amen."""
         )
 
         val THANKSGIVING_EVENING = Office(
@@ -49,7 +62,13 @@ class Office(
             "145",
             "Joel 2:21-27",
             "1 Thess. 5:12-24",
-            "Almighty and gracious Father, we give you thanks for the fruits of the earth in their season and for the labors of those who harvest them. Make us, we pray, faithful stewards of your great bounty, for the provision of our necessities and the relief of all who are in need, to the glory of your Name; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen."
+            """Almighty and gracious Father, we give you thanks for the
+fruits of the earth in their season and for the labors of those
+who harvest them. Make us, we pray, faithful stewards of
+your great bounty, for the provision of our necessities and
+the relief of all who are in need, to the glory of your Name;
+through Jesus Christ our Lord, who lives and reigns with
+you and the Holy Spirit, one God, now and for ever. Amen."""
         )
 
         val LABOR_DAY = Office(
@@ -59,7 +78,15 @@ class Office(
             "",
             "",
             "",
-            "Almighty God, you have so linked our lives one with another that all we do affects, for good or ill, all other lives: So guide us in the work we do, that we may do it not for self alone, but for the common good; and, as we seek a proper return for our own labor, make us mindful of the rightful aspirations of other workers, and arouse our concern for those who are out of work; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen."
+            """Almighty God, you have so linked our lives one with another
+that all we do affects, for good or ill, all other lives: So guide
+us in the work we do, that we may do it not for self alone, but
+for the common good; and, as we seek a proper return for
+our own labor, make us mindful of the rightful aspirations of
+other workers, and arouse our concern for those who are out
+of work; through Jesus Christ our Lord, who lives and reigns
+with you and the Holy Spirit, one God, for ever and ever.
+Amen."""
         )
     }
 
