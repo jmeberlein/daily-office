@@ -272,7 +272,7 @@ object ProperParser {
             val prevChristmas = LocalDate(date.year - 1, 12, 25)
             val prevChristmasZero =
                 prevChristmas.minus(prevChristmas.dayOfWeek.isoDayNumber % 7, DateTimeUnit.DAY)
-            val index = (sunday.day - prevChristmasZero.day + 31) / 7
+            val index = (sunday.day - prevChristmasZero.day + (if (sunday.month == Month.DECEMBER) 0 else 31)) / 7
             Pair("christmas", index)
         } else if (date < quinquagesima) {
             val index = (sunday.dayOfYear - epiphanyZero.dayOfYear) / 7
