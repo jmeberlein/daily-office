@@ -50,13 +50,13 @@ fun Matins(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
         MarkdownText(stringResource(Res.string.our_father))
 
         if (!condensed) {
-            TabbedPane(mapOf<String, String>(
+            TabbedPane(mapOf(
                 Pair("Suffrages A", stringResource(Res.string.suffrages_a)),
                 Pair("Suffrages B", stringResource(Res.string.suffrages_b_matins))
             ))
         }
 
-        MarkdownText(String.format(stringResource(Res.string.collect), office.collect.replace("\n", "  \n")))
+        MarkdownText(String.format(stringResource(Res.string.collect), office.collect))
 
         if (office.season == Season.EASTER) {
             MarkdownText(stringResource(Res.string.closing_versicle_easter))

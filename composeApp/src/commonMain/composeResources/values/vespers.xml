@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="versicle_vespers">
+*V.* O God, make speed to save us.  
+*R.* O Lord, make haste to help us.  
+Glory to the Father, and to the Son, and to the Holy Spirit:  
+as it was in the beginning, is now, and will be for ever. Amen. Alleluia.
+    </string>
+    <string name="versicle_vespers_lent">
+*V.* O God, make speed to save us.  
+*R.* O Lord, make haste to help us.  
+Glory to the Father, and to the Son, and to the Holy Spirit:  
+as it was in the beginning, is now, and will be for ever. Amen.
+    </string>
+    <string name="phos_hilaron">
+**Phos Hilaron**
+
+O gracious light,  
+pure brightness of the everliving Father in heaven,  
+O Jesus Christ, holy and blessed!
+
+Now as we come to the setting of the sun,  
+and our eyes behold the vesper light,  
+we sing your praises, O God: Father, Son, and Holy Spirit.
+
+You are worthy at all times to be praised by happy voices,  
+O Son of God, O Giver of Life,  
+and to be glorified through all the worlds.
+    </string>
+    <string name="phos_hilaron_metrical">
+**Phos Hilaron**
+
+O gracious Light, Lord Jesus Christ,  
+in you the Father's glory shone.  
+Immortal, holy, blest is he,  
+and blest are you, his holy Son.
+
+Now sunset comes, but light shines forth,  
+the lamps are lit to pierce the night.  
+Praise Father, Son, and Spirit: God  
+who dwells in the eternal light.
+
+Worthy are you of endless praise,  
+O Son of God, Life-giving Lord;  
+Wherefore you are through all the earth  
+and in the highest heav'n adored.
+    </string>
+    <string name="magnificat">
+**Magnificat**
+
+My soul proclaims the greatness of the Lord,  
+my spirit rejoices in God my Savior; \*  
+&#160;&#160;&#160;&#160;for he has looked with favor on his lowly servant.  
+From this day all generations will call me blessed: \*  
+&#160;&#160;&#160;&#160;the Almighty has done great things for me,  
+&#160;&#160;&#160;&#160;and holy is his Name.  
+He has mercy on those who fear him \*  
+&#160;&#160;&#160;&#160;in every generation.  
+He has shown the strength of his arm, \*  
+&#160;&#160;&#160;&#160;he has scattered the proud in their conceit.  
+He has cast down the mighty from their thrones, \*  
+&#160;&#160;&#160;&#160;and has lifted up the lowly.  
+He has filled the hungry with good things, \*  
+&#160;&#160;&#160;&#160;and the rich he has sent away empty.  
+He has come to the help of his servant Israel, \*  
+&#160;&#160;&#160;&#160;for he has remembered his promise of mercy,  
+The promise he made to our fathers, \*  
+&#160;&#160;&#160;&#160;to Abraham and his children for ever. 
+
+Glory to the Father, and to the Son, and to the Holy Spirit: \*  
+&#160;&#160;&#160;&#160;as it was in the beginning, is now, and will be for ever. Amen. 
+    </string>
+    <string name="suffrages_b_vespers">
+That this evening may be holy, good, and peaceful,  
+*R* We entreat you, O Lord.
+
+That your holy angels may lead us in paths of peace and goodwill,  
+*R* We entreat you, O Lord.
+
+That we may be pardoned and forgiven for our sins and offenses,  
+*R* We entreat you, O Lord.
+
+That there may be peace to your Church and to the whole world,  
+*R* We entreat you, O Lord.
+
+That we may depart this life in your faith and fear,  
+and not be condemned before the great judgment seat of Christ,  
+*R* We entreat you, O Lord.
+
+That we may be bound together by your Holy Spirit in  
+the communion of [\_\_\_\_\_\_\__ and] all your saints,  
+entrusting one another and all our life to Christ,  
+*R* We entreat you, O Lord.
+    </string>
+</resources>
