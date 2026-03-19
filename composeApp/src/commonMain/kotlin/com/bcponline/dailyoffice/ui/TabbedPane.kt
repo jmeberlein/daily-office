@@ -2,8 +2,6 @@ package com.bcponline.dailyoffice.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
@@ -20,7 +18,7 @@ fun TabbedPane(sections: Map<String, String>, modifier: Modifier = Modifier) {
     val keys = sections.keys.toList()
     var selectedIndex by remember { mutableStateOf(0) }
 
-    Column(modifier = modifier) {
+    Column(modifier = modifier.fillMaxWidth()) {
         ScrollableTabRow(selectedTabIndex = selectedIndex, edgePadding = 0.dp) {
             keys.forEachIndexed { index, title ->
                 Tab(
@@ -30,12 +28,6 @@ fun TabbedPane(sections: Map<String, String>, modifier: Modifier = Modifier) {
                 )
             }
         }
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
-        ) {
-            sections[keys[selectedIndex]]?.let { MarkdownText(it) }
-        }
+        sections[keys[selectedIndex]]?.let { MarkdownText(it) }
     }
 }

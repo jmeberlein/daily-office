@@ -9,5 +9,6 @@ enum class LiturgicalColor(val background: Color) {
     BLUE(Color(0xFFE3F2FD)),
     PURPLE(Color(0xFFF3E5F5)),
     RED(Color(0xFFFFCDD2)),
-    PINK(Color(0xFFFCE4EC))
+    PINK(Color(0xFFFCE4EC)),
+    BLACK(Color(0xFFCFD8DC))
 }

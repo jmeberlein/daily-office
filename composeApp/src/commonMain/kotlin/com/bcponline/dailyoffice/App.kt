@@ -35,9 +35,9 @@ fun App() {
     var showDatePicker by remember { mutableStateOf(false) }
     var showMenu by remember { mutableStateOf(false) }
     var condensed by remember { mutableStateOf(false) }
-    var forceTwoReadings by remember { mutableStateOf(false) }
-    var useOptionalSaints by remember { mutableStateOf(false) }
-    var useExtraFeasts by remember { mutableStateOf(false) }
+    var forceTwoReadings by remember { mutableStateOf(Settings.forceTwoReadings) }
+    var useOptionalSaints by remember { mutableStateOf(Settings.useOptionalSaints) }
+    var useExtraFeasts by remember { mutableStateOf(Settings.useExtraFeasts) }
     var liturgicalDay by remember { mutableStateOf<LiturgicalDay>(THANKSGIVING_DAY) }
     var selectedService by remember { mutableStateOf(0) }
     val scope = rememberCoroutineScope()
@@ -111,19 +111,19 @@ fun App() {
                             )
                             DropdownMenuItem(
                                 text = { Text("Two Readings") },
-                                trailingIcon = { Switch(checked = forceTwoReadings, onCheckedChange = { forceTwoReadings = it }) },
-                                onClick = { forceTwoReadings = !forceTwoReadings }
+                                trailingIcon = { Switch(checked = forceTwoReadings, onCheckedChange = { forceTwoReadings = it; Settings.forceTwoReadings = it }) },
+                                onClick = { forceTwoReadings = !forceTwoReadings; Settings.forceTwoReadings = forceTwoReadings }
                             )
                             DropdownMenuItem(
                                 text = { Text("Optional Saints") },
-                                trailingIcon = { Switch(checked = useOptionalSaints, onCheckedChange = { useOptionalSaints = it; if (!it) useExtraFeasts = false }) },
-                                onClick = { useOptionalSaints = !useOptionalSaints; if (!useOptionalSaints) useExtraFeasts = false }
+                                trailingIcon = { Switch(checked = useOptionalSaints, onCheckedChange = { useOptionalSaints = it; Settings.useOptionalSaints = it; if (!it) { useExtraFeasts = false; Settings.useExtraFeasts = false } }) },
+                                onClick = { useOptionalSaints = !useOptionalSaints; Settings.useOptionalSaints = useOptionalSaints; if (!useOptionalSaints) { useExtraFeasts = false; Settings.useExtraFeasts = false } }
                             )
                             DropdownMenuItem(
                                 enabled = useOptionalSaints,
                                 text = { Text("Even More Saints") },
-                                trailingIcon = { Switch(enabled = useOptionalSaints, checked = useExtraFeasts, onCheckedChange = { useExtraFeasts = it }) },
-                                onClick = { if (useOptionalSaints) useExtraFeasts = !useExtraFeasts }
+                                trailingIcon = { Switch(enabled = useOptionalSaints, checked = useExtraFeasts, onCheckedChange = { useExtraFeasts = it; Settings.useExtraFeasts = it }) },
+                                onClick = { if (useOptionalSaints) { useExtraFeasts = !useExtraFeasts; Settings.useExtraFeasts = useExtraFeasts } }
                             )
                         }
                     }

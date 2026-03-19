@@ -16,7 +16,7 @@ import kotlinx.datetime.LocalDate
 @Composable
 fun Vespers(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.evening
-    Column(modifier = Modifier.fillMaxSize().background(office.color.background).padding(16.dp)) {
+    Column(modifier = Modifier.fillMaxWidth().background(office.color.background).padding(16.dp)) {
         Text("Vespers — ${office.name}", style = MaterialTheme.typography.headlineSmall)
         Text("Date: $date", style = MaterialTheme.typography.labelMedium)
         if (!condensed) {

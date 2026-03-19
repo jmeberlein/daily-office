@@ -80,6 +80,7 @@
       - John 18:28-38
   WEDNESDAY:
     name: Ash Wednesday
+    color: BLACK
     rank: PRINCIPAL
     morning:
       psalter: 32,143
@@ -807,7 +808,7 @@
       - Mark 14:12-25
   FRIDAY:
     name: Good Friday
-    color: RED
+    color: BLACK
     rank: PRINCIPAL
     collect: |
       Almighty God, we pray you graciously to behold this your
