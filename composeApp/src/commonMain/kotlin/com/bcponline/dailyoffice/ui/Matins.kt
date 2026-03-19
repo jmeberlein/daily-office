@@ -1,6 +1,8 @@
 package com.bcponline.dailyoffice.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -17,7 +19,7 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 fun Matins(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.morning
-    Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+    Column(modifier = Modifier.fillMaxSize().background(office.color.background).padding(16.dp)) {
         Text("Matins — ${office.name}", style = MaterialTheme.typography.headlineSmall)
         Text("Date: $date", style = MaterialTheme.typography.labelMedium)
         if (!condensed) {

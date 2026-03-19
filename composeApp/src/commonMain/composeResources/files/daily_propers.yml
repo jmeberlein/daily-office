@@ -1,5 +1,6 @@
 "1130":
   name: St. Andrew
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, who gave such grace to your apostle Andrew
@@ -22,6 +23,7 @@
 
 "1221":
   name: St. Thomas
+  color: RED
   rank: FEAST
   collect: |
     Everliving God, who strengthened your apostle Thomas with
@@ -41,8 +43,45 @@
     - Isa. 43:8-13
     - John 14:1-7
 
+"1225":
+  name: Christmas
+  color: WHITE
+  rank: PRINCIPAL
+  collect: |
+    Almighty God, you have given your only-begotten Son to
+    take our nature upon him, and to be born [this day] of a pure
+    virgin: Grant that we, who have been born again and made
+    your children by adoption and grace, may daily be renewed
+    by your Holy Spirit; through our Lord Jesus Christ, to whom
+    with you and the same Spirit be honor and glory, now and
+    for ever. Amen.
+  vigil:
+    collect: |
+      O God, you have caused this holy night to shine with the
+      brightness of the true Light: Grant that we, who have known
+      the mystery of that Light on earth, may also enjoy him
+      perfectly in heaven; where with you and the Holy Spirit he
+      lives and reigns, one God, in glory everlasting. Amen.
+    psalter: ''
+    readings:
+    - ''
+    - ''
+  evening:
+    psalter: 110:1-5(6-7), 132
+  morning:
+    psalter: 2, 85
+  year_1_readings:
+  - Zech. 2:10-13
+  - 1 John 4:7-16
+  - John 3:31-36
+  year_2_readings:
+  - Micah 4:1-5; 5:2-4
+  - 1 John 4:7-16
+  - John 3:31-36
+
 "1226":
   name: St. Stephen the Protomartyr
+  color: RED
   rank: FEAST
   collect: |
     We give you thanks, O Lord of glory, for the example of the
@@ -63,6 +102,7 @@
 
 "1227":
   name: St. John
+  color: WHITE
   rank: FEAST
   collect: |
     Shed upon your Church, O Lord, the brightness of your light,
@@ -84,6 +124,7 @@
 
 "1228":
   name: Holy Innocents
+  color: RED
   rank: FEAST
   collect: |
     We remember today, O God, the slaughter of the holy
@@ -106,6 +147,7 @@
 
 "0101":
   name: Feast of the Holy Name
+  color: WHITE
   rank: PRINCIPAL
   collect: |
     Eternal Father, who gave to your incarnate Son the holy
@@ -188,6 +230,7 @@
 
 "0106":
   name: Epiphany
+  color: WHITE
   rank: PRINCIPAL
   collect: |
     O God, by the leading of a star you manifested your
@@ -295,6 +338,7 @@
 
 "0118":
   name: Confession of St. Peter
+  color: WHITE
   rank: FEAST
   collect: |
     Almighty Father, who inspired Saint Peter, first among the
@@ -316,6 +360,7 @@
 
 "0125":
   name: Conversion of St. Paul
+  color: WHITE
   rank: FEAST
   collect: |
     O God, by the preaching of your apostle Paul you have
@@ -338,6 +383,7 @@
 
 "0202":
   name: Candlemas
+  color: WHITE
   rank: PRINCIPAL
   collect: |
     Almighty and everliving God, we humbly pray that, as your
@@ -363,6 +409,7 @@
 
 "0224":
   name: St. Matthias
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, who in the place of Judas chose your faithful
@@ -384,6 +431,7 @@
 
 "0319":
   name: St. Joseph
+  color: WHITE
   rank: FEAST
   collect: |
     O God, who from the family of your servant David raised
@@ -405,6 +453,7 @@
 
 "0325":
   name: The Annunciation
+  color: WHITE
   rank: FEAST
   collect: |
     Pour your grace into our hearts, O Lord, that we who have
@@ -431,6 +480,7 @@
 
 "0425":
   name: St. Mark
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, by the hand of Mark the evangelist you have
@@ -452,6 +502,7 @@
 
 "0501":
   name: SS. Philip & James
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, who gave to your apostles Philip and James grace
@@ -472,6 +523,7 @@
 
 "0531":
   name: The Visitation
+  color: WHITE
   rank: FEAST
   collect: |
     Father in heaven, by your grace the virgin mother of your
@@ -499,6 +551,7 @@
 
 "0611":
   name: St. Barnabas
+  color: RED
   rank: FEAST
   collect: |
     Grant, O God, that we may follow the example of your
@@ -521,6 +574,7 @@
 
 "0624":
   name: Nativity of St. John the Baptist
+  color: WHITE
   rank: FEAST
   collect: |
     Almighty God, by whose providence your servant John the
@@ -550,6 +604,7 @@
 
 "0629":
   name: SS. Peter & Paul
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, whose blessed apostles Peter and Paul glorified
@@ -571,6 +626,7 @@
 
 "0704":
   name: Independence Day
+  color: WHITE
   rank: FEAST
   collect: |
     Lord God Almighty, in whose Name the founders of this
@@ -593,6 +649,7 @@
 
 "0722":
   name: St. Mary Magdalene
+  color: WHITE
   rank: FEAST
   collect: |
     Almighty God, whose blessed Son restored Mary Magdalene
@@ -614,6 +671,7 @@
 
 "0725":
   name: St. James
+  color: RED
   rank: FEAST
   collect: |
     O gracious God, we remember before you today your servant
@@ -637,6 +695,7 @@
 
 "0806":
   name: The Transfiguration
+  color: WHITE
   rank: PRINCIPAL
   collect: |
     O God, who on the holy mount revealed to chosen witnesses
@@ -664,6 +723,7 @@
 
 "0815":
   name: Mary, Mother of God
+  color: WHITE
   rank: FEAST
   collect: |
     O God, you have taken to yourself the blessed Virgin Mary,
@@ -685,6 +745,7 @@
 
 "0824":
   name: St. Bartholomew
+  color: RED
   rank: FEAST
   collect: |
     Almighty and everlasting God, who gave to your apostle
@@ -706,6 +767,7 @@
 
 "0914":
   name: Roodmas
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, whose Son our Savior Jesus Christ was lifted
@@ -732,6 +794,7 @@
 
 "0921":
   name: St. Matthew
+  color: RED
   rank: FEAST
   collect: |
     We thank you, heavenly Father, for the witness of your apostle
@@ -753,6 +816,7 @@
 
 "0929":
   name: Michaelmas
+  color: WHITE
   rank: FEAST
   collect: |
     Everlasting God, you have ordained and constituted in a
@@ -775,6 +839,7 @@
 
 "1018":
   name: St. Luke
+  color: RED
   rank: FEAST
   collect: |
     Almighty God, who inspired your servant Luke the physician
@@ -796,6 +861,7 @@
 
 "1023":
   name: St. James of Jerusalem
+  color: RED
   rank: FEAST
   collect: |
     Grant, O God, that, following the example of your servant
@@ -817,6 +883,7 @@
 
 "1028":
   name: SS. Simon & Jude
+  color: RED
   rank: FEAST
   collect: |
     O God, we thank you for the glorious company of the apostles,
@@ -838,6 +905,7 @@
 
 "1101":
   name: All Saints' Day
+  color: WHITE
   rank: PRINCIPAL
   collect: |
     Almighty God, you have knit together your elect in one

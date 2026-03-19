@@ -1,6 +1,8 @@
 package com.bcponline.dailyoffice.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -14,7 +16,7 @@ import kotlinx.datetime.LocalDate
 @Composable
 fun Compline(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.evening
-    Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+    Column(modifier = Modifier.fillMaxSize().background(office.color.background).padding(16.dp)) {
         Text("Compline — ${office.name}", style = MaterialTheme.typography.headlineSmall)
         Text("Date: $date", style = MaterialTheme.typography.labelMedium)
         if (!condensed) {

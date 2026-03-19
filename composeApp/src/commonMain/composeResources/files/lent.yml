@@ -489,7 +489,8 @@
     him; who lives and reigns with you and the Holy Spirit, one
     God, now and for ever. Amen.
   SUNDAY:
-    name: The Fourth Sunday in Lent
+    name: Laetare Sunday
+    color: PINK
     morning:
       psalter: 66,67
     evening:
@@ -689,6 +690,7 @@
   season: LENT
   SUNDAY:
     name: Palm Sunday
+    color: RED
     rank: PRINCIPAL
     collect: |
       Almighty and everliving God, in your tender love for the
@@ -711,6 +713,7 @@
         - Matt. 21:12-17
   MONDAY:
     name: The Monday of Holy Week
+    color: RED
     rank: PRINCIPAL
     collect: |
       Almighty God, whose dear Son went not up to joy but
@@ -734,6 +737,7 @@
       - Mark 11:12-25
   TUESDAY:
     name: The Tuesday of Holy Week
+    color: RED
     rank: PRINCIPAL
     collect: |
       O God, by the passion of your blessed Son you made an
@@ -756,6 +760,7 @@
       - Mark 11:27-33
   WEDNESDAY:
     name: The Wednesday of Holy Week
+    color: RED
     rank: PRINCIPAL
     collect: |
       Lord God, whose blessed Son our Savior gave his body to be
@@ -778,6 +783,7 @@
       - Mark 12:1-11
   THURSDAY:
     name: Maundy Thursday
+    color: RED
     rank: PRINCIPAL
     collect: |
       Almighty Father, whose dear Son, on the night before he
@@ -801,6 +807,7 @@
       - Mark 14:12-25
   FRIDAY:
     name: Good Friday
+    color: RED
     rank: PRINCIPAL
     collect: |
       Almighty God, we pray you graciously to behold this your
@@ -822,17 +829,26 @@
       - John 13:36-38
   SATURDAY:
     name: Holy Saturday
+    color: RED
     rank: PRINCIPAL
-    collect: |
-      O God, Creator of heaven and earth:  Grant that, as the
-      crucified body of your dear Son was laid in the tomb and
-      rested on this holy Sabbath, so we may await with him the
-      coming of the third day, and rise with him to newness of life;
-      who now lives and reigns with you and the Holy Spirit, one
-      God, for ever and ever. Amen.
     morning:
+      collect: |
+        O God, Creator of heaven and earth:  Grant that, as the
+        crucified body of your dear Son was laid in the tomb and
+        rested on this holy Sabbath, so we may await with him the
+        coming of the third day, and rise with him to newness of life;
+        who now lives and reigns with you and the Holy Spirit, one
+        God, for ever and ever. Amen.
       psalter: "88"
     evening:
+      collect: |
+        O God, who made this most holy night to shine with the
+        glory of the Lord's resurrection: Stir up in your Church that
+        Spirit of adoption which is given to us in Baptism, that we,
+        being renewed both in body and mind, may worship you in
+        sincerity and truth; through Jesus Christ our Lord, who lives
+        and reigns with you, in the unity of the Holy Spirit, one God,
+        now and for ever. Amen.
       psalter: "27"
     year_1_readings:
       - Job 19:21-27a

@@ -98,6 +98,7 @@
     Spirit lives and reigns, one God, in glory everlasting. Amen.
   SUNDAY:
     name: The Baptism of Our Lord Jesus Christ
+    color: WHITE
     vigil:
       psalter: "104"
       readings:

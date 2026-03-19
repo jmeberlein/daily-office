@@ -822,7 +822,7 @@
       - Matt. 9:18-26
 
 - number: 8
-  season: EASTER
+  season: EASTER # Okay, so it's technically PENTECOST, but this will add alleluias
   collect: |
     Almighty God, on this day you opened the way of eternal life
     to every race and nation by the promised gift of your Holy
@@ -833,6 +833,7 @@
     and ever. Amen.
   SUNDAY:
     name: Pentecost
+    color: RED
     rank: PRINCIPAL
     morning:
       psalter: "118"
@@ -848,7 +849,7 @@
       - John 4:19-26
 
 - number: 9
-  season: EASTER
+  season: PENTECOST
   collect: |
     Almighty and everlasting God, you have given to us
     your servants grace, by the confession of a true faith, to
@@ -860,6 +861,7 @@
     and ever. Amen.
   SUNDAY:
     name: Trinity Sunday
+    color: WHITE
     rank: PRINCIPAL
     vigil:
       psalter: "104"

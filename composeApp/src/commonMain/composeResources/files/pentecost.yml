@@ -2894,6 +2894,7 @@
     and the Holy Spirit, one God, now and for ever. Amen.
   SUNDAY:
     name: The Last Sunday after Pentecost
+    color: WHITE
     morning:
       psalter: "118"
     evening:

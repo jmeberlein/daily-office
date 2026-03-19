@@ -6,7 +6,9 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.bcponline.dailyoffice.model.LiturgicalColor
 import com.bcponline.dailyoffice.model.LiturgicalDay
 import com.bcponline.dailyoffice.model.Office
 import com.bcponline.dailyoffice.data.FileRegistry
@@ -27,32 +29,49 @@ private val THANKSGIVING_DAY = LiturgicalDay(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun App() {
-    MaterialTheme {
-        val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
+    val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
 
-        var selectedDate by remember { mutableStateOf(today) }
-        var showDatePicker by remember { mutableStateOf(false) }
-        var showMenu by remember { mutableStateOf(false) }
-        var condensed by remember { mutableStateOf(false) }
-        var forceTwoReadings by remember { mutableStateOf(false) }
-        var useOptionalSaints by remember { mutableStateOf(false) }
-        var useExtraFeasts by remember { mutableStateOf(false) }
+    var selectedDate by remember { mutableStateOf(today) }
+    var showDatePicker by remember { mutableStateOf(false) }
+    var showMenu by remember { mutableStateOf(false) }
+    var condensed by remember { mutableStateOf(false) }
+    var forceTwoReadings by remember { mutableStateOf(false) }
+    var useOptionalSaints by remember { mutableStateOf(false) }
+    var useExtraFeasts by remember { mutableStateOf(false) }
+    var liturgicalDay by remember { mutableStateOf<LiturgicalDay>(THANKSGIVING_DAY) }
+    var selectedService by remember { mutableStateOf(0) }
+    val scope = rememberCoroutineScope()
 
-        var liturgicalDay by remember { mutableStateOf<LiturgicalDay>(THANKSGIVING_DAY) }
-        val scope = rememberCoroutineScope()
-
-        LaunchedEffect(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts) {
-            scope.launch {
-                FileRegistry.loadFiles("daily_propers")
-                if (useOptionalSaints) FileRegistry.loadFiles("optional_feasts")
-                if (useExtraFeasts) FileRegistry.loadFiles("extra_feasts")
-                ProperParser.loadFilesForDate(selectedDate)
-                liturgicalDay = ProperFetcher.getProperForDate(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts)
-            }
+    LaunchedEffect(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts) {
+        scope.launch {
+            FileRegistry.loadFiles("daily_propers")
+            if (useOptionalSaints) FileRegistry.loadFiles("optional_feasts")
+            if (useExtraFeasts) FileRegistry.loadFiles("extra_feasts")
+            ProperParser.loadFilesForDate(selectedDate)
+            liturgicalDay = ProperFetcher.getProperForDate(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts)
         }
-        var selectedService by remember { mutableStateOf(0) }
-        val services = listOf("Matins", "Vespers", "Compline")
+    }
 
+    val currentOfficeColor = when (selectedService) {
+        0 -> liturgicalDay.morning.color
+        else -> liturgicalDay.evening.color
+    }
+    val bg = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFFFFFBFE) else currentOfficeColor.background
+    val colorScheme = lightColorScheme(
+        background = bg,
+        surface = bg,
+        surfaceVariant = bg,
+        surfaceContainer = bg,
+        surfaceContainerHigh = bg,
+        surfaceContainerHighest = bg,
+        surfaceContainerLow = bg,
+        surfaceContainerLowest = bg,
+        primaryContainer = bg,
+    )
+
+    val services = listOf("Matins", "Vespers", "Compline")
+
+    MaterialTheme(colorScheme = colorScheme) {
         if (showDatePicker) {
             val datePickerState = rememberDatePickerState(
                 initialSelectedDateMillis = selectedDate.atStartOfDayIn(TimeZone.UTC).toEpochMilliseconds()

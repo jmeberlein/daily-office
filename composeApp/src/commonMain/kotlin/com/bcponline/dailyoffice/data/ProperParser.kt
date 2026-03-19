@@ -61,6 +61,7 @@ object ProperParser {
         val firstAdvent = christmas.minus(christmas.dayOfWeek.isoDayNumber + 21, DateTimeUnit.DAY)
         val name = day.get<YamlScalar>("name")?.content ?: ""
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: "FERIA")
+        val color = day.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: LiturgicalColor.NONE
         val morningPsalter = day.get<YamlMap>("morning")?.get<YamlScalar>("psalter")?.content ?: ""
         val eveningPsalter = day.get<YamlMap>("evening")?.get<YamlScalar>("psalter")?.content ?: ""
         val morningReadings = day.get<YamlMap>("morning")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content!! } ?:
@@ -101,7 +102,8 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect
+                    morningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -110,7 +112,8 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect
+                    eveningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -119,7 +122,8 @@ object ProperParser {
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
-                    vigilCollect
+                    vigilCollect,
+                    color
                 )
             )
         } else {
@@ -131,7 +135,8 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect
+                    morningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -140,7 +145,8 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect
+                    eveningCollect,
+                    color
                 )
             )
         }
@@ -153,6 +159,13 @@ object ProperParser {
         val name = day.get<YamlScalar>("name")?.content ?: week.get<YamlScalar>("name")?.content ?: ""
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: week.get<YamlScalar>("rank")?.content ?: if (today.dayOfWeek == DayOfWeek.SUNDAY) "SUNDAY" else "FERIA")
         val season = Season.valueOf(day.get<YamlScalar>("season")?.content ?: week.get<YamlScalar>("season")?.content ?: "NONE")
+        val color = day.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: when (season) {
+            Season.CHRISTMAS, Season.EASTER -> LiturgicalColor.WHITE
+            Season.LENT -> LiturgicalColor.PURPLE
+            Season.ADVENT -> LiturgicalColor.BLUE
+            Season.EPIPHANY, Season.PENTECOST -> LiturgicalColor.GREEN
+            Season.NONE -> LiturgicalColor.NONE
+        }
         val morningPsalter = day.get<YamlMap>("morning")?.get<YamlScalar>("psalter")?.content ?: ""
         val eveningPsalter = day.get<YamlMap>("evening")?.get<YamlScalar>("psalter")?.content ?: ""
         val morningReadings = day.get<YamlMap>("morning")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content!! } ?:
@@ -193,7 +206,8 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect
+                    morningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -202,7 +216,8 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect
+                    eveningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -211,7 +226,8 @@ object ProperParser {
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
-                    vigilCollect
+                    vigilCollect,
+                    color
                 )
             )
         } else {
@@ -223,7 +239,8 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect
+                    morningCollect,
+                    color
                 ),
                 Office(
                     name,
@@ -232,7 +249,8 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect
+                    eveningCollect,
+                    color
                 )
             )
         }
@@ -270,7 +288,7 @@ object ProperParser {
             Pair("pentecost", index)
         } else if (date < christmas) {
             val index = (sunday.dayOfYear - firstAdvent.dayOfYear) / 7
-            Pair("christmas", index)
+            Pair("advent", index)
         } else {
             val index = (sunday.dayOfYear - christmasZero.dayOfYear) / 7
             Pair("christmas", index)

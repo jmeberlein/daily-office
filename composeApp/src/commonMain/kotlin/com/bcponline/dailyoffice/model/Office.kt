@@ -7,7 +7,8 @@ class Office(
     var psalter: String,
     var firstReading: String,
     var secondReading: String,
-    var collect: String
+    var collect: String,
+    var color: LiturgicalColor = LiturgicalColor.NONE
 ) {
     companion object {
         val SUMMER_EMBER =
@@ -68,7 +69,8 @@ who harvest them. Make us, we pray, faithful stewards of
 your great bounty, for the provision of our necessities and
 the relief of all who are in need, to the glory of your Name;
 through Jesus Christ our Lord, who lives and reigns with
-you and the Holy Spirit, one God, now and for ever. Amen."""
+you and the Holy Spirit, one God, now and for ever. Amen.""",
+            LiturgicalColor.WHITE
         )
 
         val LABOR_DAY = Office(
@@ -112,6 +114,9 @@ Amen."""
         }
         if (this.collect.isBlank() || (other.collect.isNotBlank() && other.rank > this.rank)) {
             this.collect = other.collect
+        }
+        if (this.color == LiturgicalColor.NONE || (other.color != LiturgicalColor.NONE && other.rank > this.rank)) {
+            this.color = other.color
         }
         if (other.rank > this.rank) {
             this.rank = other.rank
