@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="psalm_134">
+**Psalm 134**
+
+Behold now, bless the LORD, all you servants of the LORD, \*  
+&#160;&#160;&#160;&#160;you that stand by night in the house of the LORD.  
+Lift up your hands in the holy place and bless the LORD; \*  
+&#160;&#160;&#160;&#160;the LORD who made heaven and earth bless you out of Zion.
+
+Glory to the Father, and to the Son, and to the Holy Spirit: \*  
+&#160;&#160;&#160;&#160;as it was in the beginning, is now, and will be for ever. Amen. 
+    </string>
+    <string name="reading_compline">
+**A Reading (Jer. 14:9,22)**
+
+Lord, you are in the midst of us and we are called by your
+Name: Do not forsake us, O Lord our God.
+    </string>
+    <string name="suffrages_compline">
+*V* Into your hands, O Lord, I commend my spirit;  
+*R* For you have redeemed me, O Lord, O God of truth.  
+*V* Keep us, O Lord, as the apple of your eye;  
+*R* Hide us under the shadow of your wings.
+
+*V* Lord, have mercy.  
+*R* Christ, have mercy.  
+*V* Lord, have mercy.
+    </string>
+    <string name="collect_compline">
+Visit this place, O Lord, and drive far from it all snares of the
+enemy; let your holy angels dwell with us to preserve us in
+peace; and let your blessing be upon us always; through Jesus
+Christ our Lord. Amen.
+    </string>
+    <string name="antiphon_compline">
+Guide us waking, O Lord, and guard us sleeping; that awake  
+we may watch with Christ, and asleep we may rest in peace.
+    </string>
+    <string name="antiphon_compline_easter">
+Guide us waking, O Lord, and guard us sleeping; that awake  
+we may watch with Christ, and asleep we may rest in peace.  
+Alleluia, alleluia, alleluia.
+    </string>
+    <string name="nunc_dimittis">
+Lord, you now have set your servant free \*  
+&#160;&#160;&#160;&#160;to go in peace as you have promised;  
+For these eyes of mine have seen the Savior, \*  
+&#160;&#160;&#160;&#160;whom you have prepared for all the world to see:  
+A Light to enlighten the nations, \*  
+&#160;&#160;&#160;&#160;and the glory of your people Israel.
+
+Glory to the Father, and to the Son, and to the Holy Spirit: \*
+&#160;&#160;&#160;&#160;as it was in the beginning, is now, and will be for ever. Amen. 
+    </string>
+    <string name="closing_versicle_compline">
+The almighty and merciful Lord, Father, Son, and Holy Spirit,
+bless us and keep us. Amen.
+    </string>
+</resources>

@@ -11,19 +11,49 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalDay
+import com.bcponline.dailyoffice.model.Season
+import dailyoffice.composeapp.generated.resources.*
 import kotlinx.datetime.LocalDate
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun Compline(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.evening
     Column(modifier = Modifier.fillMaxWidth().background(office.color.background).padding(16.dp)) {
         Text("Compline — ${office.name}", style = MaterialTheme.typography.headlineSmall)
-        Text("Date: $date", style = MaterialTheme.typography.labelMedium)
         if (!condensed) {
-            Text("Psalm ${office.psalter}", style = MaterialTheme.typography.titleMedium)
-            Text("First Reading: ${office.firstReading}")
+            if (office.season == Season.LENT) {
+                MarkdownText(stringResource(Res.string.versicle_vespers_lent))
+            } else {
+                MarkdownText(stringResource(Res.string.versicle_vespers))
+            }
         }
-        MarkdownText(office.collect)
-        MarkdownText("*This is in italics* and this isn't")
+
+        MarkdownText(stringResource(Res.string.psalm_134))
+        MarkdownText(stringResource(Res.string.reading_compline))
+
+        if (!condensed) {
+            MarkdownText(stringResource(Res.string.suffrages_compline))
+        }
+
+        MarkdownText(stringResource(Res.string.our_father))
+        MarkdownText(stringResource(Res.string.collect_compline))
+
+        if (!condensed) {
+            if (office.season == Season.EASTER) {
+                MarkdownText(stringResource(Res.string.antiphon_compline_easter))
+            } else {
+                MarkdownText(stringResource(Res.string.antiphon_compline))
+            }
+        }
+        MarkdownText(stringResource(Res.string.nunc_dimittis))
+        if (!condensed) {
+            if (office.season == Season.EASTER) {
+                MarkdownText(stringResource(Res.string.antiphon_compline_easter))
+            } else {
+                MarkdownText(stringResource(Res.string.antiphon_compline))
+            }
+        }
+        MarkdownText(stringResource(Res.string.closing_versicle))
     }
 }

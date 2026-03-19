@@ -21,14 +21,17 @@ fun Matins(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.morning
     Column(modifier = Modifier.fillMaxWidth().background(office.color.background).padding(16.dp)) {
         Text("Matins — ${office.name}", style = MaterialTheme.typography.headlineSmall)
-        if (office.season == Season.LENT) {
-            MarkdownText(stringResource(Res.string.versicle_matins_lent))
-            MarkdownText(stringResource(Res.string.psalm_95_lent))
-        } else if (office.season == Season.EASTER) {
-            MarkdownText(stringResource(Res.string.versicle_matins))
+        if (!condensed) {
+            if (office.season == Season.LENT) {
+                MarkdownText(stringResource(Res.string.versicle_matins_lent))
+            } else {
+                MarkdownText(stringResource(Res.string.versicle_matins))
+            }
+        }
+
+        if (office.season == Season.EASTER) {
             MarkdownText(stringResource(Res.string.pascha_nostrum))
         } else {
-            MarkdownText(stringResource(Res.string.versicle_matins))
             MarkdownText(stringResource(Res.string.psalm_95))
         }
 

@@ -21,10 +21,12 @@ fun Vespers(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.evening
     Column(modifier = Modifier.fillMaxWidth().background(office.color.background).padding(16.dp)) {
         Text("Vespers — ${office.name}", style = MaterialTheme.typography.headlineSmall)
-        if (office.season == Season.LENT) {
-            MarkdownText(stringResource(Res.string.versicle_vespers_lent))
-        } else {
-            MarkdownText(stringResource(Res.string.versicle_vespers))
+        if (!condensed) {
+            if (office.season == Season.LENT) {
+                MarkdownText(stringResource(Res.string.versicle_vespers_lent))
+            } else {
+                MarkdownText(stringResource(Res.string.versicle_vespers))
+            }
         }
 
         TabbedPane(mapOf(
