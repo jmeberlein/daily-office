@@ -1,6 +1,7 @@
 package com.bcponline.dailyoffice.ui
 
 import androidx.compose.runtime.Composable
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.font.FontStyle
@@ -12,7 +13,13 @@ import org.intellij.markdown.MarkdownElementTypes
 
 @Composable
 fun MarkdownText(markdown: String, rubrics: Boolean = true) {
-    val italicColor = if (rubrics) Color.Red else Color.Unspecified
+    val onSurface = MaterialTheme.colorScheme.onSurface
+    val isDark = onSurface.red > 0.5f && onSurface.green > 0.5f && onSurface.blue > 0.5f
+    val italicColor = when {
+        !rubrics -> Color.Unspecified
+        isDark -> Color(0xFFFF8A80) // red accent, readable on dark bg
+        else -> Color.Red
+    }
     Markdown(
         content = markdown,
         colors = markdownColor(),

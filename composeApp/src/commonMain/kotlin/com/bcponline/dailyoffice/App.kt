@@ -57,6 +57,7 @@ fun App() {
         else -> liturgicalDay.evening.color
     }
     val bg = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFFFFFBFE) else currentOfficeColor.background
+    val fg = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFF1C1B1F) else currentOfficeColor.onBackground
     val colorScheme = lightColorScheme(
         background = bg,
         surface = bg,
@@ -67,6 +68,9 @@ fun App() {
         surfaceContainerLow = bg,
         surfaceContainerLowest = bg,
         primaryContainer = bg,
+        onBackground = fg,
+        onSurface = fg,
+        onSurfaceVariant = fg,
     )
 
     val services = listOf("Matins", "Vespers", "Compline")
