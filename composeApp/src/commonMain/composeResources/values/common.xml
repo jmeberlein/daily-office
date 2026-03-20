@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="psalms_appointed">
-**Psalms Appointed**
-
-Psalms: %s
-
 *At the end of the psalms is sung or said*
 
 Glory to the Father, and to the Son, and to the Holy Spirit: \*  
 as it was in the beginning, is now, and will be for ever. Amen.
     </string>
     <string name="lessons_intro">
-**The Lessons**
+*One or two lessons are read. The Reader first says:*
 
-*One or two lessons, as appointed, are read, the Reader first saying*
-
-A Reading (Lesson) from \_\_\_\_
+A Reading from \_\_\_\_\_\_\_\_\_\_\_\_
 
 *After each Lesson the Reader may say*
 
 The Word of the Lord.  
 *People* Thanks be to God.
     </string>
-    <string name="first_reading">
-**First reading:** %s
-    </string>
-    <string name="second_reading">
-**Second reading:** %s
-    </string>
+    <string name="first_reading">%s</string>
+    <string name="second_reading">%s</string>
     <string name="creed">
-**Apostles' Creed**
-
 I believe in God, the Father almighty,  
 creator of heaven and earth;  
 I believe in Jesus Christ, his only Son, our Lord.  
@@ -51,8 +39,6 @@ the resurrection of the body,
 and the life everlasting. Amen. 
     </string>
     <string name="prayers_intro">
-**The Prayers**
-
 *Officiant* The Lord be with you.  
 *People* And also with you.  
 *Officiant* Let us pray.
@@ -73,11 +59,7 @@ For thine is the kingdom,
 and the power, and the glory,  
 for ever and ever. Amen.
     </string>
-    <string name="collect">
-**Collect**
-
-%s
-    </string>
+    <string name="collect">%s</string>
     <string name="closing_versicle">
 *Officiant* Let us bless the Lord.  
 *People* Thanks be to God.

@@ -2,7 +2,6 @@ package com.bcponline.dailyoffice.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -19,9 +18,14 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 fun Vespers(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
     val office = day.evening
+    val twoReadings = office.firstReading.isNotEmpty()
+
     Column(modifier = Modifier.fillMaxWidth().background(office.color.background).padding(16.dp)) {
         Text("Vespers — ${office.name}", style = MaterialTheme.typography.headlineSmall)
+
+        // Versicle
         if (!condensed) {
+            SectionHeader("The Versicle")
             if (office.season == Season.LENT) {
                 MarkdownText(stringResource(Res.string.versicle_vespers_lent))
             } else {
@@ -29,36 +33,52 @@ fun Vespers(date: LocalDate, day: LiturgicalDay, condensed: Boolean) {
             }
         }
 
-        TabbedPane(mapOf(
-            Pair("Prose", stringResource(Res.string.phos_hilaron)),
-            Pair("Metrical", stringResource(Res.string.phos_hilaron_metrical))
-        ))
+        // Phos Hilaron
+        TabbedPane(
+            mapOf(
+                "Prose" to stringResource(Res.string.phos_hilaron),
+                "Metrical" to stringResource(Res.string.phos_hilaron_metrical)
+            ),
+            heading = "O Gracious Light"
+        )
 
-        MarkdownText(String.format(stringResource(Res.string.psalms_appointed), office.psalter))
+        // Psalter
+        SectionHeader("The Psalter")
+        MarkdownText("Psalms: ${office.psalter}")
+        MarkdownText(stringResource(Res.string.psalms_appointed))
+
+        // Lessons
+        SectionHeader("The Lessons")
         MarkdownText(stringResource(Res.string.lessons_intro))
-        if (office.firstReading.isEmpty()) {
-            MarkdownText(String.format(stringResource(Res.string.first_reading), office.secondReading))
+        if (twoReadings) {
+            MarkdownText("**First Reading:** ${office.firstReading}")
+            MarkdownText("**Second Reading:** ${office.secondReading}")
         } else {
-            MarkdownText(String.format(stringResource(Res.string.first_reading), office.firstReading))
-            MarkdownText(String.format(stringResource(Res.string.second_reading), office.secondReading))
+            MarkdownText("**Reading:** ${office.secondReading}")
         }
+        SectionHeader("Magnificat")
         MarkdownText(stringResource(Res.string.magnificat))
 
         if (!condensed) {
+            SectionHeader("Apostles' Creed")
             MarkdownText(stringResource(Res.string.creed))
         }
 
+        // Prayers
+        SectionHeader("The Prayers")
         MarkdownText(stringResource(Res.string.prayers_intro))
         MarkdownText(stringResource(Res.string.our_father))
-
         if (!condensed) {
-            TabbedPane(mapOf(
-                Pair("Suffrages A", stringResource(Res.string.suffrages_a)),
-                Pair("Suffrages B", stringResource(Res.string.suffrages_b_vespers))
-            ))
+            TabbedPane(
+                mapOf(
+                    "Suffrages A" to stringResource(Res.string.suffrages_a),
+                    "Suffrages B" to stringResource(Res.string.suffrages_b_vespers)
+                ),
+                heading = "The Suffrages"
+            )
         }
-
-        MarkdownText(String.format(stringResource(Res.string.collect), office.collect))
+        SectionHeader("The Collect")
+        MarkdownText(String.format(stringResource(Res.string.collect), office.collect.replace("\n", "  \n")))
 
         if (office.season == Season.EASTER) {
             MarkdownText(stringResource(Res.string.closing_versicle_easter))

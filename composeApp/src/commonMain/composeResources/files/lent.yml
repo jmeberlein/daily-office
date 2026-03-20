@@ -1,6 +1,6 @@
 - number: 0
   season: LENT
-  collect: |
+  collect: >
     Almighty and everlasting God, you hate nothing you have
     made and forgive the sins of all who are penitent: Create and
     make in us new and contrite hearts, that we, worthily
@@ -12,7 +12,7 @@
   SUNDAY:
     name: Quinquagesima
     season: EPIPHANY
-    collect: |
+    collect: >
       O God, who before the passion of your only-begotten Son
       revealed his glory upon the holy mountain: Grant to us that
       we, beholding by faith the light of his countenance, may be
@@ -35,7 +35,7 @@
   MONDAY:
     name: The Monday after Quinquagesima
     season: EPIPHANY
-    collect: |
+    collect: >
       O God, who before the passion of your only-begotten Son
       revealed his glory upon the holy mountain: Grant to us that
       we, beholding by faith the light of his countenance, may be
@@ -58,7 +58,7 @@
   TUESDAY:
     name: The Tuesday after Quinquagesima
     season: EPIPHANY
-    collect: |
+    collect: >
       O God, who before the passion of your only-begotten Son
       revealed his glory upon the holy mountain: Grant to us that
       we, beholding by faith the light of his countenance, may be
@@ -140,7 +140,7 @@
 - number: 1
   name: '{{day_of_week}} after the First Sunday in Lent'
   season: LENT
-  collect: |
+  collect: >
     Almighty God, whose blessed Son was led by the Spirit to be
     tempted by Satan: Come quickly to help us who are assaulted
     by many temptations; and, as you know the weaknesses of
@@ -190,7 +190,7 @@
   WEDNESDAY:
     name: Spring Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -227,7 +227,7 @@
   FRIDAY:
     name: Spring Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -251,7 +251,7 @@
   SATURDAY:
     name: Spring Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -276,7 +276,7 @@
 - number: 2
   name: '{{day_of_week}} after the Second Sunday in Lent'
   season: LENT
-  collect: |
+  collect: >
     O God, whose glory it is always to have mercy: Be gracious
     to all who have gone astray from your ways, and bring them
     again with penitent hearts and steadfast faith to embrace and
@@ -379,7 +379,7 @@
 - number: 3
   name: '{{day_of_week}} after the Third Sunday in Lent'
   season: LENT
-  collect: |
+  collect: >
     Almighty God, you know that we have no power in ourselves
     to help ourselves: Keep us both outwardly in our bodies and
     inwardly in our souls, that we may be defended from all
@@ -483,7 +483,7 @@
 - number: 4
   name: '{{day_of_week}} after the Fourth Sunday in Lent'
   season: LENT
-  collect: |
+  collect: >
     Gracious Father, whose blessed Son Jesus Christ came down
     from heaven to be the true bread which gives life to the world:
     Evermore give us this bread, that he may live in us, and we in
@@ -586,7 +586,7 @@
 - number: 5
   name: '{{day_of_week}} after the Fifth Sunday in Lent'
   season: LENT
-  collect: |
+  collect: >
     Almighty God, you alone can bring into order the unruly
     wills and affections of sinners: Grant your people grace to
     love what you command and desire what you promise; that,
@@ -693,7 +693,7 @@
     name: Palm Sunday
     color: RED
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty and everliving God, in your tender love for the
       human race you sent your Son our Savior Jesus Christ to
       take upon him our nature, and to suffer death upon the cross,
@@ -716,7 +716,7 @@
     name: The Monday of Holy Week
     color: RED
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty God, whose dear Son went not up to joy but
       first he suffered pain, and entered not into glory before he
       was crucified: Mercifully grant that we, walking in the way
@@ -740,7 +740,7 @@
     name: The Tuesday of Holy Week
     color: RED
     rank: PRINCIPAL
-    collect: |
+    collect: >
       O God, by the passion of your blessed Son you made an
       instrument of shameful death to be for us the means of life:
       Grant us so to glory in the cross of Christ, that we may gladly
@@ -763,7 +763,7 @@
     name: The Wednesday of Holy Week
     color: RED
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Lord God, whose blessed Son our Savior gave his body to be
       whipped and his face to be spit upon: Give us grace to accept
       joyfully the sufferings of the present time, confident of the
@@ -786,7 +786,7 @@
     name: Maundy Thursday
     color: RED
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty Father, whose dear Son, on the night before he
       suffered, instituted the Sacrament of his Body and Blood:
       Mercifully grant that we may receive it thankfully in
@@ -810,7 +810,7 @@
     name: Good Friday
     color: BLACK
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty God, we pray you graciously to behold this your
       family, for whom our Lord Jesus Christ was willing to be
       betrayed, and given into the hands of sinners, and to suffer
@@ -833,7 +833,7 @@
     color: RED
     rank: PRINCIPAL
     morning:
-      collect: |
+      collect: >
         O God, Creator of heaven and earth:  Grant that, as the
         crucified body of your dear Son was laid in the tomb and
         rested on this holy Sabbath, so we may await with him the
@@ -842,7 +842,7 @@
         God, for ever and ever. Amen.
       psalter: "88"
     evening:
-      collect: |
+      collect: >
         O God, who made this most holy night to shine with the
         glory of the Lord's resurrection: Stir up in your Church that
         Spirit of adoption which is given to us in Baptism, that we,

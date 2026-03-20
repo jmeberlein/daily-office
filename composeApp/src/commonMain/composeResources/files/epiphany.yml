@@ -1,7 +1,7 @@
 - number: 0
   name: 'The {{day_of_week}} after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     O God, by the leading of a star you manifested your only Son
     to the Peoples of the earth: Lead us, who know you now by
     faith, to your presence, where we may see your glory face to
@@ -89,7 +89,7 @@
 - number: 1
   name: '{{day_of_week}} after the First Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Father in heaven, who at the baptism of Jesus in the River
     Jordan proclaimed him your beloved Son and anointed him
     with the Holy Spirit: Grant that all who are baptized into his
@@ -198,7 +198,7 @@
 - number: 2
   name: '{{day_of_week}} after the Second Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Almighty God, whose Son our Savior Jesus Christ is the light
     of the world: Grant that your people, illumined by your Word
     and Sacraments, may shine with the radiance of Christ's
@@ -302,7 +302,7 @@
 - number: 3
   name: '{{day_of_week}} after the Third Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Give us grace, O Lord, to answer readily the call of our
     Savior Jesus Christ and proclaim to all people the Good News
     of his salvation, that we and the whole world may perceive
@@ -404,7 +404,7 @@
 - number: 4
   name: '{{day_of_week}} after the Fourth Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Almighty and everlasting God, you govern all things both in
     heaven and on earth: Mercifully hear the supplications of
     your people, and in our time grant us your peace; through
@@ -506,7 +506,7 @@
 - number: 5
   name: '{{day_of_week}} after the Fifth Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Set us free, O God, from the bondage of our sins, and give us
     the liberty of that abundant life which you have made known
     to us in your Son our Savior Jesus Christ; who lives and reigns
@@ -608,7 +608,7 @@
 - number: 6
   name: '{{day_of_week}} after the Sixth Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     O God, the strength of all who put their trust in you:
     Mercifully accept our prayers; and because in our weakness
     we can do nothing good without you, give us the help of your
@@ -712,7 +712,7 @@
 - number: 7
   name: '{{day_of_week}} after the Seventh Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     O Lord, you have taught us that without love whatever we
     do is worth nothing; Send your Holy Spirit and pour into our
     hearts your greatest gift, which is love, the true bond of peace
@@ -816,7 +816,7 @@
 - number: 8
   name: '{{day_of_week}} after the Eighth Sunday after the Epiphany'
   season: EPIPHANY
-  collect: |
+  collect: >
     Most loving Father, whose will it is for us to give thanks for
     all things, to fear nothing but the loss of you, and to cast all
     our care on you who care for us: Preserve us from faithless

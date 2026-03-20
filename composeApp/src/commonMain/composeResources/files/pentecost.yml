@@ -1,7 +1,7 @@
 - number: 1
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Remember, O Lord, what you have wrought in us and not
     what we deserve; and, as you have called us to your service,
     make us worthy of our calling; through Jesus Christ our Lord,
@@ -89,7 +89,7 @@
 - number: 2
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and merciful God, in your goodness keep us, we
     pray, from all things that may hurt us, that we, being ready
     both in mind and body, may accomplish with free hearts
@@ -178,7 +178,7 @@
 - number: 3
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Grant, O Lord, that the course of this world may be
     peaceably governed by your providence; and that your
     Church may joyfully serve you in confidence and serenity;
@@ -280,7 +280,7 @@
 - number: 4
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, your never-failing providence sets in order all things
     both in heaven and earth: Put away from us, we entreat you,
     all hurtful things, and give us those things which are profitable
@@ -383,7 +383,7 @@
 - number: 5
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, from whom all good proceeds: Grant that by your
     inspiration we may think those things that are right, and by
     your merciful guiding may do them; through Jesus Christ our
@@ -485,7 +485,7 @@
 - number: 6
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Keep, O Lord, your household the Church in your steadfast
     faith and love, that through your grace we may proclaim
     your truth with boldness, and minister your justice with
@@ -588,7 +588,7 @@
 - number: 7
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O Lord, make us have perpetual love and reverence for your
     holy Name, for you never fail to help and govern those whom
     you have set upon the sure foundation of your loving-kindness;
@@ -690,7 +690,7 @@
 - number: 8
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty God, you have built your Church upon the
     foundation of the apostles and prophets, Jesus Christ himself
     being the chief cornerstone: Grant us so to be joined together
@@ -794,7 +794,7 @@
 - number: 9
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, you have taught us to keep all your commandments
     by loving you and our neighbor: Grant us the grace of your
     Holy Spirit, that we may be devoted to you with our whole
@@ -897,7 +897,7 @@
 - number: 10
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O Lord, mercifully receive the prayers of your people who
     call upon you, and grant that they may know and understand
     what things they ought to do, and also may have grace and
@@ -1000,7 +1000,7 @@
 - number: 11
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty God, the fountain of all wisdom, you know our
     necessities before we ask and our ignorance in asking: Have
     compassion on our weakness, and mercifully give us those
@@ -1104,7 +1104,7 @@
 - number: 12
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, the protector of all who trust in you, without whom
     nothing is strong, nothing is holy: Increase and multiply upon
     us your mercy; that, with you as our ruler and guide, we may so
@@ -1207,7 +1207,7 @@
 - number: 13
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Let your continual mercy, O Lord, cleanse and defend your
     Church; and, because it cannot continue in safety without
     your help, protect and govern it always by your goodness;
@@ -1309,7 +1309,7 @@
 - number: 14
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Grant to us, Lord, we pray, the spirit to think and do always
     those things that are right, that we, who cannot exist without
     you, may by you be enabled to live according to your will;
@@ -1411,7 +1411,7 @@
 - number: 15
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty God, you have given your only Son to be for us a
     sacrifice for sin, and also an example of godly life: Give us
     grace to receive thankfully the fruits of his redeeming work,
@@ -1515,7 +1515,7 @@
 - number: 16
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Grant, O merciful God, that your Church, being gathered
     together in unity by your Holy Spirit, may show forth your
     power among all peoples, to the glory of your Name;
@@ -1617,7 +1617,7 @@
 - number: 17
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Lord of all power and might, the author and giver of all good
     things: Graft in our hearts the love of your Name; increase in
     us true religion; nourish us with all goodness; and bring forth
@@ -1720,7 +1720,7 @@
 - number: 18
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Grant us, O Lord, to trust in you with all our hearts; for, as
     you always resist the proud who confide in their own strength,
     so you never forsake those who make their boast of your
@@ -1823,7 +1823,7 @@
 - number: 19
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, because without you we are not able to please you,
     mercifully grant that your Holy Spirit may in all things direct
     and rule our hearts; through Jesus Christ our Lord, who lives
@@ -1872,7 +1872,7 @@
   WEDNESDAY:
     name: Fall Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -1909,7 +1909,7 @@
   FRIDAY:
     name: Fall Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -1933,7 +1933,7 @@
   SATURDAY:
     name: Fall Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -1958,7 +1958,7 @@
 - number: 20
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Grant us, Lord, not to be anxious about earthly things, but to
     love things heavenly; and even now, while we are placed among
     things that are passing away, to hold fast to those that shall
@@ -2060,7 +2060,7 @@
 - number: 21
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, you declare your almighty power chiefly in showing
     mercy and pity: Grant us the fullness of your grace, that we,
     running to obtain your promises, may become partakers of
@@ -2163,7 +2163,7 @@
 - number: 22
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and everlasting God, you are always more ready to
     hear than we to pray, and to give more than we either desire
     or deserve: Pour upon us the abundance of your mercy,
@@ -2268,7 +2268,7 @@
 - number: 23
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Lord, we pray that your grace may always precede and
     follow us, that we may continually be given to good works;
     through Jesus Christ our Lord, who lives and reigns with you
@@ -2369,7 +2369,7 @@
 - number: 24
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and everlasting God, in Christ you have revealed
     your glory among the nations: Preserve the works of your
     mercy, that your Church throughout the world may
@@ -2473,7 +2473,7 @@
 - number: 25
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and everlasting God, increase in us the gifts of
     faith, hope, and charity; and, that we may obtain what you
     promise, make us love what you command; through Jesus
@@ -2575,7 +2575,7 @@
 - number: 26
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and merciful God, it is only by your gift that your
     faithful people offer you true and laudable service: Grant
     that we may run without stumbling to obtain your heavenly
@@ -2678,7 +2678,7 @@
 - number: 27
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     O God, whose blessed Son came into the world that he might
     destroy the works of the devil and make us children of God
     and heirs of eternal life: Grant that, having this hope, we may
@@ -2782,7 +2782,7 @@
 - number: 28
   name: '{{day_of_week}} after the {{pentecost_ordinal}} Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Blessed Lord, who caused all holy Scriptures to be written for
     our learning: Grant us so to hear them, read, mark, learn,
     and inwardly digest them, that we may embrace and ever
@@ -2885,7 +2885,7 @@
 - number: 29
   name: '{{day_of_week}} after the Last Sunday after Pentecost'
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and everlasting God, whose will it is to restore all
     things in your well-beloved Son, the King of kings and Lord of
     lords: Mercifully grant that the peoples of the earth, divided

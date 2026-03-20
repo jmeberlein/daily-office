@@ -1,7 +1,7 @@
 - number: 1
   name: '{{day_of_week}} after the First Sunday of Advent'
   season: ADVENT
-  collect: |
+  collect: >
     Almighty God, give us grace to cast away the works of
     darkness, and put on the armor of light, now in the time of
     this mortal life in which your Son Jesus Christ came to visit
@@ -106,7 +106,7 @@
 - number: 2
   name: '{{day_of_week}} after the Second Sunday of Advent'
   season: ADVENT
-  collect: |
+  collect: >
     Merciful God, who sent your messengers the prophets to
     preach repentance and prepare the way for our salvation:
     Give us grace to heed their warnings and forsake our sins,
@@ -209,7 +209,7 @@
 - number: 3
   name: '{{day_of_week}} after the Third Sunday of Advent'
   season: ADVENT
-  collect: |
+  collect: >
     Stir up your power, O Lord, and with great might come
     among us; and, because we are sorely hindered by our sins,
     let your bountiful grace and mercy speedily help and deliver
@@ -258,7 +258,7 @@
   WEDNESDAY:
     name: Winter Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -295,7 +295,7 @@
   FRIDAY:
     name: Winter Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -319,7 +319,7 @@
   SATURDAY:
     name: Winter Ember Day
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty and everlasting God, by whose Spirit the whole
       body of your faithful people is governed and sanctified:
       Receive our supplications and prayers, which we offer before
@@ -344,7 +344,7 @@
 - number: 4
   name: '{{day_of_week}} after the Fourth Sunday of Advent'
   season: ADVENT
-  collect: |
+  collect: >
     Purify our conscience, Almighty God, by your daily visitation,
     that your Son Jesus Christ, at his coming, may find in us a
     mansion prepared for himself; who lives and reigns with you,

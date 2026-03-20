@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="first_canticle_placeholder">
+*A canticle is sung or said here.*
+    </string>
     <string name="versicle_matins">
 *V.* Lord, open our lips.  
 *R.* And our mouth shall proclaim your praise.  
@@ -13,8 +16,6 @@ Glory to the Father, and to the Son, and to the Holy Spirit:
 as it was in the beginning, is now, and will be for ever. Amen.
     </string>
     <string name="psalm_95">
-**Psalm 95**
-
 Come, let us sing to the LORD; \*  
 &#160;&#160;&#160;&#160;let us shout for joy to the Rock of our salvation.  
 Let us come before his presence with thanksgiving \*  
@@ -34,8 +35,6 @@ and we are the people of his pasture and the sheep of his hand. \*
 &#160;&#160;&#160;&#160;Oh, that today you would hearken to his voice!
     </string>
     <string name="psalm_95_lent">
-**Psalm 95**
-
 Come, let us sing to the LORD; \*  
 &#160;&#160;&#160;&#160;let us shout for joy to the Rock of our salvation.  
 Let us come before his presence with thanksgiving \*  
@@ -68,8 +67,6 @@ So I swore in my wrath, \*
 &#160;&#160;&#160;&#160;"They shall not enter into my rest."
     </string>
     <string name="pascha_nostrum">
-**Pascha Nostrum**
-
 Alleluia.  
 Christ our Passover has been sacrificed for us; \*  
 &#160;&#160;&#160;&#160;therefore let us keep the feast,  
@@ -91,8 +88,6 @@ For as in Adam all die, \*
 &#160;&#160;&#160;&#160;so also in Christ shall all be made alive. Alleluia.
     </string>
     <string name="benedictus">
-**Benedictus**
-
 Blessed be the Lord, the God of Israel; \*  
 &#160;&#160;&#160;&#160;he has come to his people and set them free.  
 He has raised up for us a mighty savior, \*  

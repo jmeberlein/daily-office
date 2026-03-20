@@ -1,7 +1,7 @@
 - number: 0
   name: 'The {{day_of_week}} after Christmas'
   season: CHRISTMAS
-  collect: |
+  collect: >
     Almighty God, you have given your only-begotten Son to
     take our nature upon him, and to be born [this day] of a pure
     virgin: Grant that we, who have been born again and made
@@ -90,7 +90,7 @@
 - number: 1
   name: 'The {{day_of_week}} after the First Sunday after Christmas'
   season: CHRISTMAS
-  collect: |
+  collect: >
     Almighty God, you have poured upon us the new light of
     your incarnate Word: Grant that this light, enkindled in our
     hearts, may shine forth in our lives; through Jesus Christ our
@@ -179,7 +179,7 @@
 - number: 2
   name: 'The {{day_of_week}} after the Second Sunday after Christmas'
   season: CHRISTMAS
-  collect: |
+  collect: >
     O God, who wonderfully created, and yet more wonderfully
     restored, the dignity of human nature: Grant that we may
     share the divine life of him who humbled himself to share

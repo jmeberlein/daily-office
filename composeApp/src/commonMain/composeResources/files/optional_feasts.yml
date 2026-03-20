@@ -1,7 +1,7 @@
 "0108":
   name: Harriet Bedell
   rank: OPTIONAL
-  collect: |
+  collect: >
     Holy God, fill us with compassion and respect for
     all people, and empower us for the work of ministry
     whether near or far away; that like your servant Harriet
@@ -24,7 +24,7 @@
 "0109":
   name: Julia Chester Emery
   rank: OPTIONAL
-  collect: |
+  collect: >
     God of all creation, who calls us to make disciples of
     all nations and to proclaim your mercy and love: Grant
     that we, after the example of your servant Julia Chester
@@ -47,7 +47,7 @@
 "0110":
   name: William Laud
   rank: OPTIONAL
-  collect: |
+  collect: >
     Keep us, O Lord, constant in faith and zealous in
     witness; that, like your servant William Laud, we may
     live in your fear, die in your favor, and rest in your
@@ -68,7 +68,7 @@
 "0112":
   name: Aelred of Rievaulx
   rank: OPTIONAL
-  collect: |
+  collect: >
     Grant to your people, Almighty God, a spirit of mutual
     affection; that, following the example of your servant
     Aelred of Rivaulx, we might know the love of Christ in
@@ -89,7 +89,7 @@
 "0113":
   name: Hilary of Poitiers
   rank: OPTIONAL
-  collect: |
+  collect: >
     Keep us steadfast, Lord God, in that true faith that we
     professed at our baptism; that, like your servant Hilary
     of Poitiers, we may rejoice in having you for our Father,
@@ -110,7 +110,7 @@
 "0117":
   name: Antony of Egypt
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, as you by your Holy Spirit enabled your servant
     Antony to withstand the temptations of the world, the
     esh, and the devil; so give us grace to follow you with
@@ -131,7 +131,7 @@
 "0119":
   name: Wulfstan of Worcester
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, whose only-begotten Son led captivity
     captive and gave gifts to your people: Multiply among
     us faithful pastors, who, like your holy bishop Wulfstan,
@@ -154,7 +154,7 @@
 "0120":
   name: Fabian
   rank: OPTIONAL
-  collect: |
+  collect: >
     Grant, Almighty God, that in all times of trial and
     persecution, we might remain steadfast in faith and
     endurance, according to the example of your servant
@@ -176,7 +176,7 @@
 "0121":
   name: Agnes and Cecilia of Rome
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, who chooses those
     whom the world deems powerless to put the powerful
     to shame: Grant us so to cherish the memory of your
@@ -198,7 +198,7 @@
 "0122":
   name: Vincent of Saragossa
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, whose deacon Vincent, upheld by
     you, was neither terrified by threats nor overcome by
     torments: Strengthen us to endure all adversity with
@@ -219,7 +219,7 @@
 "0123":
   name: Phillips Brooks
   rank: OPTIONAL
-  collect: |
+  collect: >
     Everlasting God, who implants your living Word in
     the minds and on the lips of all who proclaim your
     truth: Grant that we, like your pastor and preacher
@@ -241,7 +241,7 @@
 "0124":
   name: Florence Li Tim-Oi
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who pours out your Spirit upon your
     sons and daughters: Grant that we, following the
     example of your servant Florence Li Tim-Oi, chosen
@@ -264,7 +264,7 @@
 "0126":
   name: Timothy and Titus Companions of Saint Paul
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who called Timothy and Titus to be
     evangelists and teachers, and made them strong to
     endure hardship: Strengthen us to stand fast in adversity,
@@ -287,7 +287,7 @@
 "0127":
   name: John Chrysostom
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who gave your servant John Chrysostom
     grace eloquently to proclaim your righteousness in the
     great congregation, and fearlessly to bear reproach for
@@ -311,7 +311,7 @@
 "0128":
   name: Thomas Aquinas
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who has enriched your church with the
     singular learning and holiness of your servant Thomas
     Aquinas: Enlighten us more and more, we pray, by the
@@ -334,7 +334,7 @@
 "0201":
   name: Brigid of Kildare
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose servant Brigid, kindled with the ame
     of your love, became a shining light in your church:
     Grant that we also may be aame with the spirit of love
@@ -356,7 +356,7 @@
 "0203":
   name: Anskar
   rank: OPTIONAL
-  collect: |
+  collect: >
     Keep your church from discouragement in the day of
     small things, O God, in the knowledge that when you
     have begun a good work, you will bring it to a fruitful
@@ -378,7 +378,7 @@
 "0204":
   name: Manche Masemola
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and Everlasting God, who kindled the ame
     of your love in the heart of your faithful martyr Manche
     Masemola: Grant to us your servants, a like faith and
@@ -400,7 +400,7 @@
 "0205":
   name: Agatha of Sicily
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, who strengthened your
     martyr Agatha with constancy and courage: Grant us
     for the love of you to make no peace with oppression,
@@ -422,7 +422,7 @@
 "0213":
   name: Absalom Jones
   rank: OPTIONAL
-  collect: |
+  collect: >
     Set us free, heavenly Father, from every bond of
     prejudice and fear; that, honoring the steadfast courage
     of your servant Absalom Jones, we may show forth in
@@ -444,7 +444,7 @@
 "0214":
   name: Cyril and Methodius
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, who by the power of the
     Holy Spirit moved your servants Cyril and Methodius
     to bring the light of the Gospel to a hostile and divided
@@ -467,7 +467,7 @@
 "0215":
   name: Thomas Bray
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of compassion, who opened the heart of your
     servant Thomas Bray to answer the needs of the church
     in the New World: Make your church diligent at all
@@ -489,7 +489,7 @@
 "0217":
   name: Janani Luwum
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose Son the Good Shepherd laid down his
     life for his sheep: We give you thanks for your faithful
     shepherd, Janani Luwum, who after his Savior’s
@@ -513,7 +513,7 @@
 "0218":
   name: Martin Luther
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, our refuge and our strength, who raised up your
     servant Martin Luther to reform and renew your church
     in the light of your word: Defend and purify the church
@@ -536,7 +536,7 @@
 "0223":
   name: Polycarp of Smyrna
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, the maker of heaven and earth, you gave your
     venerable servant, the holy and gentle Polycarp, the
     boldness to confess Jesus Christ as King and Savior
@@ -559,7 +559,7 @@
 "0227":
   name: George Herbert
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who called your servant George Herbert
     from the pursuit of worldly honors to be a poet and
     a pastor of souls: Give us grace, we pray, joyfully to
@@ -580,7 +580,7 @@
 "0228":
   name: Anna Julia Haywood Cooper
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who inspired your servant Anna Julia
     Haywood Cooper with the love of learning and the skill
     of teaching: Enlighten us more and more through the
@@ -602,7 +602,7 @@
 "0502":
   name: Athanasius of Alexandria
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord, who established your servant Athanasius,
     through wisdom, in your truth: Grant that we,
     perceiving the humanity and divinity of your Son Jesus
@@ -623,7 +623,7 @@
 "0504":
   name: Monica
   rank: OPTIONAL
-  collect: |
+  collect: >
     Deepen our devotion, O Lord, and use us in accordance
     with your will; that inspired by the example of your
     servant Monica, we may bring others to acknowledge
@@ -644,7 +644,7 @@
 "0508":
   name: Julian of Norwich
   rank: OPTIONAL
-  collect: |
+  collect: >
     Triune God, Father and Mother to us all, who showed
     your servant Julian revelations of your nurturing and
     sustaining love: Move our hearts, like hers, to seek you
@@ -664,7 +664,7 @@
 "0509":
   name: Gregory of Nazianzus
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who has revealed to your Church your
     eternal Being of glorious majesty and perfect love as
     one God in Trinity of Persons: Give us grace that, like
@@ -686,7 +686,7 @@
 "0519":
   name: Dunstan
   rank: OPTIONAL
-  collect: |
+  collect: >
     Direct your Church, O Lord, into the beauty of holiness,
     that, following the good example of your servant
     Dunstan, we may honor your Son Jesus Christ with our
@@ -707,7 +707,7 @@
 "0520":
   name: Alcuin of York
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who raised up your servant Alcuin as a
     beacon of learning: Shine in our hearts, we pray, that we
     may also show forth your praise in our own generation,
@@ -729,7 +729,7 @@
 "0524":
   name: Jackson Kemper
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who sent your son Jesus Christ to preach peace
     to those who are far off and to those who are near:
     Grant that we, like your servant Jackson Kemper, may
@@ -751,7 +751,7 @@
 "0525":
   name: Bede
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who has enriched your church with the
     learning and holiness of your servant Bede: Grant us
     to find in Scripture and disciplined prayer the image of
@@ -773,7 +773,7 @@
 "0526":
   name: Augustine
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord our God, who by your Son Jesus Christ called
     your servant Augustine to preach the Gospel to the
     English people: We pray that all whom you call and send
@@ -795,7 +795,7 @@
 "0601":
   name: Justin Martyr
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who has given your church wisdom and
     revealed to it deep and secret things: Grant that we,
     like your servant Justin and in union with his prayers,
@@ -817,7 +817,7 @@
 "0602":
   name: Blandina and Her Companions
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who gave such courage and endurance
     to Blandina and her companions that by their deaths
     many hearts were turned to you; Grant that we, in
@@ -840,7 +840,7 @@
 "0603":
   name: The Martyrs of Uganda 1886
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, by whose providence the blood of the martyrs
     is the seed of the church: Grant that we who remember
     before you the blessed martyrs of Uganda, may, like
@@ -863,7 +863,7 @@
 "0605":
   name: Boniface
   rank: OPTIONAL
-  collect: |
+  collect: >
     Pour out your Holy Spirit, O God, upon your church
     in every land, that like your servant Boniface we might
     proclaim the Gospel to all nations, that your kingdom
@@ -885,7 +885,7 @@
 "0609":
   name: Columba of Iona
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who by the preaching of your servant Columba
     caused the light of the Gospel to shine in Scotland:
     Grant, we pray, that, remembering his life and labors,
@@ -907,7 +907,7 @@
 "0610":
   name: Ephrem of Nisibis
   rank: OPTIONAL
-  collect: |
+  collect: >
     Pour out upon us, O Lord, that same Spirit by which
     your deacon Ephrem declared the mysteries of faith in
     sacred song; that, with gladdened hearts, we too might
@@ -928,7 +928,7 @@
 "0612":
   name: Enmegahbowh
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who led your pilgrim people of old by
     fire and cloud: Grant that the ministers of your church,
     following the example of your servant Enmegahbowh,
@@ -950,7 +950,7 @@
 "0614":
   name: Basil of Caesarea
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who has revealed to your church your
     eternal Being of glorious majesty and perfect love as one
     God in Trinity of Persons: Give us grace that, like your
@@ -972,7 +972,7 @@
 "0615":
   name: Evelyn Underhill
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, Origin, Sustainer, and End of all creatures:
     Grant that your church, taught by your servant Evelyn
     Underhill, may continually offer to you all glory and
@@ -995,7 +995,7 @@
 "0616":
   name: Joseph Butler
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who raises up scholars for your church in every
     generation; we praise you for the wisdom and insight
     granted to your bishop and theologian Joseph Butler,
@@ -1017,7 +1017,7 @@
 "0618":
   name: Bernard Mizeki
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, who kindled the ame
     of your love in the heart of your holy martyr Bernard
     Mizeki: Grant unto us your servants a like faith and
@@ -1039,7 +1039,7 @@
 "0619":
   name: Adelaide Teague Case
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, who raises up educators
     and teachers of the faith in every generation of your
     church: Grant that following the example of your
@@ -1062,7 +1062,7 @@
 "0622":
   name: Alban
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, by whose grace and power your holy
     martyr Alban triumphed over suffering and was faithful
     even unto death: Grant us, who now remember him in
@@ -1085,7 +1085,7 @@
 "0628":
   name: Irenaeus of Lyon
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who strengthened your servant Irenaeus
     to defend thy truth against every blast of vain doctrine:
     Keep us, we pray, steadfast in your true religion, that in
@@ -1107,7 +1107,7 @@
 "0711":
   name: Benedict of Nursia
   rank: OPTIONAL
-  collect: |
+  collect: >
     Gracious God, whose service is perfect freedom and
     in whose commandments there is nothing harsh nor
     burdensome: Grant that we, with your servant Benedict,
@@ -1131,7 +1131,7 @@
 "0717":
   name: William White
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord, who in a time of turmoil and confusion raised
     up your servant William White to lead your church into
     ways of stability and peace; Hear our prayer, and give us
@@ -1154,7 +1154,7 @@
 "0719":
   name: Macrina of Caesarea
   rank: OPTIONAL
-  collect: |
+  collect: >
     Merciful God, who called your servant Macrina to
     reveal in her life and teaching the riches of your grace
     and truth: Grant that we, following her example, may
@@ -1176,7 +1176,7 @@
 "0720":
   name: Elizabeth Cady Stanton, Amelia Bloomer, and Sojourner Truth
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose Spirit guides us into all truth and
     makes us free: Strengthen and sustain us as you did
     your servants Elizabeth, Amelia, and Sojourner. Give
@@ -1199,7 +1199,7 @@
 "0724":
   name: Thomas à Kempis
   rank: OPTIONAL
-  collect: |
+  collect: >
     Holy Father, you have nourished and strengthened
     your church by the writings of your servant Thomas à
     Kempis: Grant that we may learn from him to know
@@ -1222,7 +1222,7 @@
 "0726":
   name: The Parents of the Blessed Virgin Mary
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, heavenly Father, we remember in
     thanksgiving this day the parents of the Blessed Virgin
     Mary; and we pray that we all may be made one in the
@@ -1243,7 +1243,7 @@
 "0727":
   name: William Reed Huntington
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord our God, we thank you for instilling in the
     heart of your servant William Reed Huntington a
     fervent love for your church and its mission in the
@@ -1266,7 +1266,7 @@
 "0729":
   name: Mary and Martha of Bethany
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, heavenly Father, your Son Jesus Christ enjoyed
     rest and refreshment in the home of Mary and Martha
     of Bethany: Give us the will to love you, open our hearts
@@ -1287,7 +1287,7 @@
 "0730":
   name: William Wilberforce
   rank: OPTIONAL
-  collect: |
+  collect: >
     Let your continual mercy, O Lord, kindle in your
     Church the never-failing gift of love; that, following the
     example of your servant William Wilberforce, we may
@@ -1310,7 +1310,7 @@
 "0731":
   name: Ignatius of Loyola
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who called Ignatius of Loyola to the
     service of your Divine Majesty and to seek you in all
     things; Give us also the grace to labor without counting
@@ -1332,7 +1332,7 @@
 "0801":
   name: Joseph of Arimathea
   rank: OPTIONAL
-  collect: |
+  collect: >
     Merciful God, whose servant Joseph of Arimathea with
     reverence and godly fear prepared the body of our Lord
     and Savior for burial and laid it in his own tomb: Grant
@@ -1355,7 +1355,7 @@
 "0807":
   name: John Mason Neale
   rank: OPTIONAL
-  collect: |
+  collect: >
     Grant, O God, that in all time of our testing we may
     know your presence and obey your will; that, following
     the example of your servant John Mason Neale, we may
@@ -1377,7 +1377,7 @@
 "0808":
   name: Dominic
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, grant unto your people a hunger for
     your Word and an urgent longing to share your Gospel;
     that, like your servant Dominic, we might labor to bring
@@ -1399,7 +1399,7 @@
 "0810":
   name: Laurence of Rome
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, by whose grace and power your servant
     Laurence triumphed over suffering and despised death:
     Grant that we may be steadfast in service to the poor
@@ -1421,7 +1421,7 @@
 "0811":
   name: Clare of Assisi
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose blessed Son became poor that we,
     through his poverty, might become rich: Deliver us from
     an inordinate love of this world, that we, inspired by the
@@ -1444,7 +1444,7 @@
 "0812":
   name: Florence Nightingale
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who gave grace to your servant Florence
     Nightingale to bear your healing love into the shadow
     of death: Grant to all who heal the same virtues of
@@ -1466,7 +1466,7 @@
 "0813":
   name: Jeremy Taylor
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose days are without end, and whose mercies
     cannot be numbered: Make us, like your servant Jeremy
     Taylor, deeply aware of the shortness and uncertainty of
@@ -1488,7 +1488,7 @@
 "0814":
   name: Jonathan Myrick Daniels
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of justice and compassion, who puts down the
     proud and mighty from their place, and lifts up the poor
     and the aficted: We give you thanks for your faithful
@@ -1512,7 +1512,7 @@
 "0820":
   name: Bernard of Clairvaux
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, by whose grace your servant Bernard of
     Clairvaux, kindled with the ame of your love, became
     a burning and a shining light in your church: Grant
@@ -1535,7 +1535,7 @@
 "0825":
   name: Louis
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, you called your servant Louis of France to an
     earthly throne that he might advance your heavenly
     kingdom, and gave him zeal for your church and
@@ -1559,7 +1559,7 @@
 "0827":
   name: Thomas Gallaudet and Henry Winter Syle
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Loving God, whose will it is that everyone should
     come to you and be saved: We bless your holy Name
     for your servants Thomas Gallaudet and Henry Winter
@@ -1581,7 +1581,7 @@
 "0828":
   name: Augustine of Hippo
   rank: OPTIONAL
-  collect: |
+  collect: >
     Lord God, the light of the minds that know you, the life
     of the souls that love you, and the strength of the hearts
     that serve you: Help us, following the example of your
@@ -1604,7 +1604,7 @@
 "0831":
   name: Aidan of Lindisfarne
   rank: OPTIONAL
-  collect: |
+  collect: >
     O loving God, you called your servant Aidan from the
     cloister to re-establish the Christian mission in northern
     England: Grant that we, following his example, may use
@@ -1626,7 +1626,7 @@
 "0901":
   name: David Pendleton Oakerhater
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of unsearchable wisdom and mercy; Liberate us
     from bondage to self, and empower us to serve you and
     our neighbors, that like your servant David Oakerhater,
@@ -1648,7 +1648,7 @@
 "0902":
   name: The Martyrs of New Guinea 1942
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, we remember before you this day the
     blessed martyrs of New Guinea, who, following the
     example of their Savior, laid down their lives for their
@@ -1670,7 +1670,7 @@
 "0904":
   name: Paul Jones
   rank: OPTIONAL
-  collect: |
+  collect: >
     Merciful God, you sent your beloved Son to preach
     peace to those who are far off and to those who are
     near: Raise up in this and every land witnesses who,
@@ -1692,7 +1692,7 @@
 "0909":
   name: 'The Martyrs of Memphis: Constance, Thecla, Ruth, Frances, Charles Parsons, and Louis Schuyler 1878'
   rank: OPTIONAL
-  collect: |
+  collect: >
     We give you thanks and praise, O God of compassion,
     for the heroic witness of the Martyrs of Memphis, who,
     in a time of plague and pestilence, were steadfast in
@@ -1716,7 +1716,7 @@
 "0910":
   name: Alexander Crummell
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty and everlasting God, we thank you for your
     servant Alexander Crummell, whom you called to
     preach the gospel to those who were far off and to
@@ -1739,7 +1739,7 @@
 "0912":
   name: John Henry Hobart
   rank: OPTIONAL
-  collect: |
+  collect: >
     Revive your church, Lord God of hosts, whenever it
     falls into complacency and sloth, by raising up devoted
     leaders like your servant John Henry Hobart; and grant
@@ -1761,7 +1761,7 @@
 "0913":
   name: Cyprian of Carthage
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who gave to your servant Cyprian
     boldness to confess the Name of our Savior Jesus Christ
     before the rulers of this world and courage to die for
@@ -1784,7 +1784,7 @@
 "0916":
   name: Ninian
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who by the preaching of your blessed servant
     and bishop Ninian caused the light of the Gospel to
     shine in the land of Britain: Grant, we pray, that having
@@ -1807,7 +1807,7 @@
 "0917":
   name: Hildegard of Bingen
   rank: OPTIONAL
-  collect: |
+  collect: >
     God of all times and seasons: Give us grace that we,
     after the example of your servant Hildegard, may both
     know and make known the joy and jubilation of being
@@ -1829,7 +1829,7 @@
 "0918":
   name: Edward Bouverie Pusey
   rank: OPTIONAL
-  collect: |
+  collect: >
     Grant, O God, that in all time of our testing we may
     know your presence and obey your will; that, following
     the example of your servant Edward Bouverie Pusey,
@@ -1852,7 +1852,7 @@
 "0919":
   name: Theodore of Tarsus
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who gave your servant Theodore of
     Tarsus gifts of grace and wisdom to establish unity
     where there had been division and order where there
@@ -1875,7 +1875,7 @@
 "0920":
   name: John Coleridge Patteson
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who called your faithful servant John
     Coleridge Patteson and his companions to witness to
     the gospel, and by their labors and sufferings raised
@@ -1899,7 +1899,7 @@
 "0922":
   name: Philander Chase
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, whose Son Jesus Christ is the pioneer
     and perfecter of our faith: Grant that like your servant
     Philander Chase, we might have the grace to minister
@@ -1921,7 +1921,7 @@
 "0925":
   name: Sergius of Radonezh
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, whose blessed Son became poor that we,
     through his poverty, might be rich: Deliver us from an
     inordinate love of this world, that we, inspired by the
@@ -1944,7 +1944,7 @@
 "0926":
   name: Lancelot Andrewes
   rank: OPTIONAL
-  collect: |
+  collect: >
     Perfect in us, Almighty God, whatever is lacking of
     your gifts: of faith, to increase it; of hope, to establish
     it; of love, to kindle it; that like your servant Lancelot
@@ -1966,7 +1966,7 @@
 "0930":
   name: Jerome
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who gave us the holy Scriptures as a light to
     shine upon our path: Grant us, after the example of
     your servant Jerome, so to learn of you according to
@@ -1988,7 +1988,7 @@
 "1001":
   name: Thérèse of Lisieux
   rank: OPTIONAL
-  collect: |
+  collect: >
     Gracious Father, who called your servant Thérèse to
     a life of fervent prayer: Give to us that spirit of prayer
     and zeal for the ministry of the Gospel, that the love of
@@ -2008,7 +2008,7 @@
 "1004":
   name: Francis of Assisi
   rank: OPTIONAL
-  collect: |
+  collect: >
     Most high, omnipotent, good Lord, grant your people
     grace to renounce gladly the vanities of this world; that,
     following the way of blessed Francis, we may, for love of
@@ -2030,7 +2030,7 @@
 "1006":
   name: William Tyndale
   rank: OPTIONAL
-  collect: |
+  collect: >
     Reveal to us your saving word, O God, that like your
     servant William Tyndale we might hear its call to
     repentance and new life. Plant in our hearts that same
@@ -2053,7 +2053,7 @@
 "1009":
   name: Robert Grosseteste
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, our heavenly Father, who raised up your faithful
     servant Robert Grosseteste to be a bishop and pastor in
     your church and to feed your ock: Give abundantly to
@@ -2076,7 +2076,7 @@
 "1010":
   name: Vida Dutton Scudder
   rank: OPTIONAL
-  collect: |
+  collect: >
     Most gracious God, you sent your beloved Son to preach
     peace to those who are far off and to those who are
     near: Raise up in your church witnesses who, after the
@@ -2098,7 +2098,7 @@
 "1011":
   name: Philip
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who has made of one blood all the peoples of
     the earth and sent your Son to preach peace to those
     who are far off and to those who are near: Grant that
@@ -2121,7 +2121,7 @@
 "1014":
   name: Samuel Isaac Joseph Schereschewsky
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who in your providence called Joseph
     Schereschewsky to the ministry of this church and gave
     him the gifts and the perseverance to translate the Holy
@@ -2144,7 +2144,7 @@
 "1015":
   name: Teresa of Avila
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who by your Holy Spirit moved Teresa of
     Avila to manifest to your church the way of perfection:
     Grant us, we pray, to be nourished by her teaching, and
@@ -2166,7 +2166,7 @@
 "1016":
   name: Hugh Latimer and Nicholas Ridley
   rank: OPTIONAL
-  collect: |
+  collect: >
     Keep us, O Lord, constant in faith and zealous in
     witness, that, like your servants Hugh Latimer, Nicholas
     Ridley, and Thomas Cranmer we may live in your fear,
@@ -2188,7 +2188,7 @@
 "1017":
   name: Ignatius of Antioch
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, we praise your Name for your bishop
     and martyr Ignatius of Antioch, who offered himself as
     grain to be ground by the teeth of wild beasts that he
@@ -2211,7 +2211,7 @@
 "1019":
   name: Henry Martyn
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of the nations, who gave to your servant Henry
     Martyn a longing to share your Gospel with all peoples;
     Inspire the church in our own day with that said desire,
@@ -2233,7 +2233,7 @@
 "1026":
   name: Alfred
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who called your servant Alfred to an earthly
     throne that he might advance your heavenly kingdom
     and gave him zeal for your church and love for your
@@ -2263,7 +2263,7 @@
 "1029":
   name: James Hannington
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, by whose providence the blood of the martyrs
     is the seed of the church: Grant that we who remember
     before you James Hannington and his companions, may,
@@ -2286,7 +2286,7 @@
 "1102":
   name: All Souls
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, the Maker and Redeemer of all believers: Grant
     to the faithful departed the unsearchable benefits of the
     passion of your Son; that on the day of his appearing
@@ -2307,7 +2307,7 @@
 "1103":
   name: Richard Hooker
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of truth and peace, you raised up your servant
     Richard Hooker in a day of bitter controversy to defend
     with sound reasoning and great charity the catholic and
@@ -2330,7 +2330,7 @@
 "1106":
   name: William Temple
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of light and love, you illumined your church
     through the witness of your servant William Temple:
     Inspire us, we pray, by his teaching and example, that
@@ -2354,7 +2354,7 @@
 "1107":
   name: Willibrord
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord our God, you call whom you will and send
     them where you choose: We thank you for sending
     your servant Willibrord to be an apostle to the Low
@@ -2379,7 +2379,7 @@
 "1110":
   name: Leo of Rome
   rank: OPTIONAL
-  collect: |
+  collect: >
     O Lord our God, grant that your church, following the
     teaching of your servant Leo of Rome, may hold fast
     the great mystery of our redemption and adore the one
@@ -2402,7 +2402,7 @@
 "1111":
   name: Martin of Tours
   rank: OPTIONAL
-  collect: |
+  collect: >
     Lord God of hosts, you clothed your servant Martin
     the soldier with the spirit of sacrifice and set him as a
     bishop in your church to be a defender of the catholic
@@ -2425,7 +2425,7 @@
 "1112":
   name: Charles Simeon
   rank: OPTIONAL
-  collect: |
+  collect: >
     Loving God, whose unerring wisdom and unbounded
     love order all things: Grant us in all things to see your
     hand; that, following the example and teaching of your
@@ -2448,7 +2448,7 @@
 "1114":
   name: The Consecration of Samuel Seabury
   rank: OPTIONAL
-  collect: |
+  collect: >
     We give you thanks, O Lord our God, for your
     goodness in bestowing upon this church the gift of
     the episcopate; and we pray that, joined together in
@@ -2471,7 +2471,7 @@
 "1116":
   name: Margaret of Scotland
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who called your servant Margaret to an earthly
     throne that she might advance your heavenly kingdom,
     and gave her zeal for your church and love for your
@@ -2494,7 +2494,7 @@
 "1117":
   name: Hugh of Lincoln
   rank: OPTIONAL
-  collect: |
+  collect: >
     Holy God, who endowed your servant Hugh of Lincoln
     with wise and cheerful boldness, and taught him to
     commend the discipline of holy life to kings and princes:
@@ -2517,7 +2517,7 @@
 "1118":
   name: Hilda of Whitby
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of peace, by whose grace the abbess Hilda was
     endowed with gifts of justice, prudence, and strength to
     rule as a wise mother over the nuns and monks of her
@@ -2540,7 +2540,7 @@
 "1119":
   name: Elizabeth of Hungary
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, by your grace your servant Elizabeth
     of Hungary recognized and honored Jesus in the poor
     of this world: Grant that we, following her example,
@@ -2562,7 +2562,7 @@
 "1120":
   name: Edmund
   rank: OPTIONAL
-  collect: |
+  collect: >
     Merciful God, who gave grace and fortitude to Edmund
     to die nobly for your Name: Bestow on us your servants
     the shield of faith, with which we can withstand the
@@ -2583,7 +2583,7 @@
 "1122":
   name: Clive Staples Lewis
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of searing truth and surpassing beauty, we give
     you thanks for Clive Staples Lewis, whose sanctified
     imagination lit fires of faith in young and old alike;
@@ -2605,7 +2605,7 @@
 "1123":
   name: Clement of Rome
   rank: OPTIONAL
-  collect: |
+  collect: >
     Almighty God, who chose your servant Clement of
     Rome to recall the church in Corinth to obedience and
     stability: Grant that your church may be grounded
@@ -2629,7 +2629,7 @@
 "1125":
   name: James Otis Sargent Huntington
   rank: OPTIONAL
-  collect: |
+  collect: >
     Preserve your people, O God, from discouragement
     in the face of adversity, as you did your servant James
     Huntington, knowing that when you have begun a good
@@ -2650,7 +2650,7 @@
 "1128":
   name: Kamehameha and Emma of Hawai‘i
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who called your servants Kamehameha and
     Emma to an earthly throne that they might advance
     your heavenly kingdom, and gave them zeal for your
@@ -2673,7 +2673,7 @@
 "1201":
   name: Charles de Foucauld
   rank: OPTIONAL
-  collect: |
+  collect: >
     Loving God, help us to know you wherever we find
     you and seek to serve you in all people, that with your
     servant Charles de Foucauld, we may be faithful even
@@ -2694,7 +2694,7 @@
 "1202":
   name: Channing Moore Williams
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who in your providence called Channing Moore
     Williams to the ministry of this church and gave him the
     gifts and the perseverance to preach the Gospel in new
@@ -2717,7 +2717,7 @@
 "1204":
   name: John of Damascus
   rank: OPTIONAL
-  collect: |
+  collect: >
     Confirm our minds, O Lord, in the mysteries of the
     true faith, set forth with power by your servant John
     of Damascus; that we, with him, confessing Jesus to be
@@ -2740,7 +2740,7 @@
 "1205":
   name: Clement of Alexandria
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God of unsearchable wisdom, you gave your servant
     Clement grace to understand and teach the truth as it
     is in Jesus Christ, the source of all truth: Grant to your
@@ -2762,7 +2762,7 @@
 "1206":
   name: Nicholas of Myra
   rank: OPTIONAL
-  collect: |
+  collect: >
     Grant, Almighty God, that your church may be so
     inspired by the example of your servant Nicholas of
     Myra, that it may never cease to work for the welfare of
@@ -2785,7 +2785,7 @@
 "1207":
   name: Ambrose of Milan
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, who gave your servant Ambrose grace
     eloquently to proclaim your righteousness in the great
     congregation and fearlessly to bear reproach for the
@@ -2810,7 +2810,7 @@
 "1229":
   name: Thomas Becket
   rank: OPTIONAL
-  collect: |
+  collect: >
     O God, our strength and our salvation, you called your
     servant Thomas Becket to be a shepherd of your people
     and a defender of your church; Keep your household

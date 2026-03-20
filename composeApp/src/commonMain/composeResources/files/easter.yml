@@ -3,7 +3,7 @@
   SUNDAY:
     name: Easter Sunday
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty God, who through your only-begotten Son Jesus
       Christ overcame death and opened to us the gate of
       everlasting life: Grant that we, who celebrate with joy the
@@ -24,7 +24,7 @@
   MONDAY:
     name: Monday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Grant, we pray, Almighty God, that we who celebrate with
       awe the Paschal feast may be found worthy to attain to
       everlasting joys; through Jesus Christ our Lord, who lives
@@ -45,7 +45,7 @@
   TUESDAY:
     name: Tuesday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       O God, who by the glorious resurrection of your Son Jesus
       Christ destroyed death and brought life and immortality to
       light: Grant that we, who have been raised with him, may
@@ -67,7 +67,7 @@
   WEDNESDAY:
     name: Wednesday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       O God, whose blessed Son made himself known to his
       disciples in the breaking of bread: Open the eyes of our faith,
       that we may behold him in all his redeeming work; who lives
@@ -88,7 +88,7 @@
   THURSDAY:
     name: Thursday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty and everlasting God, who in the Paschal mystery
       established the new covenant of reconciliation: Grant that all
       who have been reborn into the fellowship of Christ's Body
@@ -110,7 +110,7 @@
   FRIDAY:
     name: Friday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       Almighty Father, who gave your only Son to die for our sins
       and to rise for our justification: Give us grace so to put away
       the leaven of malice and wickedness, that we may always
@@ -132,7 +132,7 @@
   SATURDAY:
     name: Saturday of the Octave of Easter
     rank: PRINCIPAL
-    collect: |
+    collect: >
       We thank you, heavenly Father, that you have delivered us
       from the dominion of sin and death and brought us into the
       kingdom of your Son; and we pray that, as by his death he
@@ -155,7 +155,7 @@
 - number: 2
   name: '{{day_of_week}} after the Second Sunday of Easter'
   season: EASTER
-  collect: |
+  collect: >
     Almighty and everlasting God, who in the Paschal mystery
     established the new covenant of reconciliation: Grant that all
     who have been reborn into the fellowship of Christ's Body
@@ -259,7 +259,7 @@
 - number: 3
   name: '{{day_of_week}} after the Third Sunday of Easter'
   season: EASTER
-  collect: |
+  collect: >
     O God, whose blessed Son made himself known to his
     disciples in the breaking of bread: Open the eyes of our faith,
     that we may behold him in all his redeeming work; who lives
@@ -361,7 +361,7 @@
 - number: 4
   name: '{{day_of_week}} after the Fourth Sunday of Easter'
   season: EASTER
-  collect: |
+  collect: >
     O God, whose Son Jesus is the good shepherd of your people;
     Grant that when we hear his voice we may know him who
     calls us each by name, and follow where he leads; who, with
@@ -463,7 +463,7 @@
 - number: 5
   name: '{{day_of_week}} after the Fifth Sunday of Easter'
   season: EASTER
-  collect: |
+  collect: >
     Almighty God, whom truly to know is everlasting life: Grant
     us so perfectly to know your Son Jesus Christ to be the way,
     the truth, and the life, that we may steadfastly follow his
@@ -565,7 +565,7 @@
 
 - number: 6
   season: EASTER
-  collect: |
+  collect: >
     Almighty God, whose blessed Son our Savior Jesus Christ
     ascended far above all heavens that he might fill all things:
     Mercifully give us faith to perceive that, according to his
@@ -575,7 +575,7 @@
     everlasting. Amen.
   SUNDAY:
     name: Rogation Sunday
-    collect: |
+    collect: >
       O God, you have prepared for those who love you such good
       things as surpass our understanding: Pour into our hearts such
       love towards you, that we, loving you in all things and above
@@ -597,7 +597,7 @@
   MONDAY:
     name: Rogation Monday
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty God, Lord of heaven and earth: We humbly pray
       that your gracious providence may give and preserve to our
       use the harvests of the land and of the seas, and may prosper
@@ -621,7 +621,7 @@
   TUESDAY:
     name: Rogation Tuesday
     rank: OPTIONAL
-    collect: |
+    collect: >
       Almighty God, whose Son Jesus Christ in his earthly life
       shared our toil and hallowed our labor: Be present with your
       people where they work; make those who carry on the industries
@@ -645,7 +645,7 @@
   WEDNESDAY:
     name: Rogation Wednesday
     rank: OPTIONAL
-    collect: |
+    collect: >
       O merciful Creator, your hand is open wide to satisfy the
       needs of every living creature: Make us always thankful for
       your loving providence; and grant that we, remembering the
@@ -715,7 +715,7 @@
 - number: 7
   name: '{{day_of_week}} after the Seventh Sunday of Easter'
   season: EASTER
-  collect: |
+  collect: >
     O God, the King of glory, you have exalted your only Son
     Jesus Christ with great triumph to your kingdom in heaven:
     Do not leave us comfortless, but send us your Holy Spirit to
@@ -823,7 +823,7 @@
 
 - number: 8
   season: EASTER # Okay, so it's technically PENTECOST, but this will add alleluias
-  collect: |
+  collect: >
     Almighty God, on this day you opened the way of eternal life
     to every race and nation by the promised gift of your Holy
     Spirit: Shed abroad this gift throughout the world by the
@@ -850,7 +850,7 @@
 
 - number: 9
   season: PENTECOST
-  collect: |
+  collect: >
     Almighty and everlasting God, you have given to us
     your servants grace, by the confession of a true faith, to
     acknowledge the glory of the eternal Trinity, and in the

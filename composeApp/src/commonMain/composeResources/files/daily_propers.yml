@@ -2,7 +2,7 @@
   name: St. Andrew
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, who gave such grace to your apostle Andrew
     that he readily obeyed the call of your Son Jesus Christ, and
     brought his brother with him: Give us, who are called by
@@ -25,7 +25,7 @@
   name: St. Thomas
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Everliving God, who strengthened your apostle Thomas with
     firm and certain faith in your Son's resurrection: Grant us so
     perfectly and without doubt to believe in Jesus Christ, our
@@ -47,7 +47,7 @@
   name: Christmas
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     Almighty God, you have given your only-begotten Son to
     take our nature upon him, and to be born [this day] of a pure
     virgin: Grant that we, who have been born again and made
@@ -56,7 +56,7 @@
     with you and the same Spirit be honor and glory, now and
     for ever. Amen.
   vigil:
-    collect: |
+    collect: >
       O God, you have caused this holy night to shine with the
       brightness of the true Light: Grant that we, who have known
       the mystery of that Light on earth, may also enjoy him
@@ -83,7 +83,7 @@
   name: St. Stephen the Protomartyr
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     We give you thanks, O Lord of glory, for the example of the
     first martyr Stephen, who looked up to heaven and prayed
     for his persecutors to your Son Jesus Christ, who stands at
@@ -104,7 +104,7 @@
   name: St. John
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Shed upon your Church, O Lord, the brightness of your light,
     that we, being illumined by the teaching of your apostle and
     evangelist John, may so walk in the light of your truth, that
@@ -126,7 +126,7 @@
   name: Holy Innocents
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     We remember today, O God, the slaughter of the holy
     innocents of Bethlehem by King Herod. Receive, we pray,
     into the arms of your mercy all innocent victims; and by your
@@ -149,7 +149,7 @@
   name: Feast of the Holy Name
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     Eternal Father, who gave to your incarnate Son the holy
     name of Jesus to be the sign of our salvation: Plant in
     every heart, we pray, the love of him who is the Savior
@@ -232,7 +232,7 @@
   name: Epiphany
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     O God, by the leading of a star you manifested your
     only Son to the peoples of the earth: Lead us, who know
     you now by faith, to your presence, where we may see
@@ -340,7 +340,7 @@
   name: Confession of St. Peter
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Almighty Father, who inspired Saint Peter, first among the
     apostles, to confess Jesus as Messiah and Son of the living God:
     Keep your Church steadfast upon the rock of this faith, so that
@@ -362,7 +362,7 @@
   name: Conversion of St. Paul
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     O God, by the preaching of your apostle Paul you have
     caused the light of the Gospel to shine throughout the world:
     Grant, we pray, that we, having his wonderful conversion in
@@ -385,7 +385,7 @@
   name: Candlemas
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     Almighty and everliving God, we humbly pray that, as your
     only-begotten Son was this day presented in the temple, so
     we may be presented to you with pure and clean hearts by
@@ -411,7 +411,7 @@
   name: St. Matthias
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, who in the place of Judas chose your faithful
     servant Matthias to be numbered among the Twelve: Grant that
     your Church, being delivered from false apostles, may always
@@ -433,7 +433,7 @@
   name: St. Joseph
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     O God, who from the family of your servant David raised
     up Joseph to be the guardian of your incarnate Son and the
     spouse of his virgin mother: Give us grace to imitate his
@@ -455,7 +455,7 @@
   name: The Annunciation
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Pour your grace into our hearts, O Lord, that we who have
     known the incarnation of your Son Jesus Christ, announced
     by an angel to the Virgin Mary, may by his cross and passion
@@ -482,7 +482,7 @@
   name: St. Mark
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, by the hand of Mark the evangelist you have
     given to your Church the Gospel of Jesus Christ the Son of
     God: We thank you for this witness, and pray that we may be
@@ -504,7 +504,7 @@
   name: SS. Philip & James
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, who gave to your apostles Philip and James grace
     and strength to bear witness to the truth: Grant that we, being
     mindful of their victory of faith, may glorify in life and death the
@@ -525,7 +525,7 @@
   name: The Visitation
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Father in heaven, by your grace the virgin mother of your
     incarnate Son was blessed in bearing him, but still more
     blessed in keeping your word: Grant us who honor the
@@ -553,7 +553,7 @@
   name: St. Barnabas
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Grant, O God, that we may follow the example of your
     faithful servant Barnabas, who, seeking not his own renown
     but the well-being of your Church, gave generously of his
@@ -576,7 +576,7 @@
   name: Nativity of St. John the Baptist
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, by whose providence your servant John the
     Baptist was wonderfully born, and sent to prepare the way of
     your Son our Savior by preaching repentance: Make us so to
@@ -606,7 +606,7 @@
   name: SS. Peter & Paul
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, whose blessed apostles Peter and Paul glorified
     you by their martyrdom: Grant that your Church, instructed by
     their teaching and example, and knit together in unity by your
@@ -628,7 +628,7 @@
   name: Independence Day
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Lord God Almighty, in whose Name the founders of this
     country won liberty for themselves and for us, and lit the
     torch of freedom for nations then unborn: Grant that we and
@@ -651,7 +651,7 @@
   name: St. Mary Magdalene
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, whose blessed Son restored Mary Magdalene
     to health of body and of mind, and called her to be a witness
     of his resurrection: Mercifully grant that by your grace we
@@ -673,7 +673,7 @@
   name: St. James
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     O gracious God, we remember before you today your servant
     and apostle James, first among the Twelve to suffer martyrdom
     for the Name of Jesus Christ; and we pray that you will pour
@@ -697,7 +697,7 @@
   name: The Transfiguration
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     O God, who on the holy mount revealed to chosen witnesses
     your well-beloved Son, wonderfully transfigured, in raiment
     white and glistening: Mercifully grant that we, being
@@ -725,7 +725,7 @@
   name: Mary, Mother of God
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     O God, you have taken to yourself the blessed Virgin Mary,
     mother of your incarnate Son: Grant that we, who have been
     redeemed by his blood, may share with her the glory of your
@@ -747,7 +747,7 @@
   name: St. Bartholomew
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty and everlasting God, who gave to your apostle
     Bartholomew grace truly to believe and to preach your
     Word: Grant that your Church may love what he believed
@@ -769,7 +769,7 @@
   name: Roodmas
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, whose Son our Savior Jesus Christ was lifted
     high upon the cross that he might draw the whole world to
     himself: Mercifully grant that we, who glory in the mystery
@@ -796,7 +796,7 @@
   name: St. Matthew
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     We thank you, heavenly Father, for the witness of your apostle
     and evangelist Matthew to the Gospel of your Son our Savior;
     and we pray that, after his example, we may with ready wills
@@ -818,7 +818,7 @@
   name: Michaelmas
   color: WHITE
   rank: FEAST
-  collect: |
+  collect: >
     Everlasting God, you have ordained and constituted in a
     wonderful order the ministries of angels and mortals:
     Mercifully grant that, as your holy angels always serve and
@@ -841,7 +841,7 @@
   name: St. Luke
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Almighty God, who inspired your servant Luke the physician
     to set forth in the Gospel the love and healing power of your
     Son: Graciously continue in your Church this love and power
@@ -863,7 +863,7 @@
   name: St. James of Jerusalem
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     Grant, O God, that, following the example of your servant
     James the Just, brother of our Lord, your Church may give
     itself continually to prayer and to the reconciliation of all
@@ -885,7 +885,7 @@
   name: SS. Simon & Jude
   color: RED
   rank: FEAST
-  collect: |
+  collect: >
     O God, we thank you for the glorious company of the apostles,
     and especially on this day for Simon and Jude; and we pray
     that, as they were faithful and zealous in their mission, so we
@@ -907,7 +907,7 @@
   name: All Saints' Day
   color: WHITE
   rank: PRINCIPAL
-  collect: |
+  collect: >
     Almighty God, you have knit together your elect in one
     communion and fellowship in the mystical body of your Son
     Christ our Lord: Give us grace so to follow your blessed saints
