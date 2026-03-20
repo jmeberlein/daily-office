@@ -20,14 +20,25 @@
         </activity>
 
         <receiver
-            android:name=".DailyOfficeWidgetReceiver"
+            android:name=".SmallWidgetReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/daily_office_widget_info" />
+                android:resource="@xml/small_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".LargeWidgetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/large_widget_info" />
         </receiver>
     </application>
 
