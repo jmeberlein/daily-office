@@ -5,12 +5,12 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.bcponline.dailyoffice.model.LiturgicalColor
 import com.bcponline.dailyoffice.model.LiturgicalDay
-import com.bcponline.dailyoffice.model.Office
 import com.bcponline.dailyoffice.data.FileRegistry
 import com.bcponline.dailyoffice.data.ProperFetcher
 import com.bcponline.dailyoffice.data.ProperParser
@@ -21,28 +21,27 @@ import kotlinx.coroutines.launch
 import kotlinx.datetime.*
 import kotlin.time.Clock
 
-private val THANKSGIVING_DAY = LiturgicalDay(
-    morning = Office.THANKSGIVING_MORNING,
-    evening = Office.THANKSGIVING_EVENING
-)
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun App() {
-    val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
+    val now = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault())
+    val today = now.date
+    val initialDate = if (now.hour < 4) today.minus(1, kotlinx.datetime.DateTimeUnit.DAY) else today
+    val initialService = if (now.hour < 4 || now.hour >= 16) 1 else 0
 
-    var selectedDate by remember { mutableStateOf(today) }
+    var selectedDate by remember { mutableStateOf(initialDate) }
     var showDatePicker by remember { mutableStateOf(false) }
     var showMenu by remember { mutableStateOf(false) }
     var condensed by remember { mutableStateOf(false) }
     var forceTwoReadings by remember { mutableStateOf(Settings.forceTwoReadings) }
     var useOptionalSaints by remember { mutableStateOf(Settings.useOptionalSaints) }
     var useExtraFeasts by remember { mutableStateOf(Settings.useExtraFeasts) }
-    var liturgicalDay by remember { mutableStateOf<LiturgicalDay>(THANKSGIVING_DAY) }
-    var selectedService by remember { mutableStateOf(0) }
+    var liturgicalDay by remember { mutableStateOf<LiturgicalDay?>(null) }
+    var selectedService by remember { mutableStateOf(initialService) }
     val scope = rememberCoroutineScope()
 
     LaunchedEffect(selectedDate, forceTwoReadings, useOptionalSaints, useExtraFeasts) {
+        liturgicalDay = null
         scope.launch {
             FileRegistry.loadFiles("daily_propers")
             if (useOptionalSaints) FileRegistry.loadFiles("optional_feasts")
@@ -53,9 +52,9 @@ fun App() {
     }
 
     val currentOfficeColor = when (selectedService) {
-        0 -> liturgicalDay.morning.color
-        else -> liturgicalDay.evening.color
-    }
+        0 -> liturgicalDay?.morning?.color
+        else -> liturgicalDay?.evening?.color
+    } ?: LiturgicalColor.NONE
     val bg = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFFFFFBFE) else currentOfficeColor.background
     val fg = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFF1C1B1F) else currentOfficeColor.onBackground
     val primary = if (currentOfficeColor == LiturgicalColor.NONE) Color(0xFF1C1B1F) else currentOfficeColor.primary
@@ -148,10 +147,15 @@ fun App() {
                     }
                 }
                 Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                    when (selectedService) {
-                        0 -> Matins(selectedDate, liturgicalDay, condensed)
-                        1 -> Vespers(selectedDate, liturgicalDay, condensed)
-                        2 -> Compline(selectedDate, liturgicalDay, condensed)
+                    val day = liturgicalDay
+                    if (day == null) {
+                        Box(modifier = Modifier.fillMaxWidth().padding(64.dp), contentAlignment = Alignment.Center) {
+                            CircularProgressIndicator()
+                        }
+                    } else when (selectedService) {
+                        0 -> Matins(selectedDate, day, condensed)
+                        1 -> Vespers(selectedDate, day, condensed)
+                        2 -> Compline(selectedDate, day, condensed)
                     }
                 }
             }

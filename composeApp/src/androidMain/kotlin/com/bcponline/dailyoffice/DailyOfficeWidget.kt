@@ -26,18 +26,26 @@ import kotlinx.coroutines.runBlocking
 class DailyOfficeWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: android.content.Context, id: GlanceId) {
         val now = java.time.LocalDateTime.now()
-        val date = kotlinx.datetime.LocalDate(now.year, now.monthValue, now.dayOfMonth)
+        val isEarlyMorning = now.hour < 4
+        val date = if (isEarlyMorning)
+            java.time.LocalDate.now().minusDays(1).let {
+                kotlinx.datetime.LocalDate(it.year, it.monthValue, it.dayOfMonth)
+            }
+        else
+            kotlinx.datetime.LocalDate(now.year, now.monthValue, now.dayOfMonth)
+
         val day: LiturgicalDay = runBlocking {
             FileRegistry.loadFiles("daily_propers")
             ProperParser.loadFilesForDate(date)
             ProperFetcher.getProperForDate(date, forceTwoReadings = Settings.forceTwoReadings, useOptionalFeasts = Settings.useOptionalSaints, useExtraFeasts = Settings.useExtraFeasts)
         }
-        val office = if (now.hour < 12) day.morning else day.evening
+        val office = if (isEarlyMorning || now.hour >= 16) day.evening else day.morning
         val bg = if (office.color == LiturgicalColor.NONE)
             androidx.compose.ui.graphics.Color(0xFFFFFBFE)
         else
             office.color.background
 
+        WidgetUpdateWorker.schedule(context)
         provideContent { WidgetContent(date.toString(), office.name, office.psalter, office.firstReading, office.secondReading, bg) }
     }
 }
