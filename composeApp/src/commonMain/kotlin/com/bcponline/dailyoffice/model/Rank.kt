@@ -7,5 +7,6 @@ enum class Rank {
     OPTIONAL,
     FEAST,
     SUNDAY,
-    PRINCIPAL
+    PRINCIPAL,
+    HOLY_WEEK
 }

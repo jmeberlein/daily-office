@@ -2,7 +2,7 @@
   season: EASTER
   SUNDAY:
     name: Easter Sunday
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       Almighty God, who through your only-begotten Son Jesus
       Christ overcame death and opened to us the gate of
@@ -23,7 +23,7 @@
         - Luke 24:13-35, or John 20:19-23
   MONDAY:
     name: Monday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       Grant, we pray, Almighty God, that we who celebrate with
       awe the Paschal feast may be found worthy to attain to
@@ -44,7 +44,7 @@
       - Mark 16:1-8
   TUESDAY:
     name: Tuesday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       O God, who by the glorious resurrection of your Son Jesus
       Christ destroyed death and brought life and immortality to
@@ -66,7 +66,7 @@
       - Mark 16:9-20
   WEDNESDAY:
     name: Wednesday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       O God, whose blessed Son made himself known to his
       disciples in the breaking of bread: Open the eyes of our faith,
@@ -87,7 +87,7 @@
       - Matt. 28:1-16
   THURSDAY:
     name: Thursday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       Almighty and everlasting God, who in the Paschal mystery
       established the new covenant of reconciliation: Grant that all
@@ -109,7 +109,7 @@
       - Matt. 28:16-20
   FRIDAY:
     name: Friday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       Almighty Father, who gave your only Son to die for our sins
       and to rise for our justification: Give us grace so to put away
@@ -131,7 +131,7 @@
       - Luke 24:1-12
   SATURDAY:
     name: Saturday of the Octave of Easter
-    rank: PRINCIPAL
+    rank: HOLY_WEEK
     collect: >
       We thank you, heavenly Father, that you have delivered us
       from the dominion of sin and death and brought us into the
