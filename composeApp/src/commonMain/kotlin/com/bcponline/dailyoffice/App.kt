@@ -68,7 +68,7 @@ fun App() {
             )
         }
 
-        Column(Modifier.fillMaxSize()) {
+        Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             // ── Header ────────────────────────────────────────────────
             Surface(tonalElevation = 2.dp, color = office?.let { officeColorsFor(it).bg } ?: MaterialTheme.colorScheme.surface) {
                 Column(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)) {
