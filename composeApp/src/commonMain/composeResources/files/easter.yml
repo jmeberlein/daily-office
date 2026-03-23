@@ -863,6 +863,7 @@
     color: WHITE
     rank: PRINCIPAL
     vigil:
+      name: Vigil of Trinity Sunday
       psalter: "104"
       readings:
         - Ecclus. 45:15-25

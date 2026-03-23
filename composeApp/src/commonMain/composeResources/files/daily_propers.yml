@@ -56,6 +56,7 @@
     with you and the same Spirit be honor and glory, now and
     for ever. Amen.
   vigil:
+    name: Christmas Eve
     collect: >
       O God, you have caused this holy night to shine with the
       brightness of the true Light: Grant that we, who have known
@@ -215,6 +216,7 @@
   morning:
     psalter: 2,110:1-5(6-7)
   evening:
+    name: Vigil of the Epiphany
     psalter: 29,98
     readings:
     - Isa. 66:18-23
@@ -392,6 +394,7 @@
     Jesus Christ our Lord; who lives and reigns with you and the
     Holy Spirit, one God, now and for ever. Amen.
   vigil:
+    name: Vigil of Candlemas
     psalter: 113,122
     readings:
     - 1 Sam. 1:20-28a
@@ -463,6 +466,7 @@
     reigns with you, in the unity of the Holy Spirit, one God, now
     and for ever. Amen.
   vigil:
+    name: Vigil of the Annunciation
     psalter: 8,138
     readings:
     - Gen. 3:1-15
@@ -534,6 +538,7 @@
     lives and reigns with you and the Holy Spirit, one God, for
     ever and ever. Amen.
   vigil:
+    name: Vigil of the Visitation
     psalter: "132"
     readings:
     - Isa. 11:1-10
@@ -587,6 +592,7 @@
     Lord, who lives and reigns with you and the Holy Spirit, one
     God, for ever and ever. Amen.
   vigil:
+    name: Vigil of St. John the Baptist
     psalter: "103"
     readings:
     - Sir. 48:1-11
@@ -706,6 +712,7 @@
     you, O Holy Spirit, lives and reigns, one God, for ever and
     ever. Amen.
   vigil:
+    name: Vigil of the Transfiguration
     psalter: "84"
     readings:
     - 1 Kgs. 19:1-12
@@ -777,6 +784,7 @@
     follow him; who lives and reigns with you and the Holy
     Spirit, one God, in glory everlasting. Amen.
   vigil:
+    name: Vigil of Roodmas
     psalter: 46,87
     readings:
     - 1 Kgs. 8:22-30
@@ -916,6 +924,7 @@
     you; through Jesus Christ our Lord, who with you and the Holy
     Spirit lives and reigns, one God, in glory everlasting. Amen.
   vigil:
+    name: All Hallows' Eve
     psalter: "34"
     readings:
     - Wis. 3:1-9
