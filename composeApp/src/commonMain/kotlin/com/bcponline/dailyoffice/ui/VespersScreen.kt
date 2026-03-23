@@ -26,28 +26,28 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.todayIn
 import kotlin.time.Clock
 
-// ── Matins canticle catalogue ─────────────────────────────────────────────────
+// ── Vespers canticle catalogue ────────────────────────────────────────────────
 
-private val BENEDICTUS    = CanticleInfo(Res.string.benedictus,        "Benedictus",              "Luke 1:68-79")
-private val TE_DEUM       = CanticleInfo(Res.string.te_deum,           "Te Deum Laudamus",        "")
-private val FIRST_ISAIAH  = CanticleInfo(Res.string.first_isaiah,      "1st Song of Isaiah",      "Isaiah 12:2-6")
-private val SECOND_ISAIAH = CanticleInfo(Res.string.second_isaiah,     "2nd Song of Isaiah",      "Isaiah 55:6-11")
-private val THIRD_ISAIAH  = CanticleInfo(Res.string.third_isaiah,      "3rd Song of Isaiah",      "Isaiah 60:1-3,11a,14c,18-19")
-private val WILDERNESS    = CanticleInfo(Res.string.wilderness,        "Song of the Wilderness",  "Isaiah 35:1-7,10")
-private val HANNAH        = CanticleInfo(Res.string.hannah,            "Song of Hannah",          "1 Samuel 2:1-18")
-private val HOSEA         = CanticleInfo(Res.string.hosea,             "Song of Hosea",           "Hosea 6:1-3")
-private val KYRIE         = CanticleInfo(Res.string.kyrie_pantokrator, "Kyrie Pantokrator",       "Manasseh 1-2,4,6-7,11-15")
-private val WISDOM        = CanticleInfo(Res.string.wisdom,            "Song of Wisdom",          "Wisdom 10:15-19,20b-21")
-private val PILGRIMAGE    = CanticleInfo(Res.string.pilgrimage,        "Song of Pilgrimage",      "Sirach 51:13-16,20b-22")
-private val PRAISE        = CanticleInfo(Res.string.praise,            "Song of Praise",          "Three Children 29-34")
-private val EZEKIEL       = CanticleInfo(Res.string.ezekiel,           "Song of Ezekiel",         "Ezekiel 36:24-28")
-private val JUDITH        = CanticleInfo(Res.string.judith,            "Song of Judith",          "Judith 16:13-16")
-private val MOSES         = CanticleInfo(Res.string.moses,             "Song of Moses",           "Exodus 15:1-6,11-13,17-18")
+private val MAGNIFICAT    = CanticleInfo(Res.string.magnificat,     "Magnificat",                  "Luke 1:46-55")
+private val NUNC_DIMITTIS = CanticleInfo(Res.string.nunc_dimittis,  "Nunc Dimittis",               "Luke 2:29-32")
+private val SPIRIT        = CanticleInfo(Res.string.spirit,         "Song of the Spirit",          "Revelation 22:12-17")
+private val REDEEMED      = CanticleInfo(Res.string.redeemed,       "Song of the Redeemed",        "Revelation 15:3-4")
+private val LAMB          = CanticleInfo(Res.string.lamb,           "Song to the Lamb",            "Revelation 4:11; 5:9-10,13")
+private val ADOPTION      = CanticleInfo(Res.string.adoption,       "Song of Our Adoption",        "Ephesians 1:3-10")
+private val FAITH         = CanticleInfo(Res.string.faith,          "Song of Faith",               "")
+private val HUMILITY      = CanticleInfo(Res.string.humility,       "Song of Christ's Humility",   "Philippians 2:6-11")
+private val HEAVENLY_CITY = CanticleInfo(Res.string.heavenly_city,  "Song of the Heavenly City",   "Revelation 21:22-26; 22:1-4")
+// Shared with matins
+private val MOSES_V       = CanticleInfo(Res.string.moses,          "Song of Moses",               "Exodus 15:1-6,11-13,17-18")
+private val SECOND_ISAIAH_V = CanticleInfo(Res.string.second_isaiah, "2nd Song of Isaiah",         "Isaiah 55:6-11")
+private val THIRD_ISAIAH_V  = CanticleInfo(Res.string.third_isaiah,  "3rd Song of Isaiah",         "Isaiah 60:1-3,11a,14c,18-19")
+private val FIRST_ISAIAH_V  = CanticleInfo(Res.string.first_isaiah,  "1st Song of Isaiah",         "Isaiah 12:2-6")
+private val PRAISE_V        = CanticleInfo(Res.string.praise,         "Song of Praise",             "Three Children 29-34")
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 
 @Composable
-fun MatinsScreen(vm: OfficeViewModel = viewModel { OfficeViewModel() }) {
+fun VespersScreen(vm: OfficeViewModel = viewModel { OfficeViewModel() }) {
     val state by vm.state.collectAsStateWithLifecycle()
     val settings by vm.settings.collectAsStateWithLifecycle()
     val today = remember { Clock.System.todayIn(TimeZone.currentSystemDefault()) }
@@ -63,8 +63,8 @@ fun MatinsScreen(vm: OfficeViewModel = viewModel { OfficeViewModel() }) {
                 Button(onClick = { vm.load(today, settings) }) { Text("Retry") }
             }
         }
-        is OfficeUiState.Success -> MatinsContent(
-            office = s.day.morning,
+        is OfficeUiState.Success -> VespersContent(
+            office = s.day.evening,
             date = s.date,
             settings = settings
         )
@@ -74,7 +74,7 @@ fun MatinsScreen(vm: OfficeViewModel = viewModel { OfficeViewModel() }) {
 // ── Content ───────────────────────────────────────────────────────────────────
 
 @Composable
-private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSettings) {
+private fun VespersContent(office: Office, date: LocalDate, settings: OfficeSettings) {
     val colors = officeColorsFor(office)
     OfficeTheme(colors) {
         Column(
@@ -84,12 +84,13 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 20.dp, vertical = 24.dp)
         ) {
+            // ── Invitatory ────────────────────────────────────────────
             OfficeSectionHeader("Invitatory and Psalter", colors.primary)
-            LiturgyLine("Officiant", "Lord, open our lips.", colors.onBg)
-            LiturgyLine("People", "And our mouth shall proclaim your praise.", colors.onBg)
+            LiturgyLine("Officiant", "O God, make speed to save us.", colors.onBg)
+            LiturgyLine("People", "O Lord, make haste to help us.", colors.onBg)
             LiturgyLine("All", "Glory to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and will be for ever. Amen.${if (office.season != Season.LENT) " Alleluia, alleluia." else ""}", colors.onBg)
             Spacer(Modifier.height(16.dp))
-            CanticleBlock(openingCanticleFor(office), colors.primary, colors.onBg)
+            PhosHilaronBlock(colors.primary, colors.onBg)
             Spacer(Modifier.height(16.dp))
 
             OfficeSubHeader("Appointed Psalms: ${office.psalter.ifBlank { "—" }}", colors.primary)
@@ -102,12 +103,13 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
             OfficeSectionHeader("The Lessons", colors.primary)
             val hasFirstReading = office.firstReading.isNotBlank()
             val hasSecondReading = office.secondReading.isNotBlank()
+            val canticles = vespersCanticlesFor(office, date)
 
             if (hasFirstReading) {
                 ReadingLabel("First Reading", office.firstReading, colors.onBg)
                 Spacer(Modifier.height(12.dp))
                 if (!settings.condensed) {
-                    CanticleBlock(firstCanticleFor(office, date), colors.primary, colors.onBg)
+                    CanticleBlock(canticles.first, colors.primary, colors.onBg)
                     Spacer(Modifier.height(12.dp))
                 }
             }
@@ -115,7 +117,7 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
                 ReadingLabel(if (hasFirstReading) "Second Reading" else "The Reading", office.secondReading, colors.onBg)
                 Spacer(Modifier.height(12.dp))
             }
-            CanticleBlock(listOf(BENEDICTUS), colors.primary, colors.onBg)
+            CanticleBlock(canticles.second, colors.primary, colors.onBg)
 
             if (!settings.condensed) {
                 Spacer(Modifier.height(16.dp))
@@ -140,7 +142,7 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
                 Spacer(Modifier.height(16.dp))
                 OfficeSubHeader("Suffrages", colors.primary)
                 Spacer(Modifier.height(8.dp))
-                SuffragesBlock(colors.onBg, colors.primary)
+                VespersSuffragesBlock(colors.onBg, colors.primary)
             }
 
             Spacer(Modifier.height(16.dp))
@@ -152,7 +154,7 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
                 Spacer(Modifier.height(16.dp))
                 OfficeSubHeader("Intercessions", colors.primary)
                 Spacer(Modifier.height(8.dp))
-                IntercessionsBlock(colors.onBg, colors.primary, matinsPrayerForMission)
+                VespersIntercessionsBlock(colors.onBg, colors.primary)
             }
 
             Spacer(Modifier.height(24.dp))
@@ -168,31 +170,57 @@ private fun MatinsContent(office: Office, date: LocalDate, settings: OfficeSetti
 
 // ── Canticle selection ────────────────────────────────────────────────────────
 
-private fun openingCanticleFor(office: Office): List<CanticleInfo> = when {
-    office.season == Season.EASTER -> listOf(CanticleInfo(Res.string.pascha_nostrum, "Pascha Nostrum", "1 Cor 5:7-8; Rom 6:9-11; 1 Cor 15:20-22"))
-    office.season == Season.LENT   -> listOf(CanticleInfo(Res.string.psalm_95_lent,  "Psalm 95 (Venite)", ""))
-    else                           -> listOf(CanticleInfo(Res.string.psalm_95,        "Psalm 95 (Venite)", ""))
-}
+/** Returns (firstCanticle options, secondCanticle options). Second is always Magnificat unless Sunday/Feast. */
+private fun vespersCanticlesFor(office: Office, date: LocalDate): Pair<List<CanticleInfo>, List<CanticleInfo>> {
+    val isHighFeast = office.rank == Rank.FEAST || office.rank == Rank.PRINCIPAL
+    val isSunday = date.dayOfWeek == DayOfWeek.SUNDAY
 
-private fun firstCanticleFor(office: Office, date: LocalDate): List<CanticleInfo> {
-    if (office.rank == Rank.FEAST || office.rank == Rank.PRINCIPAL) return listOf(TE_DEUM)
-    return when {
-        office.season == Season.ADVENT    && date.dayOfWeek == DayOfWeek.SUNDAY -> listOf(THIRD_ISAIAH, WILDERNESS)
-        office.season == Season.CHRISTMAS && date.dayOfWeek == DayOfWeek.SUNDAY -> listOf(HANNAH, TE_DEUM)
-        office.season == Season.LENT      && date.dayOfWeek == DayOfWeek.SUNDAY -> listOf(HOSEA, KYRIE)
+    // Only one reading → just Magnificat
+    if (office.firstReading.isBlank()) return Pair(emptyList(), listOf(MAGNIFICAT))
+
+    val second = if (isHighFeast || isSunday) listOf(NUNC_DIMITTIS) else listOf(MAGNIFICAT)
+
+    val first: List<CanticleInfo> = when {
+        isHighFeast || isSunday -> when {
+            office.season == Season.ADVENT -> listOf(SPIRIT, MAGNIFICAT)
+            else -> listOf(MAGNIFICAT)
+        }
         else -> when (date.dayOfWeek) {
-            DayOfWeek.MONDAY    -> listOf(WISDOM, FIRST_ISAIAH)
-            DayOfWeek.TUESDAY   -> listOf(PILGRIMAGE, PRAISE)
-            DayOfWeek.WEDNESDAY -> if (office.season == Season.LENT) listOf(EZEKIEL, KYRIE) else listOf(EZEKIEL, THIRD_ISAIAH)
-            DayOfWeek.THURSDAY  -> listOf(JUDITH, MOSES)
-            DayOfWeek.FRIDAY    -> listOf(KYRIE, SECOND_ISAIAH)
-            DayOfWeek.SATURDAY  -> listOf(PRAISE)
-            else                -> listOf(TE_DEUM)
+            DayOfWeek.MONDAY    -> listOf(REDEEMED, MOSES_V)
+            DayOfWeek.TUESDAY   -> listOf(LAMB, SECOND_ISAIAH_V)
+            DayOfWeek.WEDNESDAY -> listOf(ADOPTION, PRAISE_V)
+            DayOfWeek.THURSDAY  -> listOf(FAITH, THIRD_ISAIAH_V)
+            DayOfWeek.FRIDAY    -> listOf(HUMILITY, PRAISE_V)
+            DayOfWeek.SATURDAY  -> listOf(HEAVENLY_CITY, FIRST_ISAIAH_V)
+            else                -> listOf(MAGNIFICAT)
         }
     }
+    return Pair(first, second)
 }
 
 // ── Local composables ─────────────────────────────────────────────────────────
+
+@Composable
+private fun PhosHilaronBlock(primary: Color, textColor: Color) {
+    var selected by remember { mutableIntStateOf(0) }
+    TabRow(
+        selectedTabIndex = selected,
+        containerColor = Color.Transparent,
+        contentColor = primary,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        listOf("Prose", "Metrical").forEachIndexed { i, title ->
+            Tab(selected == i, onClick = { selected = i },
+                text = { Text(title, style = MaterialTheme.typography.labelMedium) })
+        }
+    }
+    Spacer(Modifier.height(8.dp))
+    val info = if (selected == 0)
+        CanticleInfo(Res.string.phos_hilaron, "Phos Hilaron", "")
+    else
+        CanticleInfo(Res.string.phos_hilaron_metrical, "Phos Hilaron", "")
+    CanticleBlock(listOf(info), primary, textColor)
+}
 
 @Composable
 private fun ReadingLabel(label: String, citation: String, textColor: Color) {
@@ -209,7 +237,7 @@ private fun ReadingLabel(label: String, citation: String, textColor: Color) {
 }
 
 @Composable
-private fun SuffragesBlock(textColor: Color, primary: Color) {
+private fun VespersSuffragesBlock(textColor: Color, primary: Color) {
     var selected by remember { mutableIntStateOf(0) }
     TabRow(
         selectedTabIndex = selected,
@@ -223,21 +251,35 @@ private fun SuffragesBlock(textColor: Color, primary: Color) {
         }
     }
     Spacer(Modifier.height(8.dp))
-    val lines = if (selected == 0) suffrageALines else suffrageBLines
-    lines.forEach { (v, r) ->
-        LiturgyLine("V.", v, textColor)
-        LiturgyLine("R.", r, textColor)
+    if (selected == 0) {
+        suffrageALines.forEach { (v, r) ->
+            LiturgyLine("V.", v, textColor)
+            LiturgyLine("R.", r, textColor)
+        }
+    } else {
+        vespersSuffrageBLines.forEach { (petition, response) ->
+            Text(petition, color = textColor, style = MaterialTheme.typography.bodyMedium)
+            Text(response, color = textColor, style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
+            Spacer(Modifier.height(4.dp))
+        }
     }
+}
+
+@Composable
+private fun VespersIntercessionsBlock(textColor: Color, primary: Color) {
+    IntercessionsBlock(textColor, primary, vespersPrayerForMission)
 }
 
 // ── Static texts ──────────────────────────────────────────────────────────────
 
-private val suffrageBLines = listOf(
-    "Save your people, Lord, and bless your inheritance;" to "Govern and uphold them, now and always.",
-    "Day by day we bless you;" to "We praise your name for ever.",
-    "Lord, keep us from all sin today;" to "Have mercy upon us, Lord, have mercy.",
-    "Lord, show us your love and mercy;" to "For we put our trust in you.",
-    "In you, Lord, is our hope;" to "And we shall never hope in vain."
+private val vespersSuffrageBLines = listOf(
+    "That this evening may be holy, good, and peaceful," to "We entreat you, O Lord.",
+    "That your holy angels may lead us in paths of peace and goodwill," to "We entreat you, O Lord.",
+    "That we may be pardoned and forgiven for our sins and offenses," to "We entreat you, O Lord.",
+    "That there may be peace to your Church and to the whole world," to "We entreat you, O Lord.",
+    "That we may depart this life in your faith and fear, and not be condemned before the great judgment seat of Christ," to "We entreat you, O Lord.",
+    "That we may be bound together by your Holy Spirit in the communion of [________ and] all your saints, entrusting one another and all our life to Christ," to "We entreat you, O Lord."
 )
 
-private val matinsPrayerForMission = "Almighty and everlasting God, by whose Spirit the whole body of your faithful people is governed and sanctified: Receive our supplications and prayers which we offer before you for all members of your holy Church, that in their vocation and ministry they may truly and devoutly serve you; through our Lord and Savior Jesus Christ. Amen."
+private val vespersPrayerForMission = "Keep watch, dear Lord, with those who work, or watch, or weep this night, and give your angels charge over those who sleep. Tend the sick, Lord Christ; give rest to the weary, bless the dying, soothe the suffering, pity the afflicted, shield the joyous; and all for your love's sake. Amen."
+

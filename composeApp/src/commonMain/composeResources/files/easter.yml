@@ -805,11 +805,10 @@
     morning:
       psalter: 107:33-43,108:1-6(7-13)
     evening:
+      name: Vigil of Pentecost
+      color: RED
       psalter: "33"
-      year_1_readings:
-        - Exod. 19:3-8a, 16-20
-        - 1 Pet. 2:4-10
-      year_2_readings:
+      readings:
         - Exod. 19:3-8a, 16-20
         - 1 Pet. 2:4-10
     year_1_readings:
