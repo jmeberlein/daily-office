@@ -100,6 +100,7 @@
     name: The Baptism of Our Lord Jesus Christ
     color: WHITE
     vigil:
+      name: Vigil of the Baptism of Our Lord Jesus Christ
       psalter: "104"
       readings:
         - Isa. 61:1-9

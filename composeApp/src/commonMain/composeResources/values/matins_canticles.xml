@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="psalm_95">
+Come, let us sing to the LORD; \*  
+&#160;&#160;&#160;&#160;let us shout for joy to the Rock of our salvation.  
+Let us come before his presence with thanksgiving \*  
+&#160;&#160;&#160;&#160;and raise a loud shout to him with psalms.
+
+For the LORD is a great God, \*  
+&#160;&#160;&#160;&#160;and a great King above all gods.  
+In his hand are the caverns of the earth, \*  
+&#160;&#160;&#160;&#160;and the heights of the hills are his also.  
+The sea is his, for he made it, \*  
+&#160;&#160;&#160;&#160;and his hands have molded the dry land.
+
+Come, let us bow down, and bend the knee, \*  
+&#160;&#160;&#160;&#160;and kneel before the LORD our Maker.  
+For he is our God,  
+and we are the people of his pasture and the sheep of his hand. \*  
+&#160;&#160;&#160;&#160;Oh, that today you would hearken to his voice!
+    </string>
+    <string name="psalm_95_lent">
+Come, let us sing to the LORD; \*  
+&#160;&#160;&#160;&#160;let us shout for joy to the Rock of our salvation.  
+Let us come before his presence with thanksgiving \*  
+&#160;&#160;&#160;&#160;and raise a loud shout to him with psalms.
+
+For the LORD is a great God, \*  
+&#160;&#160;&#160;&#160;and a great King above all gods.  
+In his hand are the caverns of the earth, \*  
+&#160;&#160;&#160;&#160;and the heights of the hills are his also.  
+The sea is his, for he made it, \*  
+&#160;&#160;&#160;&#160;and his hands have molded the dry land.
+
+Come, let us bow down, and bend the knee, \*  
+&#160;&#160;&#160;&#160;and kneel before the LORD our Maker.  
+For he is our God,  
+and we are the people of his pasture and the sheep of his hand. \*  
+&#160;&#160;&#160;&#160;Oh, that today you would hearken to his voice!
+
+Harden not your hearts,  
+as your forebears did in the wilderness, \*  
+&#160;&#160;&#160;&#160;at Meribah, and on that day at Massah,  
+&#160;&#160;&#160;&#160;when they tempted me.  
+They put me to the test, \*  
+&#160;&#160;&#160;&#160;though they had seen my works.
+
+Forty years long I detested that generation and said, \*  
+&#160;&#160;&#160;&#160;"This people are wayward in their hearts;  
+&#160;&#160;&#160;&#160;they do not know my ways."  
+So I swore in my wrath, \*  
+&#160;&#160;&#160;&#160;"They shall not enter into my rest."
+    </string>
+    <string name="pascha_nostrum">
+Alleluia.  
+Christ our Passover has been sacrificed for us; \*  
+&#160;&#160;&#160;&#160;therefore let us keep the feast,  
+Not with the old leaven, the leaven of malice and evil, \*  
+&#160;&#160;&#160;&#160;but with the unleavened bread of sincerity and truth. Alleluia.
+
+Christ being raised from the dead will never die again; \*  
+&#160;&#160;&#160;&#160;death no longer has dominion over him.  
+The death that he died, he died to sin, once for all; \*  
+&#160;&#160;&#160;&#160;but the life he lives, he lives to God.  
+So also consider yourselves dead to sin, \*  
+&#160;&#160;&#160;&#160;and alive to God in Jesus Christ our Lord. Alleluia.
+
+Christ has been raised from the dead, \*  
+&#160;&#160;&#160;&#160;the first fruits of those who have fallen asleep.  
+For since by a man came death, \*  
+&#160;&#160;&#160;&#160;by a man has come also the resurrection of the dead.  
+For as in Adam all die, \*  
+&#160;&#160;&#160;&#160;so also in Christ shall all be made alive. Alleluia.
+    </string>
+    <string name="benedictus">
+Blessed be the Lord, the God of Israel; \*  
+&#160;&#160;&#160;&#160;he has come to his people and set them free.  
+He has raised up for us a mighty savior, \*  
+&#160;&#160;&#160;&#160;born of the house of his servant David.  
+Through his holy prophets he promised of old,  
+that he would save us from our enemies, \*  
+&#160;&#160;&#160;&#160;from the hands of all who hate us.  
+He promised to show mercy to our fathers \*  
+&#160;&#160;&#160;&#160;and to remember his holy covenant.  
+This was the oath he swore to our father Abraham, \*  
+&#160;&#160;&#160;&#160;to set us free from the hands of our enemies,  
+Free to worship him without fear, \*  
+&#160;&#160;&#160;&#160;holy and righteous in his sight  
+&#160;&#160;&#160;&#160;all the days of our life.   
+You, my child, shall be called the prophet of the Most High, \*  
+&#160;&#160;&#160;&#160;for you will go before the Lord to prepare his way,  
+To give his people knowledge of salvation \*  
+&#160;&#160;&#160;&#160;by the forgiveness of their sins.  
+In the tender compassion of our God \*  
+&#160;&#160;&#160;&#160;the dawn from on high shall break upon us,  
+To shine on those who dwell in darkness and the shadow of death, \*  
+&#160;&#160;&#160;&#160;and to guide our feet into the way of peace.
+
+Glory to the Father, and to the Son, and to the Holy Spirit: \*  
+&#160;&#160;&#160;&#160;as it was in the beginning, is now, and will be for ever. Amen. 
+    </string>
     <string name="te_deum">
 You are God: we praise you;  
 You are the Lord; we acclaim you;  

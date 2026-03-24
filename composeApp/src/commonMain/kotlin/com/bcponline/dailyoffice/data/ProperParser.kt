@@ -62,6 +62,10 @@ object ProperParser {
         val name = day.get<YamlScalar>("name")?.content ?: ""
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: "FERIA")
         val color = day.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: LiturgicalColor.NONE
+        val morningName = day.get<YamlMap>("morning")?.get<YamlScalar>("name")?.content ?: name
+        val eveningName = day.get<YamlMap>("evening")?.get<YamlScalar>("name")?.content ?: name
+        val morningColor = day.get<YamlMap>("morning")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
+        val eveningColor = day.get<YamlMap>("evening")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
         val morningPsalter = day.get<YamlMap>("morning")?.get<YamlScalar>("psalter")?.content ?: ""
         val eveningPsalter = day.get<YamlMap>("evening")?.get<YamlScalar>("psalter")?.content ?: ""
         val morningReadings = day.get<YamlMap>("morning")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content!! } ?:
@@ -96,57 +100,57 @@ object ProperParser {
 
             return LiturgicalDay(
                 Office(
-                    name,
+                    morningName,
                     rank,
                     Season.NONE,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
                     morningCollect,
-                    color
+                    morningColor
                 ),
                 Office(
-                    name,
+                    eveningName,
                     rank,
                     Season.NONE,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
                     eveningCollect,
-                    color
+                    eveningColor
                 ),
                 Office(
-                    name,
+                    day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name,
                     rank,
                     Season.NONE,
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
                     vigilCollect,
-                    color
+                    day.get<YamlMap>("vigil")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
                 )
             )
         } else {
             return LiturgicalDay(
                 Office(
-                    name,
+                    morningName,
                     rank,
                     Season.NONE,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
                     morningCollect,
-                    color
+                    morningColor
                 ),
                 Office(
-                    name,
+                    eveningName,
                     rank,
                     Season.NONE,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
                     eveningCollect,
-                    color
+                    eveningColor
                 )
             )
         }
@@ -159,13 +163,18 @@ object ProperParser {
         val name = day.get<YamlScalar>("name")?.content ?: week.get<YamlScalar>("name")?.content ?: ""
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: week.get<YamlScalar>("rank")?.content ?: if (today.dayOfWeek == DayOfWeek.SUNDAY) "SUNDAY" else "FERIA")
         val season = Season.valueOf(day.get<YamlScalar>("season")?.content ?: week.get<YamlScalar>("season")?.content ?: "NONE")
-        val color = day.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: when (season) {
+        val seasonColor = when (season) {
             Season.CHRISTMAS, Season.EASTER -> LiturgicalColor.WHITE
             Season.LENT -> LiturgicalColor.PURPLE
             Season.ADVENT -> LiturgicalColor.BLUE
             Season.EPIPHANY, Season.PENTECOST -> LiturgicalColor.GREEN
             Season.NONE -> LiturgicalColor.NONE
         }
+        val color = day.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: seasonColor
+        val morningName = day.get<YamlMap>("morning")?.get<YamlScalar>("name")?.content ?: name
+        val eveningName = day.get<YamlMap>("evening")?.get<YamlScalar>("name")?.content ?: name
+        val morningColor = day.get<YamlMap>("morning")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
+        val eveningColor = day.get<YamlMap>("evening")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
         val morningPsalter = day.get<YamlMap>("morning")?.get<YamlScalar>("psalter")?.content ?: ""
         val eveningPsalter = day.get<YamlMap>("evening")?.get<YamlScalar>("psalter")?.content ?: ""
         val morningReadings = day.get<YamlMap>("morning")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content!! } ?:
@@ -200,57 +209,57 @@ object ProperParser {
 
             return LiturgicalDay(
                 Office(
-                    name,
+                    morningName,
                     rank,
                     season,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
                     morningCollect,
-                    color
+                    morningColor
                 ),
                 Office(
-                    name,
+                    eveningName,
                     rank,
                     season,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
                     eveningCollect,
-                    color
+                    eveningColor
                 ),
                 Office(
-                    name,
+                    day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name,
                     rank,
                     season,
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
                     vigilCollect,
-                    color
+                    day.get<YamlMap>("vigil")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
                 )
             )
         } else {
             return LiturgicalDay(
                 Office(
-                    name,
+                    morningName,
                     rank,
                     season,
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
                     morningCollect,
-                    color
+                    morningColor
                 ),
                 Office(
-                    name,
+                    eveningName,
                     rank,
                     season,
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
                     eveningCollect,
-                    color
+                    eveningColor
                 )
             )
         }
