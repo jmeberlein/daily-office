@@ -18,23 +18,6 @@ import kotlinx.datetime.LocalDate
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
-private val LORD_S_PRAYER = """
-Our Father, who art in heaven,
-     hallowed be thy Name,
-     thy kingdom come,
-     thy will be done,
-         on earth as it is in heaven.
-Give us this day our daily bread.
-And forgive us our trespasses,
-     as we forgive those
-         who trespass against us.
-And lead us not into temptation,
-     but deliver us from evil.
-For thine is the kingdom,
-     and the power, and the glory,
-     for ever and ever. Amen.
-""".trim()
-
 /** Converts the XML canticle format to plain displayable text. */
 private fun String.formatCanticle(): String =
     this.replace("\\*", "*")
@@ -45,7 +28,10 @@ private fun String.formatCanticle(): String =
 fun MatinsScreen(vm: MatinsViewModel = viewModel { MatinsViewModel() }) {
     val day by vm.day.collectAsStateWithLifecycle()
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
+    val showCreed by vm.showCreed.collectAsStateWithLifecycle()
+    val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
     val firstCanticleTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
+    val suffragesTab by vm.suffragesTab.collectAsStateWithLifecycle()
 
     val office = day?.morning
     val color = office?.color ?: LiturgicalColor.NONE
@@ -122,11 +108,19 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                 }
                 Spacer(Modifier.height(8.dp))
                 CanticleBlock("Benedictus", com.bcponline.dailyoffice.data.CanticleRepository.BENEDICTUS)
+                if (showCreed) {
+                    Spacer(Modifier.height(8.dp))
+                    LabeledText("Apostles' Creed", APOSTLES_CREED)
+                }
             }
 
             // Prayers
             OfficeSection("Prayers") {
-                OfficeText(LORD_S_PRAYER)
+                OfficeText(LORDS_PRAYER)
+                if (showSuffrages) {
+                    Spacer(Modifier.height(8.dp))
+                    SuffragesBlock(suffragesTab, SUFFRAGES_B_MATINS) { vm.suffragesTab.value = it }
+                }
                 if (office.collect.isNotBlank()) {
                     Spacer(Modifier.height(8.dp))
                     LabeledText("Collect", office.collect)

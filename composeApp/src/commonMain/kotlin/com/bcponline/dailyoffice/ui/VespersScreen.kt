@@ -25,6 +25,9 @@ private fun String.formatCanticle(): String =
 fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
     val day by vm.day.collectAsStateWithLifecycle()
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
+    val showCreed by vm.showCreed.collectAsStateWithLifecycle()
+    val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
+    val suffragesTab by vm.suffragesTab.collectAsStateWithLifecycle()
     val phosTab by vm.phosHilaronTab.collectAsStateWithLifecycle()
     val firstTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
     val secondTab by vm.secondCanticleTab.collectAsStateWithLifecycle()
@@ -136,11 +139,19 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                             ).formatCanticle())
                         }
                     }
+                    if (showCreed) {
+                        Spacer(Modifier.height(8.dp))
+                        LabeledText("Apostles' Creed", APOSTLES_CREED)
+                    }
                 }
 
                 // Prayers
                 OfficeSection("Prayers") {
-                    OfficeText(LORD_S_PRAYER)
+                    OfficeText(LORDS_PRAYER)
+                    if (showSuffrages) {
+                        Spacer(Modifier.height(8.dp))
+                        SuffragesBlock(suffragesTab, SUFFRAGES_B_VESPERS) { vm.suffragesTab.value = it }
+                    }
                     if (office.collect.isNotBlank()) {
                         Spacer(Modifier.height(8.dp))
                         LabeledText("Collect", office.collect)
@@ -150,23 +161,6 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
         }
     }
 }
-
-private val LORD_S_PRAYER = """
-Our Father, who art in heaven,
-     hallowed be thy Name,
-     thy kingdom come,
-     thy will be done,
-         on earth as it is in heaven.
-Give us this day our daily bread.
-And forgive us our trespasses,
-     as we forgive those
-         who trespass against us.
-And lead us not into temptation,
-     but deliver us from evil.
-For thine is the kingdom,
-     and the power, and the glory,
-     for ever and ever. Amen.
-""".trim()
 
 @Composable
 private fun OfficeSection(title: String, content: @Composable ColumnScope.() -> Unit) {

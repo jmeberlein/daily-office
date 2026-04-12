@@ -15,15 +15,20 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
     val useOptionalFeasts by vm.useOptionalFeasts.collectAsStateWithLifecycle()
     val useExtraFeasts by vm.useExtraFeasts.collectAsStateWithLifecycle()
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
+    val showCreed by vm.showCreed.collectAsStateWithLifecycle()
+    val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
 
     Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+
+        Text("Settings", style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.padding(vertical = 8.dp))
+
         SettingToggle(
             label = "Always use two readings",
             description = "Pull from the alternate year to provide two readings every day",
             checked = forceTwoReadings,
             onCheckedChange = vm::setForceTwoReadings
         )
-        HorizontalDivider(Modifier.padding(vertical = 8.dp))
         SettingToggle(
             label = "Optional feasts",
             description = "Include optional feasts from the BCP calendar",
@@ -37,13 +42,20 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
             onCheckedChange = vm::setUseExtraFeasts,
             enabled = useOptionalFeasts
         )
+
         HorizontalDivider(Modifier.padding(vertical = 8.dp))
-        SettingToggle(
-            label = "First canticle",
-            description = "Include a canticle between the two readings at Morning Prayer",
-            checked = showFirstCanticle,
-            onCheckedChange = vm::setShowFirstCanticle
-        )
+        Text("Order of Service", style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.padding(vertical = 8.dp))
+
+        ServiceItem("Invitatory", enabled = false, checked = true, onCheckedChange = {})
+        ServiceItem("Psalms", enabled = false, checked = true, onCheckedChange = {})
+        ServiceItem("Readings", enabled = false, checked = true, onCheckedChange = {})
+        ServiceItem("First canticle", enabled = true, checked = showFirstCanticle, onCheckedChange = vm::setShowFirstCanticle)
+        ServiceItem("Second canticle / Benedictus / Magnificat", enabled = false, checked = true, onCheckedChange = {})
+        ServiceItem("Apostles' Creed", enabled = true, checked = showCreed, onCheckedChange = vm::setShowCreed)
+        ServiceItem("Lord's Prayer", enabled = false, checked = true, onCheckedChange = {})
+        ServiceItem("Suffrages", enabled = true, checked = showSuffrages, onCheckedChange = vm::setShowSuffrages)
+        ServiceItem("Collect", enabled = false, checked = true, onCheckedChange = {})
     }
 }
 
@@ -68,6 +80,25 @@ private fun SettingToggle(
                 color = if (enabled) MaterialTheme.colorScheme.onSurfaceVariant
                         else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.38f))
         }
+        Switch(checked = checked, onCheckedChange = onCheckedChange, enabled = enabled)
+    }
+}
+
+@Composable
+private fun ServiceItem(
+    label: String,
+    enabled: Boolean,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit
+) {
+    Row(
+        Modifier.fillMaxWidth().padding(vertical = 2.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(label, style = MaterialTheme.typography.bodyMedium,
+            color = if (enabled) MaterialTheme.colorScheme.onSurface
+                    else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f))
         Switch(checked = checked, onCheckedChange = onCheckedChange, enabled = enabled)
     }
 }

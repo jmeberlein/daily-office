@@ -17,12 +17,17 @@ class VespersViewModel : ViewModel() {
 
     val showFirstCanticle = SettingsRepository.showFirstCanticle
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+    val showCreed = SettingsRepository.showCreed
+        .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+    val showSuffrages = SettingsRepository.showSuffrages
+        .stateIn(viewModelScope, SharingStarted.Eagerly, true)
 
     // Tab state — reset on date change
     val phosHilaronTab = MutableStateFlow(0)
     val firstCanticleTab = MutableStateFlow(0)
     val secondCanticleTab = MutableStateFlow(0)
     val linkedTab = MutableStateFlow(0) // Advent Sunday only
+    val suffragesTab = MutableStateFlow(0)
 
     init {
         viewModelScope.launch {
@@ -41,6 +46,7 @@ class VespersViewModel : ViewModel() {
                     firstCanticleTab.value = 0
                     secondCanticleTab.value = 0
                     linkedTab.value = 0
+                    suffragesTab.value = 0
                 }
         }
     }

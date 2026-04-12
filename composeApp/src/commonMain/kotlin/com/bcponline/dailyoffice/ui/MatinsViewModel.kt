@@ -17,8 +17,13 @@ class MatinsViewModel : ViewModel() {
 
     val showFirstCanticle = SettingsRepository.showFirstCanticle
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+    val showCreed = SettingsRepository.showCreed
+        .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+    val showSuffrages = SettingsRepository.showSuffrages
+        .stateIn(viewModelScope, SharingStarted.Eagerly, true)
 
     val firstCanticleTab = MutableStateFlow(0)
+    val suffragesTab = MutableStateFlow(0)
 
     init {
         viewModelScope.launch {
@@ -34,6 +39,7 @@ class MatinsViewModel : ViewModel() {
                     ProperParser.loadFilesForDate(date)
                     _day.value = ProperFetcher.getProperForDate(date, force, optional, extra)
                     firstCanticleTab.value = 0
+                    suffragesTab.value = 0
                 }
         }
     }
