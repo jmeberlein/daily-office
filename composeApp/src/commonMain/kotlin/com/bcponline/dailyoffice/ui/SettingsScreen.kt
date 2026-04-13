@@ -1,6 +1,8 @@
 package com.bcponline.dailyoffice.ui
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -17,45 +19,54 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
     val showCreed by vm.showCreed.collectAsStateWithLifecycle()
     val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
+    val showIntercessions by vm.showIntercessions.collectAsStateWithLifecycle()
 
-    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-
-        Text("Settings", style = MaterialTheme.typography.titleMedium,
-            modifier = Modifier.padding(vertical = 8.dp))
-
-        SettingToggle(
-            label = "Always use two readings",
-            description = "Pull from the alternate year to provide two readings every day",
-            checked = forceTwoReadings,
-            onCheckedChange = vm::setForceTwoReadings
-        )
-        SettingToggle(
-            label = "Optional feasts",
-            description = "Include optional feasts from the BCP calendar",
-            checked = useOptionalFeasts,
-            onCheckedChange = vm::setUseOptionalFeasts
-        )
-        SettingToggle(
-            label = "Additional saints",
-            description = "Add more saints to the calendar (requires optional feasts)",
-            checked = useExtraFeasts,
-            onCheckedChange = vm::setUseExtraFeasts,
-            enabled = useOptionalFeasts
-        )
-
-        HorizontalDivider(Modifier.padding(vertical = 8.dp))
-        Text("Order of Service", style = MaterialTheme.typography.titleMedium,
-            modifier = Modifier.padding(vertical = 8.dp))
-
-        ServiceItem("Invitatory", enabled = false, checked = true, onCheckedChange = {})
-        ServiceItem("Psalms", enabled = false, checked = true, onCheckedChange = {})
-        ServiceItem("Readings", enabled = false, checked = true, onCheckedChange = {})
-        ServiceItem("First canticle", enabled = true, checked = showFirstCanticle, onCheckedChange = vm::setShowFirstCanticle)
-        ServiceItem("Second canticle / Benedictus / Magnificat", enabled = false, checked = true, onCheckedChange = {})
-        ServiceItem("Apostles' Creed", enabled = true, checked = showCreed, onCheckedChange = vm::setShowCreed)
-        ServiceItem("Lord's Prayer", enabled = false, checked = true, onCheckedChange = {})
-        ServiceItem("Suffrages", enabled = true, checked = showSuffrages, onCheckedChange = vm::setShowSuffrages)
-        ServiceItem("Collect", enabled = false, checked = true, onCheckedChange = {})
+    var tab by remember { mutableStateOf(0) }
+    Column {
+        TabRow(selectedTabIndex = tab) {
+            Tab(selected = tab == 0, onClick = { tab = 0 }, text = { Text("Settings") })
+            Tab(selected = tab == 1, onClick = { tab = 1 }, text = { Text("Order of Service") })
+        }
+        Column(
+            Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            when (tab) {
+                0 -> {
+                    SettingToggle(
+                        label = "Always use two readings",
+                        description = "Pull from the alternate year to provide two readings every day",
+                        checked = forceTwoReadings,
+                        onCheckedChange = vm::setForceTwoReadings
+                    )
+                    SettingToggle(
+                        label = "Optional feasts",
+                        description = "Include optional feasts from the BCP calendar",
+                        checked = useOptionalFeasts,
+                        onCheckedChange = vm::setUseOptionalFeasts
+                    )
+                    SettingToggle(
+                        label = "Additional saints",
+                        description = "Add more saints to the calendar (requires optional feasts)",
+                        checked = useExtraFeasts,
+                        onCheckedChange = vm::setUseExtraFeasts,
+                        enabled = useOptionalFeasts
+                    )
+                }
+                1 -> {
+                    ServiceItem("Invitatory", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Psalms", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Readings", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("First canticle", enabled = true, checked = showFirstCanticle, onCheckedChange = vm::setShowFirstCanticle)
+                    ServiceItem("Second canticle / Benedictus / Magnificat", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Apostles' Creed", enabled = true, checked = showCreed, onCheckedChange = vm::setShowCreed)
+                    ServiceItem("Lord's Prayer", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Suffrages", enabled = true, checked = showSuffrages, onCheckedChange = vm::setShowSuffrages)
+                    ServiceItem("Collect", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Intercessions", enabled = true, checked = showIntercessions, onCheckedChange = vm::setShowIntercessions)
+                }
+            }
+        }
     }
 }
 

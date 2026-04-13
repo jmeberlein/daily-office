@@ -5,9 +5,11 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.StringResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
-fun SuffragesBlock(selectedTab: Int, optionB: String, onTabSelected: (Int) -> Unit) {
+fun SuffragesBlock(selectedTab: Int, optionB: StringResource, onTabSelected: (Int) -> Unit) {
     Column {
         TabRow(selectedTabIndex = selectedTab) {
             Tab(selected = selectedTab == 0, onClick = { onTabSelected(0) },
@@ -17,7 +19,7 @@ fun SuffragesBlock(selectedTab: Int, optionB: String, onTabSelected: (Int) -> Un
         }
         Spacer(Modifier.height(8.dp))
         Text(
-            if (selectedTab == 0) SUFFRAGES_A else optionB,
+            stringResource(if (selectedTab == 0) ServiceTexts.SUFFRAGES_A else optionB),
             style = MaterialTheme.typography.bodyMedium
         )
     }

@@ -25,6 +25,7 @@ object CanticleRepository {
     val WISDOM: StringResource = Res.string.wisdom
     val PILGRIMAGE: StringResource = Res.string.pilgrimage
     val PRAISE: StringResource = Res.string.praise
+    val CREATION: StringResource = Res.string.creation
     val EZEKIEL: StringResource = Res.string.ezekiel
     val JUDITH: StringResource = Res.string.judith
     val MOSES: StringResource = Res.string.moses

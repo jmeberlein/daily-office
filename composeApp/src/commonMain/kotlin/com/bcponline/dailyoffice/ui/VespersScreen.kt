@@ -10,12 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.bcponline.dailyoffice.data.CanticleRepository
+import com.bcponline.dailyoffice.data.Canticle
 import com.bcponline.dailyoffice.data.VespersCanticleSelector
 import com.bcponline.dailyoffice.data.VespersCanticles
 import com.bcponline.dailyoffice.model.LiturgicalColor
 import com.bcponline.dailyoffice.model.Season
-import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
 private fun String.formatCanticle(): String =
@@ -27,6 +26,8 @@ fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
     val showCreed by vm.showCreed.collectAsStateWithLifecycle()
     val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
+    val showIntercessions by vm.showIntercessions.collectAsStateWithLifecycle()
+    val intercessionsTab by vm.intercessionsTab.collectAsStateWithLifecycle()
     val suffragesTab by vm.suffragesTab.collectAsStateWithLifecycle()
     val phosTab by vm.phosHilaronTab.collectAsStateWithLifecycle()
     val firstTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
@@ -80,8 +81,8 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                     Spacer(Modifier.height(8.dp))
                     CanticleChoiceBlock(
                         options = listOf(
-                            "Phos Hilaron" to CanticleRepository.PHOS_HILARON,
-                            "Phos Hilaron (Metrical)" to CanticleRepository.PHOS_HILARON_METRICAL
+                            VespersCanticleSelector.PHOS_HILARON,
+                            VespersCanticleSelector.PHOS_HILARON_METRICAL
                         ),
                         selectedTab = phosTab,
                         onTabSelected = { vm.phosHilaronTab.value = it }
@@ -105,7 +106,7 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                                 LabeledText("Reading", office.secondReading)
                             }
                             Spacer(Modifier.height(8.dp))
-                            CanticleBlock("Magnificat", CanticleRepository.MAGNIFICAT)
+                            CanticleBlock(VespersCanticleSelector.MAGNIFICAT)
                         }
                         is VespersCanticles.Independent -> {
                             LabeledText("First Reading", office.firstReading)
@@ -117,44 +118,47 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                             CanticleChoiceBlock(canticles.second, secondTab) { vm.secondCanticleTab.value = it }
                         }
                         is VespersCanticles.Linked -> {
-                            // Advent Sunday: tab 0 = Song of the Spirit + Magnificat,
-                            //                tab 1 = Magnificat + Nunc Dimittis
                             LabeledText("First Reading", office.firstReading)
                             Spacer(Modifier.height(8.dp))
                             TabRow(selectedTabIndex = linkedTab) {
-                                Tab(selected = linkedTab == 0, onClick = { vm.linkedTab.value = 0 },
-                                    text = { Text("Song of the Spirit", style = MaterialTheme.typography.labelMedium) })
-                                Tab(selected = linkedTab == 1, onClick = { vm.linkedTab.value = 1 },
-                                    text = { Text("Magnificat", style = MaterialTheme.typography.labelMedium) })
+                                canticles.pairs.forEachIndexed { i, (first, _) ->
+                                    Tab(selected = linkedTab == i, onClick = { vm.linkedTab.value = i },
+                                        text = { Text(first.name, style = MaterialTheme.typography.labelMedium) })
+                                }
                             }
                             Spacer(Modifier.height(8.dp))
-                            OfficeText(stringResource(
-                                if (linkedTab == 0) CanticleRepository.SPIRIT else CanticleRepository.MAGNIFICAT
-                            ).formatCanticle())
+                            val (firstCanticle, secondCanticle) = canticles.pairs[linkedTab]
+                            if (firstCanticle.reference.isNotBlank())
+                                Text(firstCanticle.reference, style = MaterialTheme.typography.labelSmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Spacer(Modifier.height(2.dp))
+                            OfficeText(stringResource(firstCanticle.resource).formatCanticle())
                             Spacer(Modifier.height(8.dp))
                             LabeledText("Second Reading", office.secondReading)
                             Spacer(Modifier.height(8.dp))
-                            OfficeText(stringResource(
-                                if (linkedTab == 0) CanticleRepository.MAGNIFICAT else CanticleRepository.NUNC_DIMITTIS
-                            ).formatCanticle())
+                            CanticleBlock(secondCanticle)
                         }
                     }
                     if (showCreed) {
                         Spacer(Modifier.height(8.dp))
-                        LabeledText("Apostles' Creed", APOSTLES_CREED)
+                        LabeledText("Apostles' Creed", stringResource(ServiceTexts.APOSTLES_CREED))
                     }
                 }
 
                 // Prayers
                 OfficeSection("Prayers") {
-                    OfficeText(LORDS_PRAYER)
+                    OfficeText(stringResource(ServiceTexts.LORDS_PRAYER))
                     if (showSuffrages) {
                         Spacer(Modifier.height(8.dp))
-                        SuffragesBlock(suffragesTab, SUFFRAGES_B_VESPERS) { vm.suffragesTab.value = it }
+                        SuffragesBlock(suffragesTab, ServiceTexts.SUFFRAGES_B_VESPERS) { vm.suffragesTab.value = it }
                     }
                     if (office.collect.isNotBlank()) {
                         Spacer(Modifier.height(8.dp))
                         LabeledText("Collect", office.collect)
+                    }
+                    if (showIntercessions) {
+                        Spacer(Modifier.height(8.dp))
+                        IntercessionsBlock(intercessionsTab, ServiceTexts.PRAYER_FOR_MISSION_VESPERS) { vm.intercessionsTab.value = it }
                     }
                 }
             }
@@ -187,28 +191,40 @@ private fun OfficeText(text: String) {
 }
 
 @Composable
-private fun CanticleBlock(title: String, resource: StringResource) {
-    LabeledText(title, stringResource(resource).formatCanticle())
+private fun CanticleBlock(canticle: Canticle) {
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Text(canticle.name, style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.primary)
+        if (canticle.reference.isNotBlank())
+            Text(canticle.reference, style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        OfficeText(stringResource(canticle.resource).formatCanticle())
+    }
 }
 
 @Composable
 private fun CanticleChoiceBlock(
-    options: List<Pair<String, StringResource>>,
+    options: List<Canticle>,
     selectedTab: Int,
     onTabSelected: (Int) -> Unit
 ) {
     if (options.size == 1) {
-        CanticleBlock(options[0].first, options[0].second)
+        CanticleBlock(options[0])
         return
     }
     Column {
         TabRow(selectedTabIndex = selectedTab) {
-            options.forEachIndexed { i, (name, _) ->
+            options.forEachIndexed { i, canticle ->
                 Tab(selected = selectedTab == i, onClick = { onTabSelected(i) },
-                    text = { Text(name, style = MaterialTheme.typography.labelMedium) })
+                    text = { Text(canticle.name, style = MaterialTheme.typography.labelMedium) })
             }
         }
         Spacer(Modifier.height(8.dp))
-        OfficeText(stringResource(options[selectedTab].second).formatCanticle())
+        val canticle = options[selectedTab]
+        if (canticle.reference.isNotBlank())
+            Text(canticle.reference, style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Spacer(Modifier.height(2.dp))
+        OfficeText(stringResource(canticle.resource).formatCanticle())
     }
 }

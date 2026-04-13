@@ -10,12 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.bcponline.dailyoffice.data.Canticle
 import com.bcponline.dailyoffice.data.MatinsCanticleSelector
 import com.bcponline.dailyoffice.model.LiturgicalColor
 import com.bcponline.dailyoffice.model.Office
 import com.bcponline.dailyoffice.model.Season
 import kotlinx.datetime.LocalDate
-import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
 /** Converts the XML canticle format to plain displayable text. */
@@ -30,6 +30,8 @@ fun MatinsScreen(vm: MatinsViewModel = viewModel { MatinsViewModel() }) {
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
     val showCreed by vm.showCreed.collectAsStateWithLifecycle()
     val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
+    val showIntercessions by vm.showIntercessions.collectAsStateWithLifecycle()
+    val intercessionsTab by vm.intercessionsTab.collectAsStateWithLifecycle()
     val firstCanticleTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
     val suffragesTab by vm.suffragesTab.collectAsStateWithLifecycle()
 
@@ -81,10 +83,7 @@ People: And our mouth shall proclaim your praise.
 All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and will be for ever. Amen.$alleluia
                 """.trimIndent())
                 Spacer(Modifier.height(8.dp))
-                CanticleBlock(
-                    title = if (office.season == Season.EASTER) "Pascha Nostrum" else "Psalm 95",
-                    resource = MatinsCanticleSelector.invitatoryResource(office)
-                )
+                CanticleBlock(MatinsCanticleSelector.invitatoryCanticle(office))
                 if (office.psalter.isNotBlank()) {
                     Spacer(Modifier.height(8.dp))
                     LabeledText("Psalms", office.psalter)
@@ -107,23 +106,27 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                     LabeledText("Reading", office.secondReading)
                 }
                 Spacer(Modifier.height(8.dp))
-                CanticleBlock("Benedictus", com.bcponline.dailyoffice.data.CanticleRepository.BENEDICTUS)
+                CanticleBlock(MatinsCanticleSelector.BENEDICTUS)
                 if (showCreed) {
                     Spacer(Modifier.height(8.dp))
-                    LabeledText("Apostles' Creed", APOSTLES_CREED)
+                    LabeledText("Apostles' Creed", stringResource(ServiceTexts.APOSTLES_CREED))
                 }
             }
 
             // Prayers
             OfficeSection("Prayers") {
-                OfficeText(LORDS_PRAYER)
+                OfficeText(stringResource(ServiceTexts.LORDS_PRAYER))
                 if (showSuffrages) {
                     Spacer(Modifier.height(8.dp))
-                    SuffragesBlock(suffragesTab, SUFFRAGES_B_MATINS) { vm.suffragesTab.value = it }
+                    SuffragesBlock(suffragesTab, ServiceTexts.SUFFRAGES_B_MATINS) { vm.suffragesTab.value = it }
                 }
                 if (office.collect.isNotBlank()) {
                     Spacer(Modifier.height(8.dp))
                     LabeledText("Collect", office.collect)
+                }
+                if (showIntercessions) {
+                    Spacer(Modifier.height(8.dp))
+                    IntercessionsBlock(intercessionsTab, ServiceTexts.PRAYER_FOR_MISSION_MATINS) { vm.intercessionsTab.value = it }
                 }
             }
         }
@@ -156,30 +159,41 @@ private fun OfficeText(text: String) {
 }
 
 @Composable
-private fun CanticleBlock(title: String, resource: StringResource) {
-    val text = stringResource(resource).formatCanticle()
-    LabeledText(title, text)
+private fun CanticleBlock(canticle: Canticle) {
+    val text = stringResource(canticle.resource).formatCanticle()
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Text(canticle.name, style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.primary)
+        if (canticle.reference.isNotBlank())
+            Text(canticle.reference, style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        OfficeText(text)
+    }
 }
 
 @Composable
 private fun CanticleChoiceBlock(
-    options: List<Pair<String, StringResource>>,
+    options: List<Canticle>,
     selectedTab: Int,
     onTabSelected: (Int) -> Unit
 ) {
     if (options.size == 1) {
-        CanticleBlock(options[0].first, options[0].second)
+        CanticleBlock(options[0])
         return
     }
     Column {
         TabRow(selectedTabIndex = selectedTab) {
-            options.forEachIndexed { i, (name, _) ->
+            options.forEachIndexed { i, canticle ->
                 Tab(selected = selectedTab == i, onClick = { onTabSelected(i) },
-                    text = { Text(name, style = MaterialTheme.typography.labelMedium) })
+                    text = { Text(canticle.name, style = MaterialTheme.typography.labelMedium) })
             }
         }
         Spacer(Modifier.height(8.dp))
-        val (_, resource) = options[selectedTab]
-        OfficeText(stringResource(resource).formatCanticle())
+        val canticle = options[selectedTab]
+        if (canticle.reference.isNotBlank())
+            Text(canticle.reference, style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Spacer(Modifier.height(2.dp))
+        OfficeText(stringResource(canticle.resource).formatCanticle())
     }
 }

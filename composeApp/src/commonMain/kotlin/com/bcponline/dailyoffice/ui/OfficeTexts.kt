@@ -1,92 +1,18 @@
 package com.bcponline.dailyoffice.ui
 
-val LORDS_PRAYER = """
-Our Father, who art in heaven,
-     hallowed be thy Name,
-     thy kingdom come,
-     thy will be done,
-         on earth as it is in heaven.
-Give us this day our daily bread.
-And forgive us our trespasses,
-     as we forgive those
-         who trespass against us.
-And lead us not into temptation,
-     but deliver us from evil.
-For thine is the kingdom,
-     and the power, and the glory,
-     for ever and ever. Amen.
-""".trim()
+import dailyoffice.composeapp.generated.resources.Res
+import dailyoffice.composeapp.generated.resources.*
+import org.jetbrains.compose.resources.StringResource
 
-val APOSTLES_CREED = """
-I believe in God, the Father almighty,
-     creator of heaven and earth.
-I believe in Jesus Christ, his only Son, our Lord.
-     He was conceived by the power of the Holy Spirit
-          and born of the Virgin Mary.
-     He suffered under Pontius Pilate,
-          was crucified, died, and was buried.
-     He descended to the dead.
-     On the third day he rose again.
-     He ascended into heaven,
-          and is seated at the right hand of the Father.
-     He will come again to judge the living and the dead.
-I believe in the Holy Spirit,
-     the holy catholic Church,
-     the communion of saints,
-     the forgiveness of sins,
-     the resurrection of the body,
-     and the life everlasting. Amen.
-""".trim()
-
-val SUFFRAGES_A = """
-V.    Show us your mercy, O Lord;
-R.    And grant us your salvation.
-V.    Clothe your ministers with righteousness;
-R.    Let your people sing with joy.
-V.    Give peace, O Lord, in all the world;
-R.    For only in you can we live in safety.
-V.    Lord, keep this nation under your care;
-R.    And guide us in the way of justice and truth.
-V.    Let your way be known upon earth;
-R.    Your saving health among all nations.
-V.    Let not the needy, O Lord, be forgotten;
-R.    Nor the hope of the poor be taken away.
-V.    Create in us clean hearts, O God;
-R.    And sustain us with your Holy Spirit.
-""".trim()
-
-val SUFFRAGES_B_MATINS = """
-V.    Save your people, Lord, and bless your inheritance;
-R.    Govern and uphold them, now and always.
-V.    Day by day we bless you;
-R.    We praise your name for ever.
-V.    Lord, keep us from all sin today;
-R.    Have mercy upon us, Lord, have mercy.
-V.    Lord, show us your love and mercy;
-R.    For we put our trust in you.
-V.    In you, Lord, is our hope;
-R.    And we shall never hope in vain.
-""".trim()
-
-val SUFFRAGES_B_VESPERS = """
-That this evening may be holy, good, and peaceful,
-We entreat you, O Lord.
-
-That your holy angels may lead us in paths of peace and goodwill,
-We entreat you, O Lord.
-
-That we may be pardoned and forgiven for our sins and offenses,
-We entreat you, O Lord.
-
-That there may be peace to your Church and to the whole world,
-We entreat you, O Lord.
-
-That we may depart this life in your faith and fear,
-and not be condemned before the great judgment seat of Christ,
-We entreat you, O Lord.
-
-That we may be bound together by your Holy Spirit in
-the communion of [________ and] all your saints,
-entrusting one another and all our life to Christ,
-We entreat you, O Lord.
-""".trim()
+object ServiceTexts {
+    val LORDS_PRAYER: StringResource = Res.string.lords_prayer
+    val APOSTLES_CREED: StringResource = Res.string.apostles_creed
+    val SUFFRAGES_A: StringResource = Res.string.suffrages_a
+    val SUFFRAGES_B_MATINS: StringResource = Res.string.suffrages_b_matins
+    val SUFFRAGES_B_VESPERS: StringResource = Res.string.suffrages_b_vespers
+    val INTERCESSIONS_I: StringResource = Res.string.intercessions_i
+    val INTERCESSIONS_III: StringResource = Res.string.intercessions_iii
+    val INTERCESSIONS_IV: StringResource = Res.string.intercessions_iv
+    val PRAYER_FOR_MISSION_MATINS: StringResource = Res.string.prayer_for_mission_matins
+    val PRAYER_FOR_MISSION_VESPERS: StringResource = Res.string.prayer_for_mission_vespers
+}

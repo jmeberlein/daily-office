@@ -19,6 +19,8 @@ class SettingsViewModel : ViewModel() {
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
     val showSuffrages = SettingsRepository.showSuffrages
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+    val showIntercessions = SettingsRepository.showIntercessions
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
 
     fun setForceTwoReadings(v: Boolean) = SettingsRepository.setForceTwoReadings(v)
     fun setUseOptionalFeasts(v: Boolean) = SettingsRepository.setUseOptionalFeasts(v)
@@ -26,4 +28,5 @@ class SettingsViewModel : ViewModel() {
     fun setShowFirstCanticle(v: Boolean) = SettingsRepository.setShowFirstCanticle(v)
     fun setShowCreed(v: Boolean) = SettingsRepository.setShowCreed(v)
     fun setShowSuffrages(v: Boolean) = SettingsRepository.setShowSuffrages(v)
+    fun setShowIntercessions(v: Boolean) = SettingsRepository.setShowIntercessions(v)
 }
