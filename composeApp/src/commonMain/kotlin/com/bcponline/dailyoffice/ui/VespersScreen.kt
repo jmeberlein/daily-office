@@ -160,6 +160,11 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                         Spacer(Modifier.height(8.dp))
                         IntercessionsBlock(intercessionsTab, ServiceTexts.PRAYER_FOR_MISSION_VESPERS) { vm.intercessionsTab.value = it }
                     }
+
+                    Spacer(Modifier.height(8.dp))
+                    val v = if (office.season == Season.EASTER) ServiceTexts.CLOSING_VERSICLE_V_EASTER else ServiceTexts.CLOSING_VERSICLE_V
+                    val r = if (office.season == Season.EASTER) ServiceTexts.CLOSING_VERSICLE_R_EASTER else ServiceTexts.CLOSING_VERSICLE_R
+                    OfficeText("Officiant: ${stringResource(v)}\nPeople: ${stringResource(r)}")
                 }
             }
         }

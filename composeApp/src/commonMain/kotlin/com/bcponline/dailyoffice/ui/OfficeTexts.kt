@@ -15,4 +15,8 @@ object ServiceTexts {
     val INTERCESSIONS_IV: StringResource = Res.string.intercessions_iv
     val PRAYER_FOR_MISSION_MATINS: StringResource = Res.string.prayer_for_mission_matins
     val PRAYER_FOR_MISSION_VESPERS: StringResource = Res.string.prayer_for_mission_vespers
+    val CLOSING_VERSICLE_V: StringResource = Res.string.closing_versicle_v
+    val CLOSING_VERSICLE_R: StringResource = Res.string.closing_versicle_r
+    val CLOSING_VERSICLE_V_EASTER: StringResource = Res.string.closing_versicle_v_easter
+    val CLOSING_VERSICLE_R_EASTER: StringResource = Res.string.closing_versicle_r_easter
 }

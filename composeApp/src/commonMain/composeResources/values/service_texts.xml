@@ -86,4 +86,8 @@ the communion of [________ and] all your saints,
 entrusting one another and all our life to Christ,
 We entreat you, O Lord.
     </string>
+    <string name="closing_versicle_v">Let us bless the Lord.</string>
+    <string name="closing_versicle_r">Thanks be to God.</string>
+    <string name="closing_versicle_v_easter">Let us bless the Lord, alleluia, alleluia.</string>
+    <string name="closing_versicle_r_easter">Thanks be to God, alleluia, alleluia.</string>
 </resources>

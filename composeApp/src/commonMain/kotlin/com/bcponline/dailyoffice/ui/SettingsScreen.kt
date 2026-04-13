@@ -64,6 +64,7 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
                     ServiceItem("Suffrages", enabled = true, checked = showSuffrages, onCheckedChange = vm::setShowSuffrages)
                     ServiceItem("Collect", enabled = false, checked = true, onCheckedChange = {})
                     ServiceItem("Intercessions", enabled = true, checked = showIntercessions, onCheckedChange = vm::setShowIntercessions)
+                    ServiceItem("Closing Versicle", enabled = false, checked = true, onCheckedChange = {})
                 }
             }
         }
