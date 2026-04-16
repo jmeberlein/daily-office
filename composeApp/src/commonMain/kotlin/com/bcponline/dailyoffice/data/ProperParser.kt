@@ -17,7 +17,7 @@ object ProperParser {
     suspend fun loadFilesForDate(date: LocalDate) {
         val today = getFileFromDate(date)
         val tomorrow = getFileFromDate(date.plus(1, DateTimeUnit.DAY))
-        FileRegistry.loadFiles(today.first, tomorrow.first)
+        FileRegistry.loadFiles(today.first, tomorrow.first, "daily_propers", "optional_feasts", "extra_feasts")
     }
 
     fun getWeeklyProper(today: LocalDate, forceTwoReadings: Boolean): LiturgicalDay? {
