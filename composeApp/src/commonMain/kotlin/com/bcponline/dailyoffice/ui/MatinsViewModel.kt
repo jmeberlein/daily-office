@@ -29,6 +29,7 @@ class MatinsViewModel : ViewModel() {
     val firstCanticleTab = MutableStateFlow(0)
     val suffragesTab = MutableStateFlow(0)
     val intercessionsTab = MutableStateFlow(0)
+    val collectTab = MutableStateFlow(0)
 
     init {
         viewModelScope.launch {
@@ -46,6 +47,7 @@ class MatinsViewModel : ViewModel() {
                     firstCanticleTab.value = 0
                     suffragesTab.value = 0
                     intercessionsTab.value = 0
+                    collectTab.value = 0
                 }
         }
     }

@@ -35,6 +35,7 @@ fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
     val firstTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
     val secondTab by vm.secondCanticleTab.collectAsStateWithLifecycle()
     val linkedTab by vm.linkedTab.collectAsStateWithLifecycle()
+    val collectTab by vm.collectTab.collectAsStateWithLifecycle()
 
     val office = day?.evening
     val color = office?.color ?: LiturgicalColor.NONE
@@ -165,9 +166,9 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                         Spacer(Modifier.height(8.dp))
                         SuffragesBlock(suffragesTab, ServiceTexts.SUFFRAGES_B_VESPERS) { vm.suffragesTab.value = it }
                     }
-                    if (office.collect.isNotBlank()) {
+                    if (office.collects.isNotEmpty()) {
                         Spacer(Modifier.height(8.dp))
-                        LabeledText("Collect", office.collect)
+                        CollectChoiceBlock(office.collects, collectTab) { vm.collectTab.value = it }
                     }
                     if (showIntercessions) {
                         Spacer(Modifier.height(8.dp))
@@ -245,5 +246,33 @@ private fun CanticleChoiceBlock(
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         Spacer(Modifier.height(2.dp))
         OfficeText(stringResource(canticle.resource).formatCanticle())
+    }
+}
+
+@Composable
+private fun CollectChoiceBlock(
+    collects: Map<String, String>,
+    selectedTab: Int,
+    onTabSelected: (Int) -> Unit
+) {
+    if (collects.isEmpty()) return
+
+    if (collects.size == 1) {
+        val entry = collects.entries.first()
+        LabeledText("Collect (${entry.key})", entry.value)
+        return
+    }
+
+    val keys = collects.keys.toList()
+    Column {
+        TabRow(selectedTabIndex = selectedTab) {
+            keys.forEachIndexed { i, name ->
+                Tab(selected = selectedTab == i, onClick = { onTabSelected(i) },
+                    text = { Text(name, style = MaterialTheme.typography.labelMedium) })
+            }
+        }
+        Spacer(Modifier.height(8.dp))
+        val text = collects[keys[selectedTab]] ?: ""
+        LabeledText("Collect", text)
     }
 }

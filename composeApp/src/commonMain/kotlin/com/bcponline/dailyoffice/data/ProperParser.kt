@@ -93,10 +93,15 @@ object ProperParser {
         val morningCollect = day.get<YamlMap>("morning")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
         val eveningCollect = day.get<YamlMap>("evening")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
 
+        val morningCollects = if (morningCollect.isNotBlank()) mapOf(morningName to morningCollect) else emptyMap()
+        val eveningCollects = if (eveningCollect.isNotBlank()) mapOf(eveningName to eveningCollect) else emptyMap()
+
         if (day.get<YamlMap>("vigil") != null) {
             val vigilPsalter = day.get<YamlMap>("vigil")?.get<YamlScalar>("psalter")?.content ?: ""
             val vigilReadings = day.get<YamlMap>("vigil")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content } ?: listOf("", "")
             val vigilCollect = day.get<YamlMap>("vigil")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
+            val vigilName = day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name
+            val vigilCollects = if (vigilCollect.isNotBlank()) mapOf(vigilName to vigilCollect) else emptyMap()
 
             return LiturgicalDay(
                 Office(
@@ -106,7 +111,7 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect,
+                    morningCollects,
                     morningColor
                 ),
                 Office(
@@ -116,17 +121,17 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect,
+                    eveningCollects,
                     eveningColor
                 ),
                 Office(
-                    day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name,
+                    vigilName,
                     rank,
                     Season.NONE,
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
-                    vigilCollect,
+                    vigilCollects,
                     day.get<YamlMap>("vigil")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
                 )
             )
@@ -139,7 +144,7 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect,
+                    morningCollects,
                     morningColor
                 ),
                 Office(
@@ -149,7 +154,7 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect,
+                    eveningCollects,
                     eveningColor
                 )
             )
@@ -199,13 +204,46 @@ object ProperParser {
                 if (forceTwoReadings) day.get<YamlList>("year_2_readings")?.get(0)?.yamlScalar?.content!! else "",
                 day.get<YamlList>("year_1_readings")?.get(2)?.yamlScalar?.content!!
             )
-        val morningCollect = day.get<YamlMap>("morning")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: week.get<YamlScalar>("collect")?.content ?: ""
-        val eveningCollect = day.get<YamlMap>("evening")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: week.get<YamlScalar>("collect")?.content ?: ""
+
+        val seasonalCollect = week.get<YamlScalar>("collect")?.content ?: ""
+        val dailyMorningCollect = day.get<YamlMap>("morning")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
+        val dailyEveningCollect = day.get<YamlMap>("evening")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
+
+        val morningCollects = mutableMapOf<String, String>()
+        val eveningCollects = mutableMapOf<String, String>()
+
+        if (rank == Rank.OPTIONAL) {
+            if (seasonalCollect.isNotBlank()) {
+                morningCollects["Seasonal"] = seasonalCollect
+                eveningCollects["Seasonal"] = seasonalCollect
+            }
+            if (dailyMorningCollect.isNotBlank()) {
+                morningCollects[morningName] = dailyMorningCollect
+            }
+            if (dailyEveningCollect.isNotBlank()) {
+                eveningCollects[eveningName] = dailyEveningCollect
+            }
+        } else {
+            val mCollect = if (dailyMorningCollect.isNotBlank()) dailyMorningCollect else seasonalCollect
+            val eCollect = if (dailyEveningCollect.isNotBlank()) dailyEveningCollect else seasonalCollect
+            if (mCollect.isNotBlank()) morningCollects["Seasonal"] = mCollect
+            if (eCollect.isNotBlank()) eveningCollects["Seasonal"] = eCollect
+        }
 
         if (day.get<YamlMap>("vigil") != null) {
             val vigilPsalter = day.get<YamlMap>("vigil")?.get<YamlScalar>("psalter")?.content ?: ""
             val vigilReadings = day.get<YamlMap>("vigil")?.get<YamlList>("readings")?.items?.map { it.yamlScalar.content } ?: listOf("", "")
-            val vigilCollect = day.get<YamlMap>("vigil")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: week.get<YamlScalar>("collect")?.content ?: ""
+            val dailyVigilCollect = day.get<YamlMap>("vigil")?.get<YamlScalar>("collect")?.content ?: day.get<YamlScalar>("collect")?.content ?: ""
+            val vigilName = day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name
+            val vigilCollects = mutableMapOf<String, String>()
+
+            if (rank == Rank.OPTIONAL) {
+                if (seasonalCollect.isNotBlank()) vigilCollects["Seasonal"] = seasonalCollect
+                if (dailyVigilCollect.isNotBlank()) vigilCollects[vigilName] = dailyVigilCollect
+            } else {
+                val vCollect = if (dailyVigilCollect.isNotBlank()) dailyVigilCollect else seasonalCollect
+                if (vCollect.isNotBlank()) vigilCollects["Seasonal"] = vCollect
+            }
 
             return LiturgicalDay(
                 Office(
@@ -215,7 +253,7 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect,
+                    morningCollects,
                     morningColor
                 ),
                 Office(
@@ -225,17 +263,17 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect,
+                    eveningCollects,
                     eveningColor
                 ),
                 Office(
-                    day.get<YamlMap>("vigil")?.get<YamlScalar>("name")?.content ?: name,
+                    vigilName,
                     rank,
                     season,
                     vigilPsalter,
                     vigilReadings[0],
                     vigilReadings[1],
-                    vigilCollect,
+                    vigilCollects,
                     day.get<YamlMap>("vigil")?.get<YamlScalar>("color")?.content?.let { LiturgicalColor.valueOf(it) } ?: color
                 )
             )
@@ -248,7 +286,7 @@ object ProperParser {
                     morningPsalter,
                     morningReadings[0],
                     morningReadings[1],
-                    morningCollect,
+                    morningCollects,
                     morningColor
                 ),
                 Office(
@@ -258,7 +296,7 @@ object ProperParser {
                     eveningPsalter,
                     eveningReadings[0],
                     eveningReadings[1],
-                    eveningCollect,
+                    eveningCollects,
                     eveningColor
                 )
             )

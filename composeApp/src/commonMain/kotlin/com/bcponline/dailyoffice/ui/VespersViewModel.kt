@@ -33,6 +33,7 @@ class VespersViewModel : ViewModel() {
     val linkedTab = MutableStateFlow(0) // Advent Sunday only
     val suffragesTab = MutableStateFlow(0)
     val intercessionsTab = MutableStateFlow(0)
+    val collectTab = MutableStateFlow(0)
 
     init {
         viewModelScope.launch {
@@ -53,6 +54,7 @@ class VespersViewModel : ViewModel() {
                     linkedTab.value = 0
                     suffragesTab.value = 0
                     intercessionsTab.value = 0
+                    collectTab.value = 0
                 }
         }
     }

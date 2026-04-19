@@ -91,7 +91,12 @@ private fun OfficeSection(title: String, office: Office, subtitle: String?, incl
         OfficeRow("Psalm", psalms)
         OfficeRow("First Reading", office.firstReading)
         if (office.secondReading.isNotBlank()) OfficeRow("Second Reading", office.secondReading)
-        OfficeRow("Collect", office.collect)
+        
+        if (office.collects.isNotEmpty()) {
+            val label = if (office.collects.size > 1) "Collects" else "Collect"
+            val value = office.collects.keys.joinToString(", ")
+            OfficeRow(label, value)
+        }
     }
 }
 
