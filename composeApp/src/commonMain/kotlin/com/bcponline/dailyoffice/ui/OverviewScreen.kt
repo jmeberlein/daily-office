@@ -58,11 +58,13 @@ fun OverviewScreen(vm: OverviewViewModel = viewModel { OverviewViewModel() }) {
                         color = MaterialTheme.colorScheme.primary)
                     Text(morning.name, style = MaterialTheme.typography.headlineMedium)
                 }
+                
+                val isEastertide = morning.season == Season.EASTER || morning.season == Season.ASCENSION
                 OfficeSection(
                     title = "Morning Prayer",
                     office = morning,
                     subtitle = null,
-                    includePsalm95 = morning.season != Season.EASTER
+                    includePsalm95 = !isEastertide
                 )
                 OfficeSection(
                     title = "Evening Prayer",

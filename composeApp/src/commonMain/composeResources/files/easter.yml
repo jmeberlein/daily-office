@@ -670,6 +670,7 @@
       - Matt. 22:41-46
   THURSDAY:
     name: Ascension
+    season: ASCENSION
     rank: PRINCIPAL
     morning:
       psalter: 8,47
@@ -685,6 +686,7 @@
       - Matt. 28:16-20
   FRIDAY:
     name: The Friday after the Ascension
+    season: ASCENSION
     morning:
       psalter: 85,86
     evening:
@@ -714,7 +716,7 @@
 
 - number: 7
   name: '{{day_of_week}} after the Seventh Sunday of Easter'
-  season: EASTER
+  season: ASCENSION
   collect: >
     O God, the King of glory, you have exalted your only Son
     Jesus Christ with great triumph to your kingdom in heaven:
@@ -821,7 +823,7 @@
       - Matt. 9:18-26
 
 - number: 8
-  season: EASTER # Okay, so it's technically PENTECOST, but this will add alleluias
+  season: ASCENSION # Okay, so it's technically PENTECOST, but this will add alleluias
   collect: >
     Almighty God, on this day you opened the way of eternal life
     to every race and nation by the promised gift of your Holy

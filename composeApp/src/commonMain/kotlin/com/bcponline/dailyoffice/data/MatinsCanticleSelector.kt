@@ -22,6 +22,7 @@ object MatinsCanticleSelector {
                 Season.CHRISTMAS -> listOf(HANNAH, TE_DEUM)
                 Season.LENT      -> listOf(HOSEA, KYRIE_PANTOKRATOR)
                 Season.EASTER    -> listOf(MOSES)
+                Season.ASCENSION    -> listOf(MOSES)
                 else             -> listOf(TE_DEUM)
             }
             DayOfWeek.MONDAY    -> listOf(WISDOM, FIRST_ISAIAH)
@@ -39,6 +40,7 @@ object MatinsCanticleSelector {
 
     fun invitatoryCanticle(office: Office): Canticle = when (office.season) {
         Season.EASTER -> PASCHA_NOSTRUM
+        Season.ASCENSION -> PASCHA_NOSTRUM
         Season.LENT   -> PSALM_95_LENT
         else          -> PSALM_95
     }

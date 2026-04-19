@@ -130,8 +130,9 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                 }
                 
                 Spacer(Modifier.height(8.dp))
-                val v = if (office.season == Season.EASTER) ServiceTexts.CLOSING_VERSICLE_V_EASTER else ServiceTexts.CLOSING_VERSICLE_V
-                val r = if (office.season == Season.EASTER) ServiceTexts.CLOSING_VERSICLE_R_EASTER else ServiceTexts.CLOSING_VERSICLE_R
+                val isEastertide = office.season == Season.EASTER || office.season == Season.ASCENSION
+                val v = if (isEastertide) ServiceTexts.CLOSING_VERSICLE_V_EASTER else ServiceTexts.CLOSING_VERSICLE_V
+                val r = if (isEastertide) ServiceTexts.CLOSING_VERSICLE_R_EASTER else ServiceTexts.CLOSING_VERSICLE_R
                 OfficeText("Officiant: ${stringResource(v)}\nPeople: ${stringResource(r)}")
             }
         }

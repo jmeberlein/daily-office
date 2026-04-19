@@ -164,7 +164,7 @@ object ProperParser {
         val rank = Rank.valueOf(day.get<YamlScalar>("rank")?.content ?: week.get<YamlScalar>("rank")?.content ?: if (today.dayOfWeek == DayOfWeek.SUNDAY) "SUNDAY" else "FERIA")
         val season = Season.valueOf(day.get<YamlScalar>("season")?.content ?: week.get<YamlScalar>("season")?.content ?: "NONE")
         val seasonColor = when (season) {
-            Season.CHRISTMAS, Season.EASTER -> LiturgicalColor.WHITE
+            Season.CHRISTMAS, Season.EASTER, Season.ASCENSION -> LiturgicalColor.WHITE
             Season.LENT -> LiturgicalColor.PURPLE
             Season.ADVENT -> LiturgicalColor.BLUE
             Season.EPIPHANY, Season.PENTECOST -> LiturgicalColor.GREEN

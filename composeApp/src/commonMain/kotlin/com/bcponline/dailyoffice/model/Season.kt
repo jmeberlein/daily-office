@@ -7,5 +7,6 @@ enum class Season {
     EPIPHANY,
     LENT,
     EASTER,
+    ASCENSION,
     PENTECOST
 }
