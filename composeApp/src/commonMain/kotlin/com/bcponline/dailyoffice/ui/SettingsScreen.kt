@@ -16,6 +16,7 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
     val forceTwoReadings by vm.forceTwoReadings.collectAsStateWithLifecycle()
     val useOptionalFeasts by vm.useOptionalFeasts.collectAsStateWithLifecycle()
     val useExtraFeasts by vm.useExtraFeasts.collectAsStateWithLifecycle()
+    val showConfession by vm.showConfession.collectAsStateWithLifecycle()
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
     val showCreed by vm.showCreed.collectAsStateWithLifecycle()
     val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
@@ -54,6 +55,8 @@ fun SettingsScreen(vm: SettingsViewModel = viewModel { SettingsViewModel() }) {
                     )
                 }
                 1 -> {
+                    ServiceItem("Opening Verse", enabled = false, checked = true, onCheckedChange = {})
+                    ServiceItem("Confession of Sin", enabled = true, checked = showConfession, onCheckedChange = vm::setShowConfession)
                     ServiceItem("Invitatory", enabled = false, checked = true, onCheckedChange = {})
                     ServiceItem("Psalms", enabled = false, checked = true, onCheckedChange = {})
                     ServiceItem("Readings", enabled = false, checked = true, onCheckedChange = {})

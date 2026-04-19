@@ -23,6 +23,8 @@ private fun String.formatCanticle(): String =
 @Composable
 fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
     val day by vm.day.collectAsStateWithLifecycle()
+    val date by vm.date.collectAsStateWithLifecycle()
+    val showConfession by vm.showConfession.collectAsStateWithLifecycle()
     val showFirstCanticle by vm.showFirstCanticle.collectAsStateWithLifecycle()
     val showCreed by vm.showCreed.collectAsStateWithLifecycle()
     val showSuffrages by vm.showSuffrages.collectAsStateWithLifecycle()
@@ -33,7 +35,6 @@ fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
     val firstTab by vm.firstCanticleTab.collectAsStateWithLifecycle()
     val secondTab by vm.secondCanticleTab.collectAsStateWithLifecycle()
     val linkedTab by vm.linkedTab.collectAsStateWithLifecycle()
-    val date by vm.date.collectAsStateWithLifecycle()
 
     val office = day?.evening
     val color = office?.color ?: LiturgicalColor.NONE
@@ -60,14 +61,26 @@ fun VespersScreen(vm: VespersViewModel = viewModel { VespersViewModel() }) {
                 verticalArrangement = Arrangement.spacedBy(24.dp)
             ) {
                 Column {
-                    Text(office?.name ?: "", style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary)
-                    Text("Evening Prayer", style = MaterialTheme.typography.headlineMedium)
+                    Text(
+                        office?.name ?: "",
+                        style = MaterialTheme.typography.headlineMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
                 }
 
                 if (office == null) {
                     CircularProgressIndicator()
                     return@Column
+                }
+
+                OpeningVerseSelector.getVerse(office, date)?.let { verse ->
+                    OfficeText(verse)
+                }
+
+                if (showConfession) {
+                    OfficeSection("Confession of Sin") {
+                        OfficeText(stringResource(ServiceTexts.CONFESSION_OF_SIN))
+                    }
                 }
 
                 // Invitatory & Psalter
@@ -95,7 +108,7 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
 
                 // Readings & Canticles
                 val canticles = VespersCanticleSelector.select(office, date, showFirstCanticle)
-                OfficeSection("Readings") {
+                OfficeSection("The Lessons") {
                     when (canticles) {
                         is VespersCanticles.MagnificatOnly -> {
                             if (office.firstReading.isNotBlank()) {
@@ -146,7 +159,7 @@ All: Glory to the Father, and to the Son, and to the Holy Spirit: as it was in t
                 }
 
                 // Prayers
-                OfficeSection("Prayers") {
+                OfficeSection("The Prayers") {
                     OfficeText(stringResource(ServiceTexts.LORDS_PRAYER))
                     if (showSuffrages) {
                         Spacer(Modifier.height(8.dp))

@@ -13,9 +13,9 @@ fun SuffragesBlock(selectedTab: Int, optionB: StringResource, onTabSelected: (In
     Column {
         TabRow(selectedTabIndex = selectedTab) {
             Tab(selected = selectedTab == 0, onClick = { onTabSelected(0) },
-                text = { Text("A", style = MaterialTheme.typography.labelMedium) })
+                text = { Text("Suffrages A", style = MaterialTheme.typography.labelMedium) })
             Tab(selected = selectedTab == 1, onClick = { onTabSelected(1) },
-                text = { Text("B", style = MaterialTheme.typography.labelMedium) })
+                text = { Text("Suffrages B", style = MaterialTheme.typography.labelMedium) })
         }
         Spacer(Modifier.height(8.dp))
         Text(

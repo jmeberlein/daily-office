@@ -19,4 +19,5 @@ object ServiceTexts {
     val CLOSING_VERSICLE_R: StringResource = Res.string.closing_versicle_r
     val CLOSING_VERSICLE_V_EASTER: StringResource = Res.string.closing_versicle_v_easter
     val CLOSING_VERSICLE_R_EASTER: StringResource = Res.string.closing_versicle_r_easter
+    val CONFESSION_OF_SIN: StringResource = Res.string.confession_of_sin
 }

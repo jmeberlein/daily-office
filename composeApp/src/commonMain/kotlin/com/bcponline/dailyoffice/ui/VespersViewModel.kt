@@ -15,6 +15,8 @@ class VespersViewModel : ViewModel() {
     val day: StateFlow<LiturgicalDay?> = _day
     val date: StateFlow<LocalDate> = SelectedDate.date
 
+    val showConfession = SettingsRepository.showConfession
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
     val showFirstCanticle = SettingsRepository.showFirstCanticle
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
     val showCreed = SettingsRepository.showCreed
