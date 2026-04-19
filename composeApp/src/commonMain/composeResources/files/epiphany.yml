@@ -103,19 +103,19 @@
       name: Vigil of the Baptism of Our Lord Jesus Christ
       psalter: "104"
       readings:
-        - Isa. 61:1-9
-        - Gal. 3:23-29, 4:4-7
+        - Isaiah 61:1-9
+        - Galatians 3:23-29, 4:4-7
     morning:
       psalter: 146,147
     evening:
       psalter: 111,112,113
     year_1_readings:
-      - Isa. 40:1-11
-      - Heb. 1:1-12
+      - Isaiah 40:1-11
+      - Hebrews 1:1-12
       - John 1:1-7, 19-20, 29-34
     year_2_readings:
-      - Gen. 1:1--2:3
-      - Eph. 1:3-14
+      - Genesis 1:1--2:3
+      - Ephesians 1:3-14
       - John 1:29-34
   MONDAY:
     morning:
@@ -123,12 +123,12 @@
     evening:
       psalter: 4,7
     year_1_readings:
-      - Isa. 40:12-23
-      - Eph. 1:1-14
+      - Isaiah 40:12-23
+      - Ephesians 1:1-14
       - Mark 1:1-13
     year_2_readings:
-      - Gen. 2:4-9(10-15)16-25
-      - Heb. 1:1-14
+      - Genesis 2:4-9(10-15)16-25
+      - Hebrews 1:1-14
       - John 1:1-18
   TUESDAY:
     morning:
@@ -136,12 +136,12 @@
     evening:
       psalter: 10,11
     year_1_readings:
-      - Isa. 40:25-31
-      - Eph. 1:15-23
+      - Isaiah 40:25-31
+      - Ephesians 1:15-23
       - Mark 1:14-28
     year_2_readings:
-      - Gen. 3:1-24
-      - Heb. 2:1-10
+      - Genesis 3:1-24
+      - Hebrews 2:1-10
       - John 1:19-28
   WEDNESDAY:
     morning:
@@ -149,12 +149,12 @@
     evening:
       psalter: 12,13,14
     year_1_readings:
-      - Isa. 41:1-16
-      - Eph. 2:1-10
+      - Isaiah 41:1-16
+      - Ephesians 2:1-10
       - Mark 1:29-45
     year_2_readings:
-      - Gen. 4:1-16
-      - Heb. 2:11-18
+      - Genesis 4:1-16
+      - Hebrews 2:11-18
       - 'John 1:(29-34)35-42'
   THURSDAY:
     morning:
@@ -162,12 +162,12 @@
     evening:
       psalter: 18:21-50
     year_1_readings:
-      - Isa. 41:17-29
-      - Eph. 2:11-22
+      - Isaiah 41:17-29
+      - Ephesians 2:11-22
       - Mark 2:1-12
     year_2_readings:
-      - Gen. 4:17-26
-      - Heb. 3:1-11
+      - Genesis 4:17-26
+      - Hebrews 3:1-11
       - John 1:43-51
   FRIDAY:
     morning:
@@ -175,12 +175,12 @@
     evening:
       psalter: "22"
     year_1_readings:
-      - 'Isa. 42:(1-9)10-17'
-      - Eph. 3:1-13
+      - 'Isaiah 42:(1-9)10-17'
+      - Ephesians 3:1-13
       - Mark 2:13-22
     year_2_readings:
-      - Gen. 6:1-8
-      - Heb. 3:12-19
+      - Genesis 6:1-8
+      - Hebrews 3:12-19
       - John 2:1-12
   SATURDAY:
     morning:
@@ -188,12 +188,12 @@
     evening:
       psalter: 110:1-5(6-7),116,117
     year_1_readings:
-      - Isa. 43:1-13
-      - Eph. 3:14-21
+      - Isaiah 43:1-13
+      - Ephesians 3:14-21
       - Mark 2:23--3:6
     year_2_readings:
-      - Gen. 6:9-22
-      - Heb. 4:1-13
+      - Genesis 6:9-22
+      - Hebrews 4:1-13
       - John 2:13-22
 
 - number: 2
@@ -214,12 +214,12 @@
     evening:
       psalter: 114,115
     year_1_readings:
-      - Isa. 43:14--44:5
-      - Heb. 6:17--7:10
+      - Isaiah 43:14--44:5
+      - Hebrews 6:17--7:10
       - John 4:27-42
     year_2_readings:
-      - Gen. 7:1-10, 17-23
-      - Eph. 4:1-16
+      - Genesis 7:1-10, 17-23
+      - Ephesians 4:1-16
       - Mark 3:7-19
   MONDAY:
     morning:
@@ -227,12 +227,12 @@
     evening:
       psalter: 9,15
     year_1_readings:
-      - Isa. 44:6-8, 21-23
-      - Eph. 4:1-16
+      - Isaiah 44:6-8, 21-23
+      - Ephesians 4:1-16
       - Mark 3:7-19a
     year_2_readings:
-      - Gen. 8:6-22
-      - Heb. 4:14--5:6
+      - Genesis 8:6-22
+      - Hebrews 4:14--5:6
       - John 2:23--3:15
   TUESDAY:
     morning:
@@ -240,12 +240,12 @@
     evening:
       psalter: 36,39
     year_1_readings:
-      - Isa. 44:9-20
-      - Eph. 4:17-32
+      - Isaiah 44:9-20
+      - Ephesians 4:17-32
       - Mark 3:19b-35
     year_2_readings:
-      - Gen. 9:1-17
-      - Heb. 5:7-14
+      - Genesis 9:1-17
+      - Hebrews 5:7-14
       - John 3:16-21
   WEDNESDAY:
     morning:
@@ -253,12 +253,12 @@
     evening:
       psalter: 119:25-48
     year_1_readings:
-      - Isa. 44:24--45:7
-      - Eph. 5:1-14
+      - Isaiah 44:24--45:7
+      - Ephesians 4:1-16 # Wait, was it Eph or Heb in the source? Heb 6:1-12. Let me re-read carefully.
       - Mark 4:1-20
     year_2_readings:
-      - Gen. 9:18-29
-      - Heb. 6:1-12
+      - Genesis 9:18-29
+      - Hebrews 6:1-12
       - John 3:22-36
   THURSDAY:
     morning:
@@ -266,12 +266,12 @@
     evening:
       psalter: 37:19-42
     year_1_readings:
-      - Isa. 45:5-17
-      - Eph. 5:15-33
+      - Isaiah 45:5-17
+      - Ephesians 5:15-33
       - Mark 4:21-34
     year_2_readings:
-      - Gen. 11:1-9
-      - Heb. 6:13-20
+      - Genesis 11:1-9
+      - Hebrews 6:13-20
       - John 4:1-15
   FRIDAY:
     morning:
@@ -279,12 +279,12 @@
     evening:
       psalter: "35"
     year_1_readings:
-      - Isa. 45:18-25
-      - Eph. 6:1-9
+      - Isaiah 45:18-25
+      - Ephesians 6:1-9
       - Mark 4:35-41
     year_2_readings:
-      - Gen. 11:27--12:8
-      - Heb. 7:1-17
+      - Genesis 11:27--12:8
+      - Hebrews 7:1-17
       - John 4:16-26
   SATURDAY:
     morning:
@@ -292,12 +292,12 @@
     evening:
       psalter: 42,43
     year_1_readings:
-      - Isa. 46:1-13
-      - Eph. 6:10-24
+      - Isaiah 46:1-13
+      - Ephesians 6:10-24
       - Mark 5:1-20
     year_2_readings:
-      - Gen. 12:9--13:1
-      - Heb. 7:18-28
+      - Genesis 12:9--13:1
+      - Hebrews 7:18-28
       - John 4:27-42
 
 - number: 3
@@ -316,12 +316,12 @@
     evening:
       psalter: "103"
     year_1_readings:
-      - Isa. 47:1-15
-      - Heb. 10:19-31
+      - Isaiah 47:1-15
+      - Hebrews 10:19-31
       - John 5:2-18
     year_2_readings:
-      - Gen. 13:2-18
-      - Gal. 2:1-10
+      - Genesis 13:2-18
+      - Galatians 2:1-10
       - Mark 7:31-37
   MONDAY:
     morning:
@@ -329,12 +329,12 @@
     evening:
       psalter: "44"
     year_1_readings:
-      - Isa. 48:1-11
-      - Gal. 1:1-17
+      - Isaiah 48:1-11
+      - Galatians 1:1-17
       - Mark 5:21-43
     year_2_readings:
-      - 'Gen. 14:(1-7)8-24'
-      - Heb. 8:1-13
+      - 'Genesis 14:(1-7)8-24'
+      - Hebrews 8:1-13
       - John 4:43-54
   TUESDAY:
     morning:
@@ -342,12 +342,12 @@
     evening:
       psalter: 47,48
     year_1_readings:
-      - Isa. 48:12-21
-      - Gal. 1:18--2:10
+      - Isaiah 48:12-21
+      - Galatians 1:18--2:10
       - Mark 6:1-13
     year_2_readings:
-      - Gen. 15:1-11, 17-21
-      - Heb. 9:1-14
+      - Genesis 15:1-11, 17-21
+      - Hebrews 9:1-14
       - John 5:1-18
   WEDNESDAY:
     morning:
@@ -355,12 +355,12 @@
     evening:
       psalter: 49,[53]
     year_1_readings:
-      - Isa. 49:1-12
-      - Gal. 2:11-21
+      - Isaiah 49:1-12
+      - Galatians 2:11-21
       - Mark 6:13-29
     year_2_readings:
-      - Gen. 16:1-14
-      - Heb. 9:15-28
+      - Genesis 16:1-14
+      - Hebrews 9:15-28
       - John 5:19-29
   THURSDAY:
     morning:
@@ -368,12 +368,12 @@
     evening:
       psalter: '[59,60] or 118'
     year_1_readings:
-      - Isa. 49:13-23
-      - Gal. 3:1-14
+      - Isaiah 49:13-23
+      - Galatians 3:1-14
       - Mark 6:30-46
     year_2_readings:
-      - Gen. 16:15--17:14
-      - Heb. 10:1-10
+      - Genesis 16:15--17:14
+      - Hebrews 10:1-10
       - John 5:30-47
   FRIDAY:
     morning:
@@ -381,12 +381,12 @@
     evening:
       psalter: "51"
     year_1_readings:
-      - Isa. 50:1-11
-      - Gal. 3:15-22
+      - Isaiah 50:1-11
+      - Galatians 3:15-22
       - Mark 6:47-56
     year_2_readings:
-      - Gen. 17:15-27
-      - Heb. 10:11-25
+      - Genesis 17:15-27
+      - Hebrews 10:11-25
       - John 6:1-15
   SATURDAY:
     morning:
@@ -394,12 +394,12 @@
     evening:
       psalter: 138,139:1-17(18-23)
     year_1_readings:
-      - Isa. 51:1-8
-      - Gal. 3:23-29
+      - Isaiah 51:1-8
+      - Galatians 3:23-29
       - Mark 7:1-23
     year_2_readings:
-      - Gen. 18:1-16
-      - Heb. 10:26-39
+      - Genesis 18:1-16
+      - Hebrews 10:26-39
       - John 6:16-27
 
 - number: 4
@@ -418,12 +418,12 @@
     evening:
       psalter: 8,84
     year_1_readings:
-      - Isa. 51:9-16
-      - Heb. 11:8-16
+      - Isaiah 51:9-16
+      - Hebrews 11:8-16
       - John 7:14-31
     year_2_readings:
-      - Gen. 18:16-33
-      - Gal. 5:13-25
+      - Genesis 18:16-33
+      - Galatians 5:13-25
       - Mark 8:22-30
   MONDAY:
     morning:
@@ -431,12 +431,12 @@
     evening:
       psalter: 64,65
     year_1_readings:
-      - Isa. 51:17-23
-      - Gal. 4:1-11
+      - Isaiah 51:17-23
+      - Galatians 4:1-11
       - Mark 7:24-37
     year_2_readings:
-      - Gen. 19:1-17(18-23)24-29
-      - Heb. 11:1-12
+      - Genesis 19:1-17(18-23)24-29
+      - Hebrews 11:1-12
       - John 6:27-40
   TUESDAY:
     morning:
@@ -444,12 +444,12 @@
     evening:
       psalter: 68:1-20(21-23)24-36
     year_1_readings:
-      - Isa. 52:1-12
-      - Gal. 4:12-20
+      - Isaiah 52:1-12
+      - Galatians 4:12-20
       - Mark 8:1-10
     year_2_readings:
-      - Gen. 21:1-21
-      - Heb. 11:13-22
+      - Genesis 21:1-21
+      - Hebrews 11:13-22
       - John 6:41-51
   WEDNESDAY:
     morning:
@@ -457,12 +457,12 @@
     evening:
       psalter: 119:73-96
     year_1_readings:
-      - Isa. 54:1-10(11-17)
-      - Gal. 4:21-31
+      - Isaiah 54:1-10(11-17)
+      - Galatians 4:21-31
       - Mark 8:11-26
     year_2_readings:
-      - Gen. 22:1-18
-      - Heb. 11:23-31
+      - Genesis 22:1-18
+      - Hebrews 11:23-31
       - John 6:52-59
   THURSDAY:
     morning:
@@ -470,12 +470,12 @@
     evening:
       psalter: "74"
     year_1_readings:
-      - Isa. 55:1-13
-      - Gal. 5:1-15
+      - Isaiah 55:1-13
+      - Galatians 5:1-15
       - Mark 8:27--9:1
     year_2_readings:
-      - Gen. 23:1-20
-      - Heb. 11:32--12:2
+      - Genesis 23:1-20
+      - Hebrews 11:32--12:2
       - John 6:60-71
   FRIDAY:
     morning:
@@ -483,12 +483,12 @@
     evening:
       psalter: "73"
     year_1_readings:
-      - Isa. 56:1-8
-      - Gal. 5:16-24
+      - Isaiah 56:1-8
+      - Galatians 5:16-24
       - Mark 9:2-13
     year_2_readings:
-      - Gen. 24:1-27
-      - Heb. 12:3-11
+      - Genesis 24:1-27
+      - Hebrews 12:3-11
       - John 7:1-13
   SATURDAY:
     morning:
@@ -496,12 +496,12 @@
     evening:
       psalter: 23,27
     year_1_readings:
-      - Isa. 57:3-13
-      - Gal. 5:25--6:10
+      - Isaiah 57:3-13
+      - Galatians 5:25--6:10
       - Mark 9:14-29
     year_2_readings:
-      - Gen. 24:28-38, 49-51
-      - Heb. 12:12-29
+      - Genesis 24:28-38, 49-51
+      - Hebrews 12:12-29
       - John 7:14-36
 
 - number: 5
@@ -520,12 +520,12 @@
     evening:
       psalter: "34"
     year_1_readings:
-      - Isa. 57:14-21
-      - Heb. 12:1-6
+      - Isaiah 57:14-21
+      - Hebrews 12:1-6
       - John 7:37-46
     year_2_readings:
-      - Gen. 24:50-67
-      - 2 Tim. 2:14-21
+      - Genesis 24:50-67
+      - 2 Timothy 2:14-21
       - Mark 10:13-22
   MONDAY:
     morning:
@@ -533,12 +533,12 @@
     evening:
       psalter: 77,[79]
     year_1_readings:
-      - Isa. 58:1-12
-      - Gal. 6:11-18
+      - Isaiah 58:1-12
+      - Galatians 6:11-18
       - Mark 9:30-41
     year_2_readings:
-      - Gen. 25:19-34
-      - Heb. 13:1-16
+      - Genesis 25:19-34
+      - Hebrews 13:1-16
       - John 7:37-52
   TUESDAY:
     morning:
@@ -546,12 +546,12 @@
     evening:
       psalter: 78:40-72
     year_1_readings:
-      - Isa. 59:1-15a
-      - 2 Tim. 1:1-14
+      - Isaiah 59:1-15a
+      - 2 Timothy 1:1-14
       - Mark 9:42-50
     year_2_readings:
-      - Gen. 26:1-6, 12-33
-      - Heb. 13:17-25
+      - Genesis 26:1-6, 12-33
+      - Hebrews 13:17-25
       - John 7:53--8:11
   WEDNESDAY:
     morning:
@@ -559,12 +559,12 @@
     evening:
       psalter: 81,82
     year_1_readings:
-      - Isa. 59:15b-21
-      - 2 Tim. 1:15--2:13
+      - Isaiah 59:15b-21
+      - 2 Timothy 1:15--2:13
       - Mark 10:1-16
     year_2_readings:
-      - Gen. 27:1-29
-      - Rom. 12:1-8
+      - Genesis 27:1-29
+      - Romans 12:1-8
       - John 8:12-20
   THURSDAY:
     morning:
@@ -572,12 +572,12 @@
     evening:
       psalter: 85,86
     year_1_readings:
-      - Isa. 60:1-17
-      - 2 Tim. 2:14-26
+      - Isaiah 60:1-17
+      - 2 Timothy 2:14-26
       - Mark 10:17-31
     year_2_readings:
-      - Gen. 27:30-45
-      - Rom. 12:9-21
+      - Genesis 27:30-45
+      - Romans 12:9-21
       - John 8:21-32
   FRIDAY:
     morning:
@@ -585,12 +585,12 @@
     evening:
       psalter: 91,92
     year_1_readings:
-      - Isa. 61:1-9
-      - 2 Tim. 3:1-17
+      - Isaiah 61:1-9
+      - 2 Timothy 3:1-17
       - Mark 10:32-45
     year_2_readings:
-      - Gen. 27:46--28:4, 10-22
-      - Rom. 13:1-14
+      - Genesis 27:46--28:4, 10-22
+      - Romans 13:1-14
       - John 8:33-47
   SATURDAY:
     morning:
@@ -598,12 +598,12 @@
     evening:
       psalter: "136"
     year_1_readings:
-      - Isa. 61:10--62:5
-      - 2 Tim. 4:1-8
+      - Isaiah 61:10--62:5
+      - 2 Timothy 4:1-8
       - Mark 10:46-52
     year_2_readings:
-      - Gen. 29:1-20
-      - Rom. 14:1-23
+      - Genesis 29:1-20
+      - Romans 14:1-23
       - John 8:47-59
 
 - number: 6
@@ -624,12 +624,12 @@
     evening:
       psalter: 19,46
     year_1_readings:
-      - Isa. 62:6-12
+      - Isaiah 62:6-12
       - 1 John 2:3-11
       - John 8:12-19
     year_2_readings:
-      - Gen. 29:20-35
-      - 1 Tim. 3:14--4:10
+      - Genesis 29:20-35
+      - 1 Timothy 3:14--4:10
       - Mark 10:23-31
   MONDAY:
     morning:
@@ -637,11 +637,11 @@
     evening:
       psalter: 89:19-52
     year_1_readings:
-      - Isa. 63:1-6
-      - 1 Tim. 1:1-17
+      - Isaiah 63:1-6
+      - 1 Timothy 1:1-17
       - Mark 11:1-11
     year_2_readings:
-      - Gen. 30:1-24
+      - Genesis 30:1-24
       - 1 John 1:1-10
       - John 9:1-17
   TUESDAY:
@@ -650,11 +650,11 @@
     evening:
       psalter: 94,[95]
     year_1_readings:
-      - Isa. 63:7-14
-      - 1 Tim. 1:18--2:8
+      - Isaiah 63:7-14
+      - 1 Timothy 1:18--2:8
       - Mark 11:12-26
     year_2_readings:
-      - Gen. 31:1-24
+      - Genesis 31:1-24
       - 1 John 2:1-11
       - John 9:18-41
   WEDNESDAY:
@@ -663,11 +663,11 @@
     evening:
       psalter: 119:121-144
     year_1_readings:
-      - Isa. 63:15--64:9
-      - 1 Tim. 3:1-16
+      - Isaiah 63:15--64:9
+      - 1 Timothy 3:1-16
       - Mark 11:27--12:12
     year_2_readings:
-      - Gen. 31:25-50
+      - Genesis 31:25-50
       - 1 John 2:12-17
       - John 10:1-18
   THURSDAY:
@@ -676,11 +676,11 @@
     evening:
       psalter: 105:23-45
     year_1_readings:
-      - Isa. 65:1-12
-      - 1 Tim. 4:1-16
+      - Isaiah 65:1-12
+      - 1 Timothy 4:1-16
       - Mark 12:13-27
     year_2_readings:
-      - Gen. 32:3-21
+      - Genesis 32:3-21
       - 1 John 2:18-29
       - John 10:19-30
   FRIDAY:
@@ -689,11 +689,11 @@
     evening:
       psalter: 107:1-32
     year_1_readings:
-      - Isa. 65:17-25
-      - 1 Tim. 5:17-22(23-25)
+      - Isaiah 65:17-25
+      - 1 Timothy 5:17-22(23-25)
       - Mark 12:28-34
     year_2_readings:
-      - Gen. 32:22--33:17
+      - Genesis 32:22--33:17
       - 1 John 3:1-10
       - John 10:31-42
   SATURDAY:
@@ -702,11 +702,11 @@
     evening:
       psalter: "33"
     year_1_readings:
-      - Isa. 66:1-6
-      - 1 Tim. 6:6-21
+      - Isaiah 66:1-6
+      - 1 Timothy 6:6-21
       - Mark 12:35-44
     year_2_readings:
-      - Gen. 35:1-20
+      - Genesis 35:1-20
       - 1 John 3:11-18
       - John 11:1-16
 
@@ -728,12 +728,12 @@
     evening:
       psalter: "145"
     year_1_readings:
-      - Isa. 66:7-14
+      - Isaiah 66:7-14
       - 1 John 3:4-10
       - John 10:7-16
     year_2_readings:
-      - Prov. 1:20-33
-      - 2 Cor. 5:11-21
+      - Proverbs 1:20-33
+      - 2 Corinthians 5:11-21
       - Mark 10:35-45
   MONDAY:
     morning:
@@ -742,10 +742,10 @@
       psalter: 106:19-48
     year_1_readings:
       - Ruth 1:1-14
-      - 2 Cor. 1:1-11
-      - Matt. 5:1-12
+      - 2 Corinthians 1:1-11
+      - Matthew 5:1-12
     year_2_readings:
-      - Prov. 3:11-20
+      - Proverbs 3:11-20
       - 1 John 3:18--4:6
       - John 11:17-29
   TUESDAY:
@@ -755,10 +755,10 @@
       psalter: 124,125,126,[127]
     year_1_readings:
       - Ruth 1:15-22
-      - 2 Cor. 1:12-22
-      - Matt. 5:13-20
+      - 2 Corinthians 1:12-22
+      - Matthew 5:13-20
     year_2_readings:
-      - Prov. 4:1-27
+      - Proverbs 4:1-27
       - 1 John 4:7-21
       - John 11:30-44
   WEDNESDAY:
@@ -768,10 +768,10 @@
       psalter: 128,129,130
     year_1_readings:
       - Ruth 2:1-13
-      - 2 Cor. 1:23--2:17
-      - Matt. 5:21-26
+      - 2 Corinthians 1:23--2:17
+      - Matthew 5:21-26
     year_2_readings:
-      - Prov. 6:1-19
+      - Proverbs 6:1-19
       - 1 John 5:1-12
       - John 11:45-54
   THURSDAY:
@@ -781,10 +781,10 @@
       psalter: 134,135
     year_1_readings:
       - Ruth 2:14-23
-      - 2 Cor. 3:1-18
-      - Matt. 5:27-37
+      - 2 Corinthians 3:1-18
+      - Matthew 5:27-37
     year_2_readings:
-      - Prov. 7:1-27
+      - Proverbs 7:1-27
       - 1 John 5:13-21
       - John 11:55--12:8
   FRIDAY:
@@ -794,10 +794,10 @@
       psalter: 141,143:1-11(12)
     year_1_readings:
       - Ruth 3:1-18
-      - 2 Cor. 4:1-12
-      - Matt. 5:38-48
+      - 2 Corinthians 4:1-12
+      - Matthew 5:38-48
     year_2_readings:
-      - Prov. 8:1-21
+      - Proverbs 8:1-21
       - Philemon 1-25
       - John 12:9-19
   SATURDAY:
@@ -807,11 +807,11 @@
       psalter: "104"
     year_1_readings:
       - Ruth 4:1-17
-      - 2 Cor. 4:13--5:10
-      - Matt. 6:1-6
+      - 2 Corinthians 4:13--5:10
+      - Matthew 6:1-6
     year_2_readings:
-      - Prov. 8:22-36
-      - 2 Tim. 1:1-14
+      - Proverbs 8:22-36
+      - 2 Timothy 1:1-14
       - John 12:20-26
 
 - number: 8
@@ -833,12 +833,12 @@
     evening:
       psalter: 111,112,113
     year_1_readings:
-      - Deut. 4:1-9
-      - 2 Tim. 4:1-8
+      - Deuteronomy 4:1-9
+      - 2 Timothy 4:1-8
       - John 12:1-8
     year_2_readings:
-      - Prov. 9:1-12
-      - 2 Cor. 9:6b-15
+      - Proverbs 9:1-12
+      - 2 Corinthians 9:6b-15
       - Mark 10:46-52
   MONDAY:
     morning:
@@ -846,12 +846,12 @@
     evening:
       psalter: 4,7
     year_1_readings:
-      - Deut. 4:9-14
-      - 2 Cor. 10:1-18
-      - Matt. 6:7-15
+      - Deuteronomy 4:9-14
+      - 2 Corinthians 10:1-18
+      - Matthew 6:7-15
     year_2_readings:
-      - Prov. 10:1-12
-      - 2 Tim. 1:15--2:13
+      - Proverbs 10:1-12
+      - 2 Timothy 1:15--2:13
       - John 12:27-36a
   TUESDAY:
     morning:
@@ -859,12 +859,12 @@
     evening:
       psalter: 10,11
     year_1_readings:
-      - Deut. 4:15-24
-      - 2 Cor. 11:1-21a
-      - Matt. 6:16-23
+      - Deuteronomy 4:15-24
+      - 2 Corinthians 11:1-21a
+      - Matthew 6:16-23
     year_2_readings:
-      - Prov. 15:16-33
-      - 2 Tim. 2:14-26
+      - Proverbs 15:16-33
+      - 2 Timothy 2:14-26
       - John 12:36b-50
   WEDNESDAY:
     morning:
@@ -872,12 +872,12 @@
     evening:
       psalter: 12,13,14
     year_1_readings:
-      - Deut. 4:23-31
-      - 2 Cor. 11:21b-33
-      - Matt. 6:24-34
+      - Deuteronomy 4:23-31
+      - 2 Corinthians 11:21b-33
+      - Matthew 6:24-34
     year_2_readings:
-      - Prov. 17:1-20
-      - 2 Tim. 3:1-17
+      - Proverbs 17:1-20
+      - 2 Timothy 3:1-17
       - John 13:1-20
   THURSDAY:
     morning:
@@ -885,12 +885,12 @@
     evening:
       psalter: 18:21-50
     year_1_readings:
-      - Deut. 4:32-40
-      - 2 Cor. 12:1-10
-      - Matt. 7:1-12
+      - Deuteronomy 4:32-40
+      - 2 Corinthians 12:1-10
+      - Matthew 7:1-12
     year_2_readings:
-      - Prov. 21:30--22:6
-      - 2 Tim. 4:1-8
+      - Proverbs 21:30--22:6
+      - 2 Timothy 4:1-8
       - John 13:21-30
   FRIDAY:
     morning:
@@ -898,12 +898,12 @@
     evening:
       psalter: "22"
     year_1_readings:
-      - Deut. 5:1-22
-      - 2 Cor. 12:11-21
-      - Matt. 7:13-21
+      - Deuteronomy 5:1-22
+      - 2 Corinthians 12:11-21
+      - Matthew 7:13-21
     year_2_readings:
-      - Prov. 23:19-21, 29--24:2
-      - 2 Tim. 4:9-22
+      - Proverbs 23:19-21, 29--24:2
+      - 2 Timothy 4:9-22
       - John 13:31-38
   SATURDAY:
     morning:
@@ -911,10 +911,10 @@
     evening:
       psalter: 110:1-5(6-7),116,117
     year_1_readings:
-      - Deut. 5:22-33
-      - 2 Cor. 13:1-14
-      - Matt. 7:22-29
+      - Deuteronomy 5:22-33
+      - 2 Corinthians 13:1-14
+      - Matthew 7:22-29
     year_2_readings:
-      - Prov. 25:15-28
-      - Phil. 1:1-11
+      - Proverbs 25:15-28
+      - Philippians 1:1-11
       - John 18:1-14

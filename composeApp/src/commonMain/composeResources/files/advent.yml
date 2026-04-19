@@ -17,12 +17,12 @@
     evening:
       psalter: 111,112,113
     year_1_readings:
-      - Isa. 1:1-9
-      - 2 Pet. 3:1-10
-      - Matt. 25:1-13
+      - Isaiah 1:1-9
+      - 2 Peter 3:1-10
+      - Matthew 25:1-13
     year_2_readings:
       - Amos 1:1-5, 13--2:8
-      - 1 Thess. 5:1-11
+      - 1 Thessalonians 5:1-11
       - Luke 21:5-19
   MONDAY:
     morning:
@@ -30,78 +30,78 @@
     evening:
       psalter: 4,7
     year_1_readings:
-      - Isa. 1:10-20
-      - 1 Thess. 1:1-10
+      - Isaiah 1:10-20
+      - 1 Thessalonians 1:1-10
       - Luke 20:1-8
     year_2_readings:
       - Amos 2:6-16
-      - 2 Pet. 1:1-11
-      - Matt. 21:1-11
+      - 2 Peter 1:1-11
+      - Matthew 21:1-11
   TUESDAY:
     morning:
       psalter: 5,6
     evening:
       psalter: 10,11
     year_1_readings:
-      - Isa. 1:21-31
-      - 1 Thess. 2:1-12
+      - Isaiah 1:21-31
+      - 1 Thessalonians 2:1-12
       - Luke 20:9-18
     year_2_readings:
       - Amos 3:1-11
-      - 2 Pet. 1:12-21
-      - Matt. 21:12-22
+      - 2 Peter 1:12-21
+      - Matthew 21:12-22
   WEDNESDAY:
     morning:
       psalter: 119:1-24
     evening:
       psalter: 12,13,14
     year_1_readings:
-      - Isa. 2:1-11
-      - 1 Thess. 2:13-20
+      - Isaiah 2:1-11
+      - 1 Thessalonians 2:13-20
       - Luke 20:19-26
     year_2_readings:
       - Amos 3:12--4:5
-      - 2 Pet. 3:1-10
-      - Matt. 21:23-32
+      - 2 Peter 3:1-10
+      - Matthew 21:23-32
   THURSDAY:
     morning:
       psalter: 18:1-20
     evening:
       psalter: 18:21-50
     year_1_readings:
-      - Isa. 2:12-22
-      - 1 Thess. 3:1-13
+      - Isaiah 2:12-22
+      - 1 Thessalonians 3:1-13
       - Luke 20:27-40
     year_2_readings:
       - Amos 4:6-13
-      - 2 Pet. 3:11-18
-      - Matt. 21:33-46
+      - 2 Peter 3:11-18
+      - Matthew 21:33-46
   FRIDAY:
     morning:
       psalter: 16,17
     evening:
       psalter: "22"
     year_1_readings:
-      - Isa. 3:8-15
-      - 1 Thess. 4:1-12
+      - Isaiah 3:8-15
+      - 1 Thessalonians 4:1-12
       - Luke 20:41--21:4
     year_2_readings:
       - Amos 5:1-17
       - Jude 1-16
-      - Matt. 22:1-14
+      - Matthew 22:1-14
   SATURDAY:
     morning:
       psalter: 20,21:1-7(8-14)
     evening:
       psalter: 110:1-5(6-7),116,117
     year_1_readings:
-      - Isa. 4:2-6
-      - 1 Thess. 4:13-18
+      - Isaiah 4:2-6
+      - 1 Thessalonians 4:13-18
       - Luke 21:5-19
     year_2_readings:
       - Amos 5:18-27
       - Jude 17-25
-      - Matt. 22:15-22
+      - Matthew 22:15-22
 
 - number: 2
   name: '{{day_of_week}} after the Second Sunday of Advent'
@@ -120,12 +120,12 @@
     evening:
       psalter: 114,115
     year_1_readings:
-      - Isa. 5:1-7
-      - 2 Pet. 3:11-18
+      - Isaiah 5:1-7
+      - 2 Peter 3:11-18
       - Luke 7:28-35
     year_2_readings:
       - Amos 6:1-14
-      - 2 Thess. 1:5-12
+      - 2 Thessalonians 1:5-12
       - Luke 1:57-67
   MONDAY:
     morning:
@@ -133,78 +133,78 @@
     evening:
       psalter: 9,15
     year_1_readings:
-      - Isa. 5:8-12, 18-23
-      - 1 Thess. 5:1-11
+      - Isaiah 5:8-12, 18-23
+      - 1 Thessalonians 5:1-11
       - Luke 21:20-28
     year_2_readings:
       - Amos 7:1-9
-      - Rev. 1:1-8
-      - Matt. 22:23-33
+      - Revelation 1:1-8
+      - Matthew 22:23-33
   TUESDAY:
     morning:
       psalter: 26,28
     evening:
       psalter: 36,39
     year_1_readings:
-      - Isa. 5:13-17, 24-25
-      - 1 Thess. 5:12-28
+      - Isaiah 5:13-17, 24-25
+      - 1 Thessalonians 5:12-28
       - Luke 21:29-38
     year_2_readings:
       - Amos 7:10-17
-      - Rev. 1:9-16
-      - Matt. 22:34-46
+      - Revelation 1:9-16
+      - Matthew 22:34-46
   WEDNESDAY:
     morning:
       psalter: "38"
     evening:
       psalter: 119:25-48
     year_1_readings:
-      - Isa. 6:1-13
-      - 2 Thess. 1:1-12
+      - Isaiah 6:1-13
+      - 2 Thessalonians 1:1-12
       - John 7:53--8:11
     year_2_readings:
       - Amos 8:1-14
-      - Rev. 1:17--2:7
-      - Matt. 23:1-12
+      - Revelation 1:17--2:7
+      - Matthew 23:1-12
   THURSDAY:
     morning:
       psalter: 37:1-18
     evening:
       psalter: 37:19-42
     year_1_readings:
-      - Isa. 7:1-9
-      - 2 Thess. 2:1-12
+      - Isaiah 7:1-9
+      - 2 Thessalonians 2:1-12
       - Luke 22:1-13
     year_2_readings:
       - Amos 9:1-10
-      - Rev. 2:8-17
-      - Matt. 23:13-26
+      - Revelation 2:8-17
+      - Matthew 23:13-26
   FRIDAY:
     morning:
       psalter: "31"
     evening:
       psalter: "35"
     year_1_readings:
-      - Isa. 7:10-25
-      - 2 Thess. 2:13--3:5
+      - Isaiah 7:10-25
+      - 2 Thessalonians 2:13--3:5
       - Luke 22:14-30
     year_2_readings:
       - Haggai 1:1-15
-      - Rev. 2:18-29
-      - Matt. 23:27-39
+      - Revelation 2:18-29
+      - Matthew 23:27-39
   SATURDAY:
     morning:
       psalter: 30,32
     evening:
       psalter: 42,43
     year_1_readings:
-      - Isa. 8:1-15
-      - 2 Thess. 3:6-18
+      - Isaiah 8:1-15
+      - 2 Thessalonians 3:6-18
       - Luke 22:31-38
     year_2_readings:
       - Haggai 2:1-9
-      - Rev. 3:1-6
-      - Matt. 24:1-14
+      - Revelation 3:1-6
+      - Matthew 24:1-14
 
 - number: 3
   name: '{{day_of_week}} after the Third Sunday of Advent'
@@ -222,12 +222,12 @@
     evening:
       psalter: "103"
     year_1_readings:
-      - Isa. 13:6-13
-      - Heb. 12:18-29
+      - Isaiah 13:6-13
+      - Hebrews 12:18-29
       - John 3:22-30
     year_2_readings:
       - Amos 9:11-15
-      - 2 Thess. 2:1-3, 13-17
+      - 2 Thessalonians 2:1-3, 13-17
       - John 5:30-47
   MONDAY:
     morning:
@@ -235,26 +235,26 @@
     evening:
       psalter: "44"
     year_1_readings:
-      - Isa. 8:16--9:1
-      - 2 Pet. 1:1-11
+      - Isaiah 8:16--9:1
+      - 2 Peter 1:1-11
       - Luke 22:39-53
     year_2_readings:
-      - Zech. 1:7-17
-      - Rev. 3:7-13
-      - Matt. 24:15-31
+      - Zechariah 1:7-17
+      - Revelation 3:7-13
+      - Matthew 24:15-31
   TUESDAY:
     morning:
       psalter: "45"
     evening:
       psalter: 47,48
     year_1_readings:
-      - Isa. 9:1-7
-      - 2 Pet. 1:12-21
+      - Isaiah 9:1-7
+      - 2 Peter 1:12-21
       - Luke 22:54-69
     year_2_readings:
-      - Zech. 2:1-13
-      - Rev. 3:14-22
-      - Matt. 24:32-44
+      - Zechariah 2:1-13
+      - Revelation 3:14-22
+      - Matthew 24:32-44
   WEDNESDAY:
     name: Winter Ember Day
     rank: OPTIONAL
@@ -272,26 +272,26 @@
     evening:
       psalter: 49,[53]
     year_1_readings:
-      - Isa. 9:8-17
-      - 2 Pet. 2:1-10a
+      - Isaiah 9:8-17
+      - 2 Peter 2:1-10a
       - Mark 1:1-8
     year_2_readings:
-      - Zech. 3:1-10
-      - Rev. 4:1-8
-      - Matt. 24:45-51
+      - Zechariah 3:1-10
+      - Revelation 4:1-8
+      - Matthew 24:45-51
   THURSDAY:
     morning:
       psalter: "50"
     evening:
       psalter: '[59,60] or 33'
     year_1_readings:
-      - Isa. 9:18--10:4
-      - 2 Pet. 2:10b-16
-      - Matt. 3:1-12
+      - Isaiah 9:18--10:4
+      - 2 Peter 2:10b-16
+      - Matthew 3:1-12
     year_2_readings:
-      - Zech. 4:1-14
-      - Rev. 4:9--5:5
-      - Matt. 25:1-13
+      - Zechariah 4:1-14
+      - Revelation 4:9--5:5
+      - Matthew 25:1-13
   FRIDAY:
     name: Winter Ember Day
     rank: OPTIONAL
@@ -309,13 +309,13 @@
     evening:
       psalter: "51"
     year_1_readings:
-      - Isa. 10:5-19
-      - 2 Pet. 2:17-22
-      - Matt. 11:2-15
+      - Isaiah 10:5-19
+      - 2 Peter 2:17-22
+      - Matthew 11:2-15
     year_2_readings:
-      - Zech. 7:8--8:8
-      - Rev. 5:6-14
-      - Matt. 25:14-30
+      - Zechariah 7:8--8:8
+      - Revelation 5:6-14
+      - Matthew 25:14-30
   SATURDAY:
     name: Winter Ember Day
     rank: OPTIONAL
@@ -333,13 +333,13 @@
     evening:
       psalter: 138,139:1-17(18-23)
     year_1_readings:
-      - Isa. 10:20-27
+      - Isaiah 10:20-27
       - Jude 17-25
       - Luke 3:1-9
     year_2_readings:
-      - Zech. 8:9-17
-      - Rev. 6:1-17
-      - Matt. 25:31-46
+      - Zechariah 8:9-17
+      - Revelation 6:1-17
+      - Matthew 25:31-46
 
 - number: 4
   name: '{{day_of_week}} after the Fourth Sunday of Advent'
@@ -357,12 +357,12 @@
     evening:
       psalter: 8,84
     year_1_readings:
-      - Isa. 42:1-12
-      - Eph. 6:10-20
+      - Isaiah 42:1-12
+      - Ephesians 6:10-20
       - John 3:16-21
     year_2_readings:
-      - Gen. 3:8-15
-      - Rev. 12:1-10
+      - Genesis 3:8-15
+      - Revelation 12:1-10
       - John 3:16-21
   MONDAY:
     morning:
@@ -370,11 +370,11 @@
     evening:
       psalter: 112,115
     year_1_readings:
-      - Isa. 11:1-9
-      - Rev. 20:1-10
+      - Isaiah 11:1-9
+      - Revelation 20:1-10
       - John 5:30-47
     year_2_readings:
-      - Zeph. 3:14-20
+      - Zephaniah 3:14-20
       - Titus 1:1-16
       - Luke 1:1-25
   TUESDAY:
@@ -383,11 +383,11 @@
     evening:
       psalter: 116,117
     year_1_readings:
-      - Isa. 11:10-16
-      - Rev. 20:11--21:8
+      - Isaiah 11:10-16
+      - Revelation 20:11--21:8
       - Luke 1:5-25
     year_2_readings:
-      - 1 Samuel 2:1b-10
+      - Samuel 2:1b-10
       - Titus 2:1-10
       - Luke 1:26-38
   WEDNESDAY:
@@ -396,11 +396,11 @@
     evening:
       psalter: 111,113
     year_1_readings:
-      - Isa. 28:9-22
-      - Rev. 21:9-21
+      - Isaiah 28:9-22
+      - Revelation 21:9-21
       - Luke 1:26-38
     year_2_readings:
-      - 2 Samuel 7:1-17
+      - Samuel 7:1-17
       - Titus 2:11--3:8a
       - Luke 1:39-48a(48b-56)
   THURSDAY:
@@ -409,12 +409,12 @@
     evening:
       psalter: 146,147
     year_1_readings:
-      - Isa. 29:13-24
-      - Rev. 21:22--22:5
+      - Isaiah 29:13-24
+      - Revelation 21:22--22:5
       - Luke 1:39-48a(48b-56)
     year_2_readings:
-      - 2 Samuel 7:18-29
-      - Gal. 3:1-14
+      - Samuel 7:18-29
+      - Galatians 3:1-14
       - Luke 1:57-66
   FRIDAY:
     morning:
@@ -422,10 +422,10 @@
     evening:
       psalter: 148,150
     year_1_readings:
-      - Isa. 33:17-22
-      - Rev. 22:6-11, 18-20
+      - Isaiah 33:17-22
+      - Revelation 22:6-11, 18-20
       - Luke 1:57-66
     year_2_readings:
       - Baruch 4:21-29
-      - Gal. 3:15-22
-      - Luke 1:67-80 or Matt. 1:1-17
+      - Galatians 3:15-22
+      - Luke 1:67-80 or Matthew 1:1-17

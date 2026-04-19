@@ -25,12 +25,12 @@
     evening:
       psalter: 114,115
     year_1_readings:
-      - Deut. 6:1-9
-      - Heb. 12:18-29
+      - Deuteronomy 6:1-9
+      - Hebrews 12:18-29
       - John 12:24-32
     year_2_readings:
-      - Ecclus. 48:1-11
-      - 2 Cor. 3:7-18
+      - Sirach 48:1-11
+      - 2 Corinthians 3:7-18
       - Luke 9:18-27
   MONDAY:
     name: Shrove Monday
@@ -48,12 +48,12 @@
     evening:
       psalter: 9,15
     year_1_readings:
-      - Deut. 6:10-15
-      - Heb. 1:1-14
+      - Deuteronomy 6:10-15
+      - Hebrews 1:1-14
       - John 1:1-18
     year_2_readings:
-      - Prov. 27:1-6, 10-12
-      - Phil. 2:1-13
+      - Proverbs 27:1-6, 10-12
+      - Philippians 2:1-13
       - John 18:15-18, 25-27
   TUESDAY:
     name: Shrove Tuesday
@@ -71,12 +71,12 @@
     evening:
       psalter: 36,39
     year_1_readings:
-      - Deut. 6:16-25
-      - Heb. 2:1-10
+      - Deuteronomy 6:16-25
+      - Hebrews 2:1-10
       - John 1:19-28
     year_2_readings:
-      - Prov. 30:1-4, 24-33
-      - Phil. 3:1-11
+      - Proverbs 30:1-4, 24-33
+      - Philippians 3:1-11
       - John 18:28-38
   WEDNESDAY:
     name: Ash Wednesday
@@ -88,11 +88,11 @@
       psalter: 102,130
     year_1_readings:
       - Jonah 3:1--4:11
-      - Heb. 12:1-14
+      - Hebrews 12:1-14
       - Luke 18:9-14
     year_2_readings:
       - Amos 5:6-15
-      - Heb. 12:1-14
+      - Hebrews 12:1-14
       - Luke 18:9-14
   THURSDAY:
     name: The Thursday after Ash Wednesday
@@ -101,12 +101,12 @@
     evening:
       psalter: 37:19-42
     year_1_readings:
-      - Deut. 7:6-11
+      - Deuteronomy 7:6-11
       - Titus 1:1-16
       - John 1:29-34
     year_2_readings:
-      - Hab. 3:1-10(11-15)16-18
-      - Phil. 3:12-21
+      - Habakkuk 3:1-10(11-15)16-18
+      - Philippians 3:12-21
       - John 17:1-8
   FRIDAY:
     name: The Friday after Ash Wednesday
@@ -115,12 +115,12 @@
     evening:
       psalter: "35"
     year_1_readings:
-      - Deut. 7:12-16
+      - Deuteronomy 7:12-16
       - Titus 2:1-15
       - John 1:35-42
     year_2_readings:
-      - Ezek. 18:1-4, 25-32
-      - Phil. 4:1-9
+      - Ezekiel 18:1-4, 25-32
+      - Philippians 4:1-9
       - John 17:9-19
   SATURDAY:
     name: The Saturday after Ash Wednesday
@@ -129,12 +129,12 @@
     evening:
       psalter: 42,43
     year_1_readings:
-      - Deut. 7:17-26
+      - Deuteronomy 7:17-26
       - Titus 3:1-15
       - John 1:43-51
     year_2_readings:
-      - Ezek. 39:21-29
-      - Phil. 4:10-20
+      - Ezekiel 39:21-29
+      - Philippians 4:10-20
       - John 17:20-26
 
 - number: 1
@@ -154,12 +154,12 @@
     evening:
       psalter: "103"
     year_1_readings:
-      - Deut. 8:1-10
-      - 1 Cor. 1:17-31
+      - Deuteronomy 8:1-10
+      - 1 Corinthians 1:17-31
       - Mark 2:18-22
     year_2_readings:
-      - Dan. 9:3-10
-      - Heb. 2:10-18
+      - Daniel 9:3-10
+      - Hebrews 2:10-18
       - John 12:44-50
   MONDAY:
     morning:
@@ -167,12 +167,12 @@
     evening:
       psalter: "44"
     year_1_readings:
-      - Deut. 8:11-20
-      - Heb. 2:11-18
+      - Deuteronomy 8:11-20
+      - Hebrews 2:11-18
       - John 2:1-12
     year_2_readings:
-      - Gen. 37:1-11
-      - 1 Cor. 1:1-19
+      - Genesis 37:1-11
+      - 1 Corinthians 1:1-19
       - Mark 1:1-13
   TUESDAY:
     morning:
@@ -180,12 +180,12 @@
     evening:
       psalter: 47,48
     year_1_readings:
-      - Deut. 9:4-12
-      - Heb. 3:1-11
+      - Deuteronomy 9:4-12
+      - Hebrews 3:1-11
       - John 2:13-22
     year_2_readings:
-      - Gen. 37:12-24
-      - 1 Cor. 1:20-31
+      - Genesis 37:12-24
+      - 1 Corinthians 1:20-31
       - Mark 1:14-28
   WEDNESDAY:
     name: Spring Ember Day
@@ -204,12 +204,12 @@
     evening:
       psalter: 49,[53]
     year_1_readings:
-      - Deut. 9:13-21
-      - Heb. 3:12-19
+      - Deuteronomy 9:13-21
+      - Hebrews 3:12-19
       - John 2:23--3:15
     year_2_readings:
-      - Gen. 37:25-36
-      - 1 Cor. 2:1-13
+      - Genesis 37:25-36
+      - 1 Corinthians 2:1-13
       - Mark 1:29-45
   THURSDAY:
     morning:
@@ -217,12 +217,12 @@
     evening:
       psalter: '[59,60] or 19,46'
     year_1_readings:
-      - Deut. 9:23--10:5
-      - Heb. 4:1-10
+      - Deuteronomy 9:23--10:5
+      - Hebrews 4:1-10
       - John 3:16-21
     year_2_readings:
-      - Gen. 39:1-23
-      - 1 Cor. 2:14--3:15
+      - Genesis 39:1-23
+      - 1 Corinthians 2:14--3:15
       - Mark 2:1-12
   FRIDAY:
     name: Spring Ember Day
@@ -241,12 +241,12 @@
     evening:
       psalter: "51"
     year_1_readings:
-      - Deut. 10:12-22
-      - Heb. 4:11-16
+      - Deuteronomy 10:12-22
+      - Hebrews 4:11-16
       - John 3:22-36
     year_2_readings:
-      - Gen. 40:1-23
-      - 1 Cor. 3:16-23
+      - Genesis 40:1-23
+      - 1 Corinthians 3:16-23
       - Mark 2:13-22
   SATURDAY:
     name: Spring Ember Day
@@ -265,12 +265,12 @@
     evening:
       psalter: 138,139:1-17(18-23)
     year_1_readings:
-      - Deut. 11:18-28
-      - Heb. 5:1-10
+      - Deuteronomy 11:18-28
+      - Hebrews 5:1-10
       - John 4:1-26
     year_2_readings:
-      - Gen. 41:1-13
-      - 1 Cor. 4:1-7
+      - Genesis 41:1-13
+      - 1 Corinthians 4:1-7
       - Mark 2:23--3:6
 
 - number: 2
@@ -290,12 +290,12 @@
     evening:
       psalter: 8,84
     year_1_readings:
-      - Jer. 1:1-10
-      - 1 Cor. 3:11-23
+      - Jeremiah 1:1-10
+      - 1 Corinthians 3:11-23
       - Mark 3:31--4:9
     year_2_readings:
-      - Gen. 41:14-45
-      - Rom. 6:3-14
+      - Genesis 41:14-45
+      - Romans 6:3-14
       - John 5:19-24
   MONDAY:
     morning:
@@ -303,12 +303,12 @@
     evening:
       psalter: 64,65
     year_1_readings:
-      - Jer. 1:11-19
-      - Rom. 1:1-15
+      - Jeremiah 1:11-19
+      - Romans 1:1-15
       - John 4:27-42
     year_2_readings:
-      - Gen. 41:46-57
-      - 1 Cor. 4:8-20(21)
+      - Genesis 41:46-57
+      - 1 Corinthians 4:8-20(21)
       - Mark 3:7-19a
   TUESDAY:
     morning:
@@ -316,12 +316,12 @@
     evening:
       psalter: 68:1-20(21-23)24-36
     year_1_readings:
-      - Jer. 2:1-13
-      - Rom. 1:16-25
+      - Jeremiah 2:1-13
+      - Romans 1:16-25
       - John 4:43-54
     year_2_readings:
-      - Gen. 42:1-17
-      - 1 Cor. 5:1-8
+      - Genesis 42:1-17
+      - 1 Corinthians 5:1-8
       - Mark 3:19b-35
   WEDNESDAY:
     morning:
@@ -329,12 +329,12 @@
     evening:
       psalter: 119:73-96
     year_1_readings:
-      - Jer. 3:6-18
-      - Rom. 1:28--2:11
+      - Jeremiah 3:6-18
+      - Romans 1:28--2:11
       - John 5:1-18
     year_2_readings:
-      - Gen. 42:18-28
-      - 1 Cor. 5:9--6:8
+      - Genesis 42:18-28
+      - 1 Corinthians 5:9--6:8
       - Mark 4:1-20
   THURSDAY:
     morning:
@@ -342,12 +342,12 @@
     evening:
       psalter: "74"
     year_1_readings:
-      - Jer. 4:9-10, 19-28
-      - Rom. 2:12-24
+      - Jeremiah 4:9-10, 19-28
+      - Romans 2:12-24
       - John 5:19-29
     year_2_readings:
-      - Gen. 42:29-38
-      - 1 Cor. 6:12-20
+      - Genesis 42:29-38
+      - 1 Corinthians 6:12-20
       - Mark 4:21-34
   FRIDAY:
     morning:
@@ -355,12 +355,12 @@
     evening:
       psalter: "73"
     year_1_readings:
-      - Jer. 5:1-9
-      - Rom. 2:25--3:18
+      - Jeremiah 5:1-9
+      - Romans 2:25--3:18
       - John 5:30-47
     year_2_readings:
-      - Gen. 43:1-15
-      - 1 Cor. 7:1-9
+      - Genesis 43:1-15
+      - 1 Corinthians 7:1-9
       - Mark 4:35-41
   SATURDAY:
     morning:
@@ -368,12 +368,12 @@
     evening:
       psalter: 23,27
     year_1_readings:
-      - Jer. 5:20-31
-      - Rom. 3:19-31
+      - Jeremiah 5:20-31
+      - Romans 3:19-31
       - John 7:1-13
     year_2_readings:
-      - Gen. 43:16-34
-      - 1 Cor. 7:10-24
+      - Genesis 43:16-34
+      - 1 Corinthians 7:10-24
       - Mark 5:1-20
 
 - number: 3
@@ -394,12 +394,12 @@
     evening:
       psalter: "34"
     year_1_readings:
-      - Jer. 6:9-15
-      - 1 Cor. 6:12-20
+      - Jeremiah 6:9-15
+      - 1 Corinthians 6:12-20
       - Mark 5:1-20
     year_2_readings:
-      - Gen. 44:1-17
-      - Rom. 8:1-10
+      - Genesis 44:1-17
+      - Romans 8:1-10
       - John 5:25-29
   MONDAY:
     morning:
@@ -407,12 +407,12 @@
     evening:
       psalter: 77,[79]
     year_1_readings:
-      - Jer. 7:1-15
-      - Rom. 4:1-12
+      - Jeremiah 7:1-15
+      - Romans 4:1-12
       - John 7:14-36
     year_2_readings:
-      - Gen. 44:18-34
-      - 1 Cor. 7:25-31
+      - Genesis 44:18-34
+      - 1 Corinthians 7:25-31
       - Mark 5:21-43
   TUESDAY:
     morning:
@@ -420,12 +420,12 @@
     evening:
       psalter: 78:40-72
     year_1_readings:
-      - Jer. 7:21-34
-      - Rom. 4:13-25
+      - Jeremiah 7:21-34
+      - Romans 4:13-25
       - John 7:37-52
     year_2_readings:
-      - Gen. 45:1-15
-      - 1 Cor. 7:32-40
+      - Genesis 45:1-15
+      - 1 Corinthians 7:32-40
       - Mark 6:1-13
   WEDNESDAY:
     morning:
@@ -433,12 +433,12 @@
     evening:
       psalter: 81,82
     year_1_readings:
-      - Jer. 8:18--9:6
-      - Rom. 5:1-11
+      - Jeremiah 8:18--9:6
+      - Romans 5:1-11
       - John 8:12-20
     year_2_readings:
-      - Gen. 45:16-28
-      - 1 Cor. 8:1-13
+      - Genesis 45:16-28
+      - 1 Corinthians 8:1-13
       - Mark 6:13-29
   THURSDAY:
     morning:
@@ -446,12 +446,12 @@
     evening:
       psalter: 85,86
     year_1_readings:
-      - Jer. 10:11-24
-      - Rom. 5:12-21
+      - Jeremiah 10:11-24
+      - Romans 5:12-21
       - John 8:21-32
     year_2_readings:
-      - Gen. 46:1-7, 28-34
-      - 1 Cor. 9:1-15
+      - Genesis 46:1-7, 28-34
+      - 1 Corinthians 9:1-15
       - Mark 6:30-46
   FRIDAY:
     morning:
@@ -459,12 +459,12 @@
     evening:
       psalter: 91,92
     year_1_readings:
-      - Jer. 11:1-8, 14-20
-      - Rom. 6:1-11
+      - Jeremiah 11:1-8, 14-20
+      - Romans 6:1-11
       - John 8:33-47
     year_2_readings:
-      - Gen. 47:1-26
-      - 1 Cor. 9:16-27
+      - Genesis 47:1-26
+      - 1 Corinthians 9:16-27
       - Mark 6:47-56
   SATURDAY:
     morning:
@@ -472,12 +472,12 @@
     evening:
       psalter: "136"
     year_1_readings:
-      - Jer. 13:1-11
-      - Rom. 6:12-23
+      - Jeremiah 13:1-11
+      - Romans 6:12-23
       - John 8:47-59
     year_2_readings:
-      - Gen. 47:27--48:7
-      - 1 Cor. 10:1-13
+      - Genesis 47:27--48:7
+      - 1 Corinthians 10:1-13
       - Mark 7:1-23
 
 - number: 4
@@ -497,12 +497,12 @@
     evening:
       psalter: 19,46
     year_1_readings:
-      - Jer. 14:1-9, 17-22
-      - Gal. 4:21--5:1
+      - Jeremiah 14:1-9, 17-22
+      - Galatians 4:21--5:1
       - Mark 8:11-21
     year_2_readings:
-      - Gen. 48:8-22
-      - Rom. 8:11-25
+      - Genesis 48:8-22
+      - Romans 8:11-25
       - John 6:27-40
   MONDAY:
     morning:
@@ -510,12 +510,12 @@
     evening:
       psalter: 89:19-52
     year_1_readings:
-      - Jer. 16:10-21
-      - Rom. 7:1-12
+      - Jeremiah 16:10-21
+      - Romans 7:1-12
       - John 6:1-15
     year_2_readings:
-      - Gen. 49:1-28
-      - 1 Cor. 10:14--11:1
+      - Genesis 49:1-28
+      - 1 Corinthians 10:14--11:1
       - Mark 7:24-37
   TUESDAY:
     morning:
@@ -523,12 +523,12 @@
     evening:
       psalter: 94,[95]
     year_1_readings:
-      - Jer. 17:19-27
-      - Rom. 7:13-25
+      - Jeremiah 17:19-27
+      - Romans 7:13-25
       - John 6:16-27
     year_2_readings:
-      - Gen. 49:29--50:14
-      - 1 Cor. 11:17-34
+      - Genesis 49:29--50:14
+      - 1 Corinthians 11:17-34
       - Mark 8:1-10
   WEDNESDAY:
     morning:
@@ -536,12 +536,12 @@
     evening:
       psalter: 119:121-144
     year_1_readings:
-      - Jer. 18:1-11
-      - Rom. 8:1-11
+      - Jeremiah 18:1-11
+      - Romans 8:1-11
       - John 6:27-40
     year_2_readings:
-      - Gen. 50:15-26
-      - 1 Cor. 12:1-11
+      - Genesis 50:15-26
+      - 1 Corinthians 12:1-11
       - Mark 8:11-26
   THURSDAY:
     morning:
@@ -549,12 +549,12 @@
     evening:
       psalter: "73"
     year_1_readings:
-      - Jer. 22:13-23
-      - Rom. 8:12-27
+      - Jeremiah 22:13-23
+      - Romans 8:12-27
       - John 6:41-51
     year_2_readings:
-      - Exod. 1:6-22
-      - 1 Cor. 12:12-26
+      - Exodus 1:6-22
+      - 1 Corinthians 12:12-26
       - Mark 8:27--9:1
   FRIDAY:
     morning:
@@ -562,12 +562,12 @@
     evening:
       psalter: 107:1-32
     year_1_readings:
-      - Jer. 23:1-8
-      - Rom. 8:28-39
+      - Jeremiah 23:1-8
+      - Romans 8:28-39
       - John 6:52-59
     year_2_readings:
-      - Exod. 2:1-22
-      - 1 Cor. 12:27--13:3
+      - Exodus 2:1-22
+      - 1 Corinthians 12:27--13:3
       - Mark 9:2-13
   SATURDAY:
     morning:
@@ -575,12 +575,12 @@
     evening:
       psalter: "33"
     year_1_readings:
-      - Jer. 23:9-15
-      - Rom. 9:1-18
+      - Jeremiah 23:9-15
+      - Romans 9:1-18
       - John 6:60-71
     year_2_readings:
-      - Exod. 2:23--3:15
-      - 1 Cor. 13:1-13
+      - Exodus 2:23--3:15
+      - 1 Corinthians 13:1-13
       - Mark 9:14-29
 
 - number: 5
@@ -601,12 +601,12 @@
     evening:
       psalter: "145"
     year_1_readings:
-      - Jer. 23:16-32
-      - 1 Cor. 9:19-27
+      - Jeremiah 23:16-32
+      - 1 Corinthians 9:19-27
       - Mark 8:31--9:1
     year_2_readings:
-      - Exod. 3:16--4:12
-      - Rom. 12:1-21
+      - Exodus 3:16--4:12
+      - Romans 12:1-21
       - John 8:46-59
   MONDAY:
     morning:
@@ -614,12 +614,12 @@
     evening:
       psalter: "35"
     year_1_readings:
-      - Jer. 24:1-10
-      - Rom. 9:19-33
+      - Jeremiah 24:1-10
+      - Romans 9:19-33
       - John 9:1-17
     year_2_readings:
-      - Exod. 4:10-20(21-26)27-31
-      - 1 Cor. 14:1-19
+      - Exodus 4:10-20(21-26)27-31
+      - 1 Corinthians 14:1-19
       - Mark 9:30-41
   TUESDAY:
     morning:
@@ -627,12 +627,12 @@
     evening:
       psalter: 124,125,126,[127]
     year_1_readings:
-      - Jer. 25:8-17
-      - Rom. 10:1-13
+      - Jeremiah 25:8-17
+      - Romans 10:1-13
       - John 9:18-41
     year_2_readings:
-      - Exod. 5:1--6:1
-      - 1 Cor. 14:20-33a, 39-40
+      - Exodus 5:1--6:1
+      - 1 Corinthians 14:20-33a, 39-40
       - Mark 9:42-50
   WEDNESDAY:
     morning:
@@ -640,12 +640,12 @@
     evening:
       psalter: 128,129,130
     year_1_readings:
-      - Jer. 25:30-38
-      - Rom. 10:14-21
+      - Jeremiah 25:30-38
+      - Romans 10:14-21
       - John 10:1-18
     year_2_readings:
-      - Exod. 7:8-24
-      - 2 Cor. 2:14--3:6
+      - Exodus 7:8-24
+      - 2 Corinthians 2:14--3:6
       - Mark 10:1-16
   THURSDAY:
     morning:
@@ -653,12 +653,12 @@
     evening:
       psalter: 140,142
     year_1_readings:
-      - Jer. 26:1-16
-      - Rom. 11:1-12
+      - Jeremiah 26:1-16
+      - Romans 11:1-12
       - John 10:19-42
     year_2_readings:
-      - Exod. 7:25--8:19
-      - 2 Cor. 3:7-18
+      - Exodus 7:25--8:19
+      - 2 Corinthians 3:7-18
       - Mark 10:17-31
   FRIDAY:
     morning:
@@ -666,12 +666,12 @@
     evening:
       psalter: 141,143:1-11(12)
     year_1_readings:
-      - Jer. 29:1, 4-13
-      - Rom. 11:13-24
+      - Jeremiah 29:1, 4-13
+      - Romans 11:13-24
       - John 11:1-27, or 12:1-10
     year_2_readings:
-      - Exod. 9:13-35
-      - 2 Cor. 4:1-12
+      - Exodus 9:13-35
+      - 2 Corinthians 4:1-12
       - Mark 10:32-45
   SATURDAY:
     morning:
@@ -679,12 +679,12 @@
     evening:
       psalter: 42,43
     year_1_readings:
-      - Jer. 31:27-34
-      - Rom. 11:25-36
+      - Jeremiah 31:27-34
+      - Romans 11:25-36
       - John 11:28-44, or 12:37-50
     year_2_readings:
-      - Exod. 10:21--11:8
-      - 2 Cor. 4:13-18
+      - Exodus 10:21--11:8
+      - 2 Corinthians 4:13-18
       - Mark 10:46-52
 
 - number: 6
@@ -705,13 +705,13 @@
     morning:
       psalter: 24,29
       readings:
-        - Zech. 9:9-12
-        - 1 Tim. 6:12-16
+        - Zechariah 9:9-12
+        - 1 Timothy 6:12-16
     evening:
       psalter: "103"
       readings:
-        - Zech. 12:9-11, 13:1, 7-9
-        - Matt. 21:12-17
+        - Zechariah 12:9-11, 13:1, 7-9
+        - Matthew 21:12-17
   MONDAY:
     name: The Monday of Holy Week
     color: RED
@@ -729,12 +729,12 @@
     evening:
       psalter: 69:1-23
     year_1_readings:
-      - Jer. 12:1-16
-      - Phil. 3:1-14
+      - Jeremiah 12:1-16
+      - Philippians 3:1-14
       - John 12:9-19
     year_2_readings:
-      - Lam. 1:1-2, 6-12
-      - 2 Cor. 1:1-7
+      - Lamentations 1:1-2, 6-12
+      - 2 Corinthians 1:1-7
       - Mark 11:12-25
   TUESDAY:
     name: The Tuesday of Holy Week
@@ -752,12 +752,12 @@
     evening:
       psalter: "94"
     year_1_readings:
-      - Jer. 15:10-21
-      - Phil. 3:15-21
+      - Jeremiah 15:10-21
+      - Philippians 3:15-21
       - John 12:20-26
     year_2_readings:
-      - Lam. 1:17-22
-      - 2 Cor. 1:8-22
+      - Lamentations 1:17-22
+      - 2 Corinthians 1:8-22
       - Mark 11:27-33
   WEDNESDAY:
     name: The Wednesday of Holy Week
@@ -775,12 +775,12 @@
     evening:
       psalter: "74"
     year_1_readings:
-      - Jer. 17:5-10, 14-17
-      - Phil. 4:1-13
+      - Jeremiah 17:5-10, 14-17
+      - Philippians 4:1-13
       - John 12:27-36
     year_2_readings:
-      - Lam. 2:1-9
-      - 2 Cor. 1:23--2:11
+      - Lamentations 2:1-9
+      - 2 Corinthians 1:23--2:11
       - Mark 12:1-11
   THURSDAY:
     name: Maundy Thursday
@@ -789,7 +789,7 @@
     collect: >
       Almighty Father, whose dear Son, on the night before he
       suffered, instituted the Sacrament of his Body and Blood:
-      Mercifully grant that we may receive it thankfully in
+      Mercifully grant that we receive it thankfully in
       remembrance of Jesus Christ our Lord, who in these holy
       mysteries gives us a pledge of eternal life; and who now lives
       and reigns with you and the Holy Spirit, one God, for ever
@@ -799,12 +799,12 @@
     evening:
       psalter: 142,143
     year_1_readings:
-      - Jer. 20:7-11
-      - 1 Cor. 10:14-17; 11:27-32
+      - Jeremiah 20:7-11
+      - 1 Corinthians 10:14-17; 11:27-32
       - John 17:1-11(12-26)
     year_2_readings:
-      - Lam. 2:10-18
-      - 1 Cor. 10:14-17; 11:27-32
+      - Lamentations 2:10-18
+      - 1 Corinthians 10:14-17; 11:27-32
       - Mark 14:12-25
   FRIDAY:
     name: Good Friday
@@ -825,7 +825,7 @@
       - John 13:36-38
       - John 19:38-42
     year_2_readings:
-      - Lam. 3:1-9, 19-33
+      - Lamentations 3:1-9, 19-33
       - John 19:38-42
       - John 13:36-38
   SATURDAY:
@@ -853,9 +853,9 @@
       psalter: "27"
     year_1_readings:
       - Job 19:21-27a
-      - Heb. 4:1-16
-      - Rom. 8:1-11
+      - Hebrews 4:1-16
+      - Romans 8:1-11
     year_2_readings:
-      - Lam. 3:37-58
-      - Rom. 8:1-11
-      - Heb. 4:1-16
+      - Lamentations 3:37-58
+      - Romans 8:1-11
+      - Hebrews 4:1-16
