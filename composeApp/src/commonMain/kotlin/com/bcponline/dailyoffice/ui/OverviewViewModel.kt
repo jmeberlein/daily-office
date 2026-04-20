@@ -15,6 +15,9 @@ class OverviewViewModel : ViewModel() {
     val day: StateFlow<LiturgicalDay?> = _day
     val date: StateFlow<LocalDate> = SelectedDate.date
 
+    val morningCollectTab = MutableStateFlow(0)
+    val eveningCollectTab = MutableStateFlow(0)
+
     init {
         viewModelScope.launch {
             combine(
@@ -28,6 +31,8 @@ class OverviewViewModel : ViewModel() {
                     _day.value = null
                     ProperParser.loadFilesForDate(date)
                     _day.value = ProperFetcher.getProperForDate(date, force, optional, extra)
+                    morningCollectTab.value = 0
+                    eveningCollectTab.value = 0
                 }
         }
     }

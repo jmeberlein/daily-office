@@ -21,6 +21,8 @@ import kotlinx.datetime.format.char
 @Composable
 fun OverviewScreen(vm: OverviewViewModel = viewModel { OverviewViewModel() }) {
     val day by vm.day.collectAsStateWithLifecycle()
+    val morningTab by vm.morningCollectTab.collectAsStateWithLifecycle()
+    val eveningTab by vm.eveningCollectTab.collectAsStateWithLifecycle()
     val color = day?.morning?.color ?: LiturgicalColor.NONE
 
     val dateString = vm.date.collectAsStateWithLifecycle().value.format(LocalDate.Format {
@@ -64,13 +66,17 @@ fun OverviewScreen(vm: OverviewViewModel = viewModel { OverviewViewModel() }) {
                     title = "Morning Prayer",
                     office = morning,
                     subtitle = null,
-                    includePsalm95 = !isEastertide
+                    includePsalm95 = !isEastertide,
+                    collectTab = morningTab,
+                    onCollectTabSelected = { vm.morningCollectTab.value = it }
                 )
                 OfficeSection(
                     title = "Evening Prayer",
                     office = evening,
                     subtitle = if (evening.name != morning.name) evening.name else null,
-                    includePsalm95 = false
+                    includePsalm95 = false,
+                    collectTab = eveningTab,
+                    onCollectTabSelected = { vm.eveningCollectTab.value = it }
                 )
             }
         }
@@ -79,7 +85,14 @@ fun OverviewScreen(vm: OverviewViewModel = viewModel { OverviewViewModel() }) {
 }
 
 @Composable
-private fun OfficeSection(title: String, office: Office, subtitle: String?, includePsalm95: Boolean) {
+private fun OfficeSection(
+    title: String,
+    office: Office,
+    subtitle: String?,
+    includePsalm95: Boolean,
+    collectTab: Int,
+    onCollectTabSelected: (Int) -> Unit
+) {
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text(title, style = MaterialTheme.typography.titleLarge,
             color = MaterialTheme.colorScheme.primary)
@@ -93,9 +106,7 @@ private fun OfficeSection(title: String, office: Office, subtitle: String?, incl
         if (office.secondReading.isNotBlank()) OfficeRow("Second Reading", office.secondReading)
         
         if (office.collects.isNotEmpty()) {
-            val label = if (office.collects.size > 1) "Collects" else "Collect"
-            val value = office.collects.keys.joinToString(", ")
-            OfficeRow(label, value)
+            CollectChoiceBlock(office.collects, collectTab, onCollectTabSelected)
         }
     }
 }
@@ -107,5 +118,33 @@ private fun OfficeRow(label: String, value: String) {
         Text(label, style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.primary)
         Text(value, style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
+@Composable
+private fun CollectChoiceBlock(
+    collects: Map<String, String>,
+    selectedTab: Int,
+    onTabSelected: (Int) -> Unit
+) {
+    if (collects.isEmpty()) return
+
+    if (collects.size == 1) {
+        val entry = collects.entries.first()
+        OfficeRow("Collect (${entry.key})", entry.value)
+        return
+    }
+
+    val keys = collects.keys.toList()
+    Column {
+        TabRow(selectedTabIndex = selectedTab) {
+            keys.forEachIndexed { i, name ->
+                Tab(selected = selectedTab == i, onClick = { onTabSelected(i) },
+                    text = { Text(name, style = MaterialTheme.typography.labelMedium) })
+            }
+        }
+        Spacer(Modifier.height(8.dp))
+        val text = collects[keys[selectedTab]] ?: ""
+        OfficeRow("Collect", text)
     }
 }

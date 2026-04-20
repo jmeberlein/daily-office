@@ -45,15 +45,9 @@ Amen.""")
             Rank.OPTIONAL,
             Season.PENTECOST,
             "147",
-            "Deut. 26:1-11",
+            "Deuteronomy 26:1-11",
             "John 6:26-35",
-            mapOf("Thanksgiving" to """Almighty and gracious Father, we give you thanks for the
-fruits of the earth in their season and for the labors of those
-who harvest them. Make us, we pray, faithful stewards of
-your great bounty, for the provision of our necessities and
-the relief of all who are in need, to the glory of your Name;
-through Jesus Christ our Lord, who lives and reigns with
-you and the Holy Spirit, one God, now and for ever. Amen.""")
+            mapOf("Thanksgiving" to """Almighty and gracious Father, we give you thanks for the fruits of the earth in their season and for the labors of those who harvest them. Make us, we pray, faithful stewards of your great bounty, for the provision of our necessities and the relief of all who are in need, to the glory of your Name;through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.""")
         )
 
         val THANKSGIVING_EVENING = Office(
@@ -62,14 +56,8 @@ you and the Holy Spirit, one God, now and for ever. Amen.""")
             Season.PENTECOST,
             "145",
             "Joel 2:21-27",
-            "1 Thess. 5:12-24",
-            mapOf("Thanksgiving" to """Almighty and gracious Father, we give you thanks for the
-fruits of the earth in their season and for the labors of those
-who harvest them. Make us, we pray, faithful stewards of
-your great bounty, for the provision of our necessities and
-the relief of all who are in need, to the glory of your Name;
-through Jesus Christ our Lord, who lives and reigns with
-you and the Holy Spirit, one God, now and for ever. Amen."""),
+            "1 Thessalonians 5:12-24",
+            mapOf("Thanksgiving" to """Almighty and gracious Father, we give you thanks for the fruits of the earth in their season and for the labors of those who harvest them. Make us, we pray, faithful stewards of your great bounty, for the provision of our necessities and the relief of all who are in need, to the glory of your Name; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen."""),
             LiturgicalColor.WHITE
         )
 
@@ -80,15 +68,7 @@ you and the Holy Spirit, one God, now and for ever. Amen."""),
             "",
             "",
             "",
-            mapOf("Labor Day" to """Almighty God, you have so linked our lives one with another
-that all we do affects, for good or ill, all other lives: So guide
-us in the work we do, that we may do it not for self alone, but
-for the common good; and, as we seek a proper return for
-our own labor, make us mindful of the rightful aspirations of
-other workers, and arouse our concern for those who are out
-of work; through Jesus Christ our Lord, who lives and reigns
-with you and the Holy Spirit, one God, for ever and ever.
-Amen.""")
+            mapOf("Labor Day" to """Almighty God, you have so linked our lives one with another that all we do affects, for good or ill, all other lives: So guide us in the work we do, that we may do it not for self alone, but for the common good; and, as we seek a proper return for our own labor, make us mindful of the rightful aspirations of other workers, and arouse our concern for those who are out of work; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.""")
         )
     }
 
@@ -116,7 +96,11 @@ Amen.""")
         }
 
         if (higherRank == Rank.OPTIONAL) {
-            this.collects = this.collects + other.collects
+            if (this.collects.isNotEmpty() && other.collects.isNotEmpty()) {
+                this.collects = this.collects + other.collects
+            } else if (this.collects.isEmpty()) {
+                this.collects = other.collects
+            }
         } else {
             if (this.collects.isEmpty() || (other.collects.isNotEmpty() && other.rank > this.rank)) {
                 this.collects = other.collects
